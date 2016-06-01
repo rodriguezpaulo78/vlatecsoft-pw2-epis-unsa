@@ -1,0 +1,485 @@
+html{height:100%}
+@font-face{font-family:'GothamRounded-Light';src:url(font/GothamRounded-Light.eot);src:local("GothamRounded-Light"),url(font/GothamRounded-Light.ttf) format("truetype"),url(font/GothamRounded-Light.otf) format("opentype"),url(font/GothamRounded-Light.woff) format("woff")}
+@font-face{font-family:'GothamRounded-Book';src:url(font/GothamRounded-Book.eot);src:local("GothamRounded-Book"),url(font/GothamRounded-Book.ttf) format("truetype"),url(font/GothamRounded-Book.otf) format("opentype"),url(font/GothamRounded-Book.woff) format("woff")}
+@font-face{font-family:'fontello';src:url("font/fontellodf29.eot?72545342");src:url("font/fontellodf29.eot?72545342#iefix") format("embedded-opentype"),url("font/fontellodf29.woff?72545342") format("woff"),url("font/fontellodf29.ttf?72545342") format("truetype"),url("font/fontellodf29.svg?72545342#fontello") format("svg");font-weight:normal;font-style:normal}
+[class^="icon-"]:before,[class*=" icon-"]:before{font-family:"fontello";font-style:normal;font-weight:normal;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.icon-menu:before{content:'\e800'}
+.icon-cancel:before{content:'\e801'}
+.icon-down-open:before{content:'\e802'}
+.icon-facebook:before{content:'\e803'}
+.icon-twitter:before{content:'\e804'}
+.icon-linkedin:before{content:'\e805'}
+.icon-up-open:before{content:'\e806'}
+.icon-arrow-combo:before{content:'\e807'}
+.icon-youtube:before{content:'\e808'}
+.icon-github:before{content:'\e809'}
+
+
+body{height:100%;font-family:'GothamRounded-Light', sans-serif}
+.top-3 .info:after,.top-contacto:after,.top-precios:after,header .container:after,header .container nav ul:after,section .boxes:after,section .medio .barra:after,section .dev-bottom:after,section .precios .container ul:after,section .container:after,section .container .historia:after,section .container .equipo .perfiles:after,section .ubicacion .container:after,section .beneficios ul.nav-two:after,section .beneficios .two .container:after,footer .container:after{content:"";display:table;clear:both}
+ul{margin:0;padding:0}
+ul li{list-style-type:none}
+a{text-decoration:none;color:#fff}
+p{line-height:180%}
+h1,h2,h3,h4{font-weight:500}
+.page-title{padding:200px 0}
+.page-title2{padding:100px 0;}
+.page-title h1{font-size:4em;margin:0; background:#1C4475}
+.page-title h4{font-family:"GothamRounded-Book",sans-serif;  background:#000}
+.page-title2 h1{font-size:4em;margin:0; background:#1C4475}
+.page-title2 h4{font-family:"GothamRounded-Book",sans-serif;  background:#000}
+
+.container{max-width:1140px;width:100%;margin:0 auto}
+.container1{max-width:1140px;width:100%;margin:0 auto}
+.top{background-image:url(../images/fondo1.jpg);background-position:bottom center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;height:600px;color:#fff}
+.top1{background-image:url(../images/fondo-contacto.jpg);background-position:bottom center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;height:1000px;color:#fff}
+
+.g-recaptcha{padding:2px;display: flex;justify-content: center;align-items: center;}
+
+label
+{  display: block;
+   padding:2px;
+   margin:2px;
+   cursor:pointer;
+ 
+}
+textarea{resize:none;}
+
+.top-desarrolladores{background:url(../images/trama.png),-webkit-radial-gradient(bottom, circle, #44D5B3, #3FBFE2, #6275AE);background:url(../images/trama.png),-moz-radial-gradient(bottom, circle, #44D5B3, #3FBFE2, #6275AE);background:url(../images/trama.png),-ms-radial-gradient(bottom, circle, #44D5B3, #3FBFE2, #6275AE);background:url(../images/trama.png),-o-radial-gradient(bottom, circle, #44D5B3, #3FBFE2, #6275AE);background:url(../images/trama.png),radial-gradient(bottom, circle, #44D5B3, #3FBFE2, #6275AE);height:600px;color:#fff}
+.top-legal{background-image:url(../images/opacity.png),url(../images/empresa.jpg);background-position:top center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;height:600px;position:relative}
+.top-legal .title{color:#fff;padding:10em 0}
+.top-legal .title h1{text-transform:uppercase;font-size:3.5em}
+.top-legal .title h3{font-weight:normal}
+.top-legal .tabs{position:absolute;width:100%;bottom:0;border-top:1px solid #c9c9c9}
+.top-legal .tabs ul li{display:inline-block;padding:1em 10em;text-transform:uppercase}
+.top-3{background-image:url(../images/opacity-s.png),url(../images/bg-seguridad-2.jpg);background-position:top center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;color:#fff}
+.top-3 .title{padding:10em 0}
+.top-3 .title h1{font-size:4em;text-transform:uppercase}
+.top-3 .title h3{font-weight:normal}
+.top-3 .info{background:url(../images/trebol.png) no-repeat 0 center;padding:0 0 0 30%;text-align:left}
+.top-3 .info h2{font-size:2em;font-family:"GothamRounded-Book",sans-serif}
+.top-3 .info p.semilla{width:80%}
+.top-3 .info ul{width:46%;float:left;padding:30px 2% 2em;text-align:center}
+.top-3 .info ul li{padding:0 15%}
+.top-3 .info ul li h4{font-family:"GothamRounded-Book",sans-serif}
+.top-3 .infra{background:none;background:url(../images/xapo.png) no-repeat right 240px;padding-left:0;padding-right:30%}
+.top-3 .infra ul{padding-left:0}
+.top-beneficios{background-image:url(../images/bg-beneficios-2.jpg);background-position:bottom center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;height:600px;color:#fff}
+.top-beneficios header .container nav ul li:last-child{background:#0AA6A9;border:none}
+.top-beneficios header .container nav ul li:last-child:hover{background:#0FBDD3;-webkit-transition:background linear .2s;transition:background linear .2s}
+.top-beneficios .title{padding:12em 0}
+.top-beneficios .title h1{font-size:3.5em;text-transform:uppercase}
+.top-beneficios .title h2{font-size:1.3em}
+.top-contacto{background-image:url(../images/bg-contacto.png);-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;height:600px;color:#fff}
+.top-contacto header .container nav ul li:last-child a{color:#fff}
+.top-contacto .title{color:#484848;padding:11em 0}
+.top-contacto .title h1{font-size:4em;text-transform:uppercase}
+.top-contacto .title a{color:#0AA6A9}
+.top-contacto .contactos{padding:0 0 3em 0}
+.top-contacto .contactos ul li{display:inline-block;text-align:left;width:25%;padding:30px 0 30px 8%}
+.top-contacto .contactos ul li a{color:#0AA6A9}
+.top-contacto .contactos ul li.soporte{background:url(../images/ayuda.jpg) no-repeat 0 center}
+.top-contacto .contactos ul li.ventas{background:url(../images/ventas.jpg) no-repeat 0 center}
+.top-contacto .contactos ul li.prensa{background:url(../images/prensa.jpg) no-repeat 0 center}
+.top-contacto .contactos p a{color:#0AA6A9}
+.top-precios{background-image:url(../images/bg-precios-2.jpg);background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;height:600px;color:#fff}
+.top-precios header .container nav ul li:last-child{background:#0AA6A9}
+.top-precios header .container nav ul li:last-child a{color:#fff}
+.top-precios header .container nav ul li:last-child:hover{background:#05C4DD;-webkit-transition:background linear .2s;transition:background linear .2s}
+.top-precios .title{padding:11em 0}
+.top-precios .title .container h1{color:#fff;font-size:4em;font-family:"GothamRounded-Book",sans-serif;margin:0;text-shadow:2px 2px 8px #3E3E3E}
+.top-precios .title .container h1 span{font-size:.5em}
+.top-precios .title .container p{font-size:1.5em;text-shadow:2px 2px 8px #3E3E3E}
+.top-precios .title .container ul{padding:1.5em 0}
+.top-precios .title .container ul li{background:#0AA6A9;display:inline-block;padding:15px 20px;font-family:"GothamRounded-Book",sans-serif;text-align:center;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
+.top-precios .title .container ul li:hover{background:#05C4DD;-webkit-transition:background linear .2s;transition:background linear .2s;cursor:pointer}
+header{background:url(../images/pattern.png),#322D2A;position:fixed;width:100%;-webkit-box-shadow:0px 1px 15px #000;-moz-box-shadow:0px 1px 15px #000;box-shadow:0px 1px 15px #000;z-index:999}
+header .container .logo{width:15%;min-width:150px;float:left;text-align:left;position:relative}
+header .container .logo img{padding:10px 0;float:left}
+header .container .logo span.subtitle{display:block;float:left;padding:30px 0 3em 1em;font-size:1.4em}
+header .container .dev{width:38%}
+header .container .min{width:62%}
+header .container nav{width:80%;float:right;font-size:.85em}
+header .container nav ul{text-align:right;padding:17px 0;}
+header .container nav ul li{display:inline-block;}
+
+header .container nav ul li:hover .children{display:block;padding:0}
+header .container nav ul li .children{display:none; background:#000000; position:absolute;}
+header .container nav ul li .children li {display:block;overflow: hidden;border-bottom: 1px solid rgba(255,255,255,.5);text-align:left}
+header .container nav ul li .children li a {display: block;}
+
+header .container nav ul li a{color:#fff;padding:1em 15px;display:block}
+header .container nav ul li a:hover{color:#05C4DD}
+header .container nav ul li:last-child{background:#0AA6A9;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;font-family:"GothamRounded-Book",sans-serif;color:#fff;cursor:pointer}
+header .container nav ul li:last-child:hover{background:#05C4DD;-webkit-transition:background linear .2s;transition:background linear .2s}
+header .container nav ul li:last-child:hover a{color:#fff}
+header .container .nav-mobil{display:none}
+header .container .nav2{background:red;position:fixed;top:0;height:70px;width:100%}
+header i.icon-menu{display:none}
+header.nosotros .container nav ul li a{color:#484848 !important}
+header.nosotros .container nav ul li:last-child{background:#0AA6A9}
+header.nosotros .container nav ul li:last-child a{color:#fff !important}
+header.desarrolladores{background:#3A3E49}
+header.desarrolladores span{color:#fff}
+.developers{background:url(../images/online.jpg) no-repeat right 160px;position:relative;height:600px}
+.developers .title{text-align:left;padding:10em 0 0}
+.developers .title h1{text-transform:uppercase;font-size:3.5em;margin:0.3em 0}
+.developers .title p{width:55%;font-size:1.3em}
+.developers .title ul{width:130px;text-align:center;padding:1em 0}
+.developers .title ul li{border:1px solid #fff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;padding:15px 20px}
+.developers .title ul li:hover{background:#0AA6A9;-webkit-transition:background linear .2s;transition:background linear .2s;border-color:#0AA6A9;cursor:pointer}
+.developers .sdk{width:40%;position:absolute;top:60px;right:0}
+.developers .sdk pre{margin:0;padding:0}
+.developers .sdk pre code{padding-left:2em;-webkit-border-top-left-radius:15px;-webkit-border-bottom-left-radius:15px;-moz-border-radius-topleft:15px;-moz-border-radius-bottomleft:15px;border-top-left-radius:15px;border-bottom-left-radius:15px}
+.container{text-align:center}
+.container1{text-align:center; background:black}
+.container ul.botones li{display:inline-block;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;width:200px}
+.container ul.botones li a{padding:15px 20px;display:block}
+.container ul.botones li:first-child{margin-right:1em;background-color:rgba(255,255,255,0.5)}
+.container ul.botones li:last-child{background:#0AA6A9;cursor:pointer}
+.container ul.botones li:last-child a{color:#fff}
+.container ul.botones li:first-child:hover{background:#05C4DD;-webkit-transition:background linear .2s;transition:background linear .2s}
+.container ul.botones li:last-child:hover{background:#05C4DD;-webkit-transition:background linear .2s;transition:background linear .2s}
+img.back{width:100%;display:block}
+.franja{background:#3E424E;padding:1em 0}
+.franja p,.franja span{padding:15px 0}
+.franja p{font-size:1.8em;color:#fff;margin:0}
+.franja span{color:#fff;display:block}
+section{color:#484848;text-align:center}
+section h2{font-family:"GothamRounded-Book",sans-serif;margin:0;padding:3em 0 1em 0}
+section .cards{background:#F9FAFA;border-bottom:1px solid #D8D8D8}
+section .cards ul li{display:inline-block;padding:2em .5em}
+section .boxes{margin:3em auto}
+section .boxes h2{padding:1em 0;margin:0}
+section .boxes ul{width:23.5%;min-height:320px;float:left;padding:3% 2% 0 0}
+section .boxes ul:first-child{padding:0}
+section .boxes ul.last{padding-right:0}
+section .boxes ul li{padding:0.5em .5em}
+section .boxes ul li:last-child{bottom:0}
+section .boxes ul li h3{margin:0;font-family:"GothamRounded-Book",sans-serif}
+section .boxes ul li p{font-size:.81em;min-height:70px}
+section .boxes ul li a.more{color:#0AA6A9;border-bottom:5px solid #0AA6A9;padding-bottom:1.7em}
+section .partners{border-bottom:1px solid #EFEFEF;padding:3em 0}
+section .partners ul li{display:inline-block;padding:1em 2em}
+section .medio{padding:50px 0;border-bottom:1px solid #D8D8D8}
+section .medio h1,section .medio h2,section .medio h3{color:#ABABAB}
+section .medio .barra{margin:50px 0}
+section .medio .barra .left{width:48%;float:left;text-align:left}
+section .medio .barra .left span{background:none;padding:30px 0}
+section .medio .barra .left span p{color:#484848}
+section .medio .barra .right{width:48%;padding-left:4%;float:right;text-align:center}
+section .medio .barra .right img{padding:50px 0}
+section .medio .barra h1{color:#05C4DD;font-family:"GothamRounded-Book",sans-serif}
+section .medio .barra p{font-size:1.2em}
+section .dev-bottom{margin:50px 0}
+section .dev-bottom .container h1{color:#ABABAB;font-family:"GothamRounded-Book",sans-serif;margin:0}
+section .dev-bottom .container ul{width:30%;float:left;padding:100px 10%}
+section .dev-bottom .container ul a.more{color:#0AA6A9;border-bottom:5px solid #0AA6A9;padding-bottom:1.7em}
+section .dev-bottom .container ul li:last-child{color:#0AA6A9}
+section .dev-bottom .container ul li:last-child a{color:#0AA6A9}
+section .dev-bottom .container ul h3{font-family:"GothamRounded-Book",sans-serif}
+section .integrate{background:url(../images/nodo-left.png) no-repeat left center,url(../images/nodo-right.png) no-repeat right center,#F6F7F8;padding:3em 0;border-top:1px solid #EFEFEF;border-bottom:1px solid #EFEFEF}
+section .integrate h2{font-family:"GothamRounded-Book",sans-serif;padding:1em 0}
+section .integrate p{font-size:1.2em;padding:0 15em}
+section .integrate ul{padding:2em 0}
+section .integrate ul li{display:inline-block;border:1px solid #484848;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;width:200px}
+section .integrate ul li a{display:block;padding:15px 20px}
+section .integrate ul li:first-child{margin-right:1em}
+section .integrate ul li:first-child:hover{background:#05C4DD;-webkit-transition:background linear .2s;transition:background linear .2s;border-color:#05C4DD}
+section .integrate ul li:first-child:hover a{color:#fff}
+section .integrate ul li:first-child a{color:#484848}
+section .integrate ul li:last-child{background:#0AA6A9;border-color:#0AA6A9;color:#fff;cursor:pointer}
+section .integrate ul li:last-child:hover{background:#05C4DD;border-color:#05C4DD;-webkit-transition:background linear .2s;transition:background linear .2s}
+section hr{border:1px solid #EFEFEF;margin:3em 0}
+section .content{text-align:left;padding:2em 0;font-size:1.3em}
+section .enprecios{background:none;padding:30px 0}
+section .precios .container h1{font-family:"GothamRounded-Book",sans-serif;color:#ABABAB}
+section .precios .container h3{padding:0;color:#ABABAB}
+section .precios .container .title{padding:50px 0}
+section .precios .container ul{margin:20px 0}
+section .precios .container ul li{width:40%;min-height:210px;float:left;padding:30px 5%}
+section .precios .container ul li h4{text-transform:none;font-family:"GothamRounded-Book",sans-serif}
+section .precios .container ul.beneficios{padding:50px 0}
+section .precios .container ul.beneficios li{width:32%;float:left;padding:0 0 0 2%;text-align:center}
+section .precios .container ul.beneficios li:first-child{padding-left:0}
+section .precios .container ul.beneficios li p{width:80%;margin:0 auto 1.5em}
+section .precios .container ul.beneficios li a{color:#0AA6A9;border-bottom:5px solid #0AA6A9;padding:20px;display:block;width:100px;margin:0 auto}
+section .precios .container ul.beneficios li a:hover{color:#05C4DD;border-color:#05C4DD}
+section .container #sidebar{width:24%;float:left}
+section .container #sidebar ul li{padding:.7em 0}
+section .container #sidebar ul li a{color:#484848}
+section .container ul.languages{border-bottom:2px solid #dbdbdb}
+section .container ul.languages li{display:inline-block;font-family:"GothamRounded-Book",sans-serif;font-size:15px;-webkit-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;-webkit-mask-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);background:-webkit-linear-gradient(#dbdfe5, #cfd5dd);background:-moz-linear-gradient(#dbdfe5, #cfd5dd)}
+section .container ul.languages li.ui-state-active{background:#05C4DD}
+section .container ul.languages li.ui-state-active a{color:#fff}
+section .container ul.languages li a{color:#484848;padding:5px 10px;display:block;-webkit-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;-webkit-mask-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);text-shadow:0 0 2px rgba(169,179,193,0.7),0 1px 0 rgba(169,179,193,0.6)}
+section .container ul.languages li a:hover{background:#05C4DD;-webkit-transition:background linear .2s;transition:background linear .2s}
+section .container .documentation{width:70%;float:right;padding-left:5%;border-left:1px solid #EFEFEF}
+section .container .documentation h3{font-family:"GothamRounded-Book",sans-serif}
+section .container .documentation pre code{-webkit-border-radius:5px;border-radius:5px}
+section .container #sidebar,section .container .documentation{text-align:left;padding-top:50px}
+section .phones{background:url(../images/nodo-left.png) no-repeat left 50px,url(../images/nodo-right.png) no-repeat right bottom,#F9FAFA}
+section .phones .title{padding:1.5em 0}
+section .phones ul{position:relative}
+section .phones ul li{display:inline-block;margin:8% -34% 0}
+section .phones ul li.two{position:absolute;top:0;left:0;right:0;margin:auto;z-index:1}
+section .historia,section .equipo{margin:3em 0}
+section .nosotros{position:relative}
+section .nosotros .title{padding:6em 0}
+section .nosotros .title h1{font-size:4em;text-transform:uppercase;padding:50px 0 20px;margin:0}
+section .nosotros .title h2{padding:0 6em;font-family:inherit;color:#ABABAB}
+section .nosotros .title h2 span{color:#484848}
+section .nosotros img{width:100%}
+section .container h1{font-family:"GothamRounded-Book",sans-serif}
+section .container .historia p{text-align:justify}
+section .container .historia .box{width:49%;float:left;padding-left:2%;text-align:left}
+section .container .historia .left{padding-left:0}
+section .container .historia .left p{padding:0 0 0 5em}
+section .container .historia .right p{padding:0 5em 0 0}
+section .container .equipo .perfiles ul{width:28%;margin:40px 8% 40px 0;float:left;position:relative;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-mask-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);overflow:hidden}
+section .container .equipo .perfiles ul:nth-child(3n){margin-right:0}
+section .container .equipo .perfiles ul li{width:100%;text-align:left}
+section .container .equipo .perfiles ul li.name{position:relative;-webkit-transform:translateY(100%);-ms-transform:translateY(100%);transform:translateY(100%);-webkit-transition:transform 1s;transition:transform 1s}
+section .container .equipo .perfiles ul li.name i{position:absolute;right:10px;top:25px;border:1px solid #fff;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;padding:.3em}
+section .container .equipo .perfiles ul li.muestrate{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
+section .container .equipo .perfiles ul li:first-child img{width:100%;height:auto;background:#c4c4c4;display:block}
+section .container .equipo .perfiles ul li:last-child{background:rgba(0,0,0,0.5);position:absolute;bottom:0;padding:.5em 0}
+section .container .equipo .perfiles ul li:last-child h5,section .container .equipo .perfiles ul li:last-child span{margin:.5em;color:#fff}
+section .container .equipo .perfiles ul li:last-child span{display:block}
+section .ubicacion{margin:3em 0}
+section .ubicacion .container p{width:60%;float:left;text-align:left;padding-left:10%;margin:0}
+section .ubicacion .container p span{font-family:"GothamRounded-Book",sans-serif}
+section .ubicacion .container i{display:block;width:15%;float:left;background:#DCDADC;padding:1em;color:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;font-style:normal}
+section .ubicacion hr{margin:3em 0 !important}
+section .empezar{margin:0;background:url(../images/bg-empezar.png) no-repeat center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
+section .beneficios ul.nav-two{padding:2em 0}
+section .beneficios ul.nav-two li{width:23.5%;float:left;padding-left:2%}
+section .beneficios ul.nav-two li:first-child{padding-left:0}
+section .beneficios ul.nav-two li h4{font-family:"GothamRounded-Book",sans-serif;margin:15px 0 0 0}
+section .beneficios .section{padding:80px 0}
+section .beneficios .section h2{padding:.7em 0}
+section .beneficios .section .container{text-align:left}
+section .beneficios .section .container p.semilla{color:#797979;padding:0 0 1.5em 0}
+section .beneficios .section .container ul{padding:1.5em 0}
+section .beneficios .section .container ul li{width:160px;text-align:center;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;display:inline-block}
+section .beneficios .section .container ul li a{color:#484848;display:block}
+section .beneficios .section .container ul li:first-child{border:1px solid #808488;margin-right:1em}
+section .beneficios .section .container ul li:first-child:hover{border-color:#05C4DD}
+section .beneficios .section .container ul li:first-child a{padding:15px 0}
+section .beneficios .section .container ul li:last-child{background:#0AA6A9;color:#fff;cursor:pointer}
+section .beneficios .section .container ul li:last-child:hover{background:#05C4DD;border-color:#05C4DD}
+section .beneficios .section .container ul li:last-child a{color:#fff;padding:15px 0}
+section .beneficios .one{background:#E4E8E9;position:relative}
+section .beneficios .one .left{width:50%;float:left;padding:4em 0}
+section .beneficios .one .left ul li:first-child:hover{background:#05C4DD;border-color:#05C4DD}
+section .beneficios .one .left ul li:first-child:hover a{color:#fff}
+section .beneficios .one .right{width:50%;float:right}
+section .beneficios .one .right img{width:100%}
+section .beneficios .one .api{background:url(../images/bg-smart.png) no-repeat left center #e4e8e9;width:50%;height:720px;padding-left:50%;margin-top:3em}
+section .beneficios .one .api .container{padding:10em 0}
+section .beneficios .one .api .container p{width:100%}
+section .beneficios .two{background:#EBF7FA;color:#484848}
+section .beneficios .two .container .left{width:50%;float:left;padding:4em 0}
+section .beneficios .two .container .left p{width:100%}
+section .beneficios .two .container .left ul li:first-child{border-color:#484848}
+section .beneficios .two .container .left ul li:first-child:hover{border-color:#05C4DD}
+section .beneficios .two .container .left ul li:first-child a{color:#484848}
+section .beneficios .two .container .right{width:50%;float:left}
+section .beneficios .two .container .right img{width:100%}
+section .beneficios .two .container .right p{width:100%}
+section .beneficios .two .container .right p.semilla{color:#fff}
+section .beneficios .three{background:url(../images/memorias.jpg) no-repeat left bottom #A4CAFA}
+section .beneficios .three .container{text-align:right}
+section .beneficios .three .container p{margin-left:48%}
+section .beneficios .three .container ul li a{padding:15px 0}
+section .beneficios .four{background:-webkit-radial-gradient(left bottom, circle, #223D49 25%, #1C1C1C);background:-moz-radial-gradient(left bottom, circle, #223D49 25%, #1C1C1C);background:-ms-radial-gradient(left bottom, circle, #223D49 25%, #1C1C1C);background:-o-radial-gradient(left bottom, circle, #223D49 25%, #1C1C1C);background:radial-gradient(left bottom, circle, #223D49 25%, #1C1C1C)}
+section .beneficios .four .container{color:#fff}
+section .beneficios .four .container .left{float:left;width:48%;margin-right:2%}
+section .beneficios .four .container .right{float:right;width:50%}
+section .beneficios .two .container h2,section .beneficios .three .container h2,section .beneficios .four .container h2{font-family:"GothamRounded-Book",sans-serif}
+section .beneficios .two .container ul li a,section .beneficios .three .container ul li a,section .beneficios .four .container ul li a{color:#0AA6A9}
+section .beneficios .two .container ul li:first-child,section .beneficios .three .container ul li:first-child,section .beneficios .four .container ul li:first-child{border-color:#0AA6A9}
+section .beneficios .two .container ul li:first-child:hover,section .beneficios .three .container ul li:first-child:hover,section .beneficios .four .container ul li:first-child:hover{background:#05C4DD;-webkit-transition:background linear .2s;transition:background linear .2s}
+section .beneficios .two .container ul li:first-child:hover a,section .beneficios .three .container ul li:first-child:hover a,section .beneficios .four .container ul li:first-child:hover a{color:#fff}
+section .legal h3{font-family:"GothamRounded-Book",sans-serif}
+section .legal p{font-size:.9em;text-align:justify}
+section .legal p span{font-family:"GothamRounded-Book",sans-serif}
+section .legal a{color:#0AA6A9}
+section .legal ul{font-size:.9em;padding:50px 0 50px 3em;line-height:180%}
+section .legal ul li{list-style-type:circle;padding:0.5em 0}
+footer{margin:3em 0;font-size:.85em}
+footer .container .box{width:23.5%;float:left;padding-left:2%;text-align:left}
+footer .container .box h3{font-family:"GothamRounded-Book",sans-serif}
+footer .container .box:first-child{padding-left:0}
+footer .container .box ul li{line-height:250%}
+footer .container .box ul li a{color:#484848}
+footer .container .box ul li a:hover{color:#0AA6A9}
+footer .container .four{text-align:right}
+footer .container .four ul li.mixpanel{padding:15px 0 0 0}
+footer .container .four ul.redes li{display:inline-block}
+footer .container .four ul.redes li a i{color:#797979;padding:0.5em;border:2px solid #797979;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%}
+footer .box-mobile{display:none}
+.error404{width:100%;height:100vh;background:-webkit-radial-gradient(bottom, circle, #44D5B3, #3FBFE2, #6275AE);background:-moz-radial-gradient(bottom, circle, #44D5B3, #3FBFE2, #6275AE);background:-ms-radial-gradient(bottom, circle, #44D5B3, #3FBFE2, #6275AE);background:-o-radial-gradient(bottom, circle, #44D5B3, #3FBFE2, #6275AE);background:radial-gradient(bottom, circle, #44D5B3, #3FBFE2, #6275AE)}
+.error404 div{width:50%;height:400px;position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-justify-content:center;justify-content:center;color:#fff;text-align:center}
+.error404 div img{width:60px;margin:0 auto}
+.error404 div span{border-bottom:2px solid #fff;font-size:2em;padding:.5em 0}
+.error404 div p a{text-decoration:underline}
+.shadow{display:none}
+.item6{background:-webkit-radial-gradient(circle, rgba(0,0,0,0.8) 100%, transparent);background:-moz-radial-gradient(circle, rgba(0,0,0,0.8) 100%, transparent);background:-ms-radial-gradient(circle, rgba(0,0,0,0.8) 100%, transparent);background:-o-radial-gradient(circle, rgba(0,0,0,0.8) 100%, transparent);background:radial-gradient(circle, rgba(0,0,0,0.8) 100%, transparent);position:fixed;-webkit-animation:fadein 2s;-moz-animation:fadein 2s;-ms-animation:fadein 2s;-o-animation:fadein 2s;animation:fadein 2s;width:100%;height:100%;color:#fff;font-size:30px;display:inherit;z-index:1000}
+
+@keyframes fadein{from{opacity:0}}
+@-moz-keyframes fadein{from{opacity:0}}
+@-webkit-keyframes fadein{from{opacity:0}}
+@-ms-keyframes fadein{from{opacity:0}}
+@-o-keyframes fadein{from{opacity:0}}
+.mensaje{width:50%;height:510px;position:absolute;top:0;left:0;right:0;bottom:0;margin:auto}
+.mensaje i{position:absolute;left:-65px;top:0;border:2px solid #fff;border-radius:50%;font-size:20px}
+.mensaje i:hover{cursor:pointer}
+.mensaje iframe{width:100%;height:100%}
+
+@media screen and (max-width: 1224px){
+.container{width:95%}}
+
+@media screen and (max-width: 1024px){
+.developers{background:none}
+.developers .title{text-align:inherit}
+.developers .title p{width:100%}
+.developers .title ul{margin:0 auto}
+header .container nav ul li a{padding:1em 10px}
+.top-3 .infra{background:none}
+section .beneficios .four .left img{width:100%}}
+
+@media screen and (max-width: 835px){
+header .container .pais{display:none}
+header .container nav{width:75%}
+section .medio .barra .right img{width:100%}
+section .integrate p{padding:0 3em}}
+
+@media screen and (max-width: 768px){
+header .container .logo{width:100%;text-align:center}
+header .container .logo img{float:none;padding:.5em 0}
+header .container nav{display:none}
+header .container .nav-mobil{-webkit-transform:translateX(-100%);-ms-transform:translateX(-100%);transform:translateX(-100%);-webkit-transition:-webkit-transform 1s ease;-moz-transition:transform 1s ease;-ms-transition:transform 1s ease;-o-transition:transform 1s ease;transition:transform 1s ease}
+header .container .nav-mobil i.icon-cancel{position:absolute;right:10px;top:10px;font-size:1.7em;cursor:pointer;color:#fff}
+header .container .nav-mobile{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0);-webkit-transition:-webkit-transform 1s ease;-moz-transition:transform 1s ease;-ms-transition:transform 1s ease;-o-transition:transform 1s ease;transition:transform 1s ease}
+header .container .nav-mobil,header .container .nav-mobile{display:inherit;position:fixed;top:0;left:0;width:60%;height:100%;background-color:rgba(0,0,0,0.8);z-index:998}
+header .container .nav-mobil ul,header .container .nav-mobile ul{text-align:left;padding-top:0em}
+header .container .nav-mobil ul li,header .container .nav-mobile ul li{padding:1em 2em;color:#fff}
+header .container .nav-mobil ul li:last-child:hover,header .container .nav-mobile ul li:last-child:hover{cursor:pointer}
+header .container .nav-mobil ul li a:hover,header .container .nav-mobile ul li a:hover{color:#ffffff;border-bottom:1px solid #ffffff;padding-bottom:.2em}
+
+header .container .nav-mobil ul li:hover .children{display:block}
+header .container .nav-mobil ul li .children{display:none; background:#1399AB; position:absolute;}
+header .container .nav-mobil ul li .children li {display:block;overflow: hidden;border-bottom: 1px solid rgba(255,255,255,.5);}
+header .container .nav-mobil ul li .children li a {display: block;font-size: 12px;}
+
+header i.icon-menu{display:initial;position:absolute;font-size:1.5em;cursor:pointer;color:#fff;top:25px;left:10px;z-index:997}
+header i.icon-menu:hover{color:#0AA6A9;-webkit-transition:color 0.5s linear 0.2s;transition:color 0.5s linear 0.2s}
+header i.icon-menu2{background:red}
+.top-beneficios .title h1{font-size:2.6em}.top-3 .title{padding:8em 0 5em}
+.top-3 .info{padding:30px 0}
+.top-3 .info ul{width:50%;min-height:230px;padding:30px 0}
+.top-3 .infra{background:none}
+section .beneficios .section .container{text-align:center}
+section .beneficios p{margin:0 !important}
+section .beneficios .left,section .beneficios .right{width:100% !important}
+section .beneficios .one .right img{width:auto}
+section .beneficios .three{background:none}
+section .beneficios .four{background:-webkit-radial-gradient(left bottom, circle, #223D49 25%, #1C1C1C)}
+section .beneficios .one .container ul li,section .beneficios .two .container ul li,section .beneficios .three .container ul li,section .beneficios .four .container ul li{margin:20px 0 !important}
+section .container .historia .box{width:100%;padding:0}
+section .container .historia .box p{padding:0}
+section .container .equipo .perfiles ul{width:46%}
+section .container .equipo .perfiles ul:nth-child(2n){margin-right:0 !important}
+section .container .equipo .perfiles ul:nth-child(3n){margin-right:8%}
+section .precios .container ul.beneficios li{width:100%;min-height:300px}
+section .precios .container ul.beneficios li p{width:100%}
+section .dev-bottom .container ul{width:40%;padding:70px 5%}}
+
+@media screen and (max-width: 767px){
+section .phones ul{height:550px;margin:0 3em 0}
+section .phones ul li.one{display:none}
+section .phones ul li.three{display:none}
+section .boxes ul{width:48%}
+section .medio .barra div{width:100% !important;text-align:inherit !important}
+section .medio .barra div img{width:auto !important}
+section .partners{border:none}
+section .beneficios ul.nav-two{display:none}
+section .precios .container ul li{width:100%;padding:30px 0}
+section .integrate .container ul li{margin:1em 0}
+section .integrate .container ul li:first-child{margin-right:1em}
+section .container .equipo .perfiles ul li.name{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
+footer .container .box{display:none;width:100%;text-align:center;margin:30px 0}
+footer .box-mobile{display:inherit}
+footer .box-mobile #accordion{text-align:left;background:#322D2A;margin:0 0 30px 0}
+footer .box-mobile #accordion h3{font-family:"GothamRounded-Book",sans-serif;color:#fff;border-top:1px solid #3c3c3c;margin:0;padding:1.5em;position:relative}
+footer .box-mobile #accordion h3 i{position:absolute;top:25px;font-size:1.3em;right:0;cursor:pointer}
+footer .box-mobile #accordion div{text-align:left}
+footer .box-mobile #accordion div ul{padding:1em 0 1em 1.5em}
+footer .box-mobile #accordion div ul li{font-size:12px;padding:1em;color:#fff}
+footer .box-mobile .container ul.redes{padding:10px 0}
+footer .box-mobile .container ul.redes li{display:inline-block;padding:.5em}
+footer .box-mobile .container ul.redes li a{color:#484848;border:2px solid #484848;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;padding:.5em}
+footer .box-mobile .container ul.redes li a:hover{color:#0AA6A9;border-color:#0AA6A9}
+footer .box-mobile .container ul li{padding:10px 0}}
+
+@media screen and (max-width: 500px){.mensaje{width:90%}
+.mensaje i{top:-40px;left:0;font-size:20px}
+.top{height:650px}
+.top .page-title .container ul.botones li{margin:1em 0}
+.top-contacto .title h1{font-size:3.5em}
+.top-3 .title h1{font-size:2.5em}
+.top-3 .info{padding:50px 0}
+.top-3 .info ul{width:100%;min-height:inherit;padding:30px 0}
+.top-3 .info p.semilla{width:100%}
+.top-3 .infra{background:none}
+section .phones .container ul li.two img{width:100%}
+section .dev-bottom .container ul{width:100%;padding:70px 0}
+section .container .equipo .perfiles ul{width:100%}
+section .container .equipo .perfiles ul:nth-child(2n){margin-right:0}
+section .container .equipo .perfiles ul:nth-child(3n){margin-right:0}
+section .legal{text-align:center}
+section .legal ul{text-align:initial}
+section .integrate .container ul li{margin:1em 0}
+section .integrate .container ul li:first-child{margin-right:0}
+section .nosotros .title h1{font-size:3em}
+section .nosotros .title h2{padding:0}
+section .ubicacion .container p{width:100%;padding:0;text-align:inherit;float:none}
+section .ubicacion .container i{width:30%;float:none;margin:20px auto}
+section .partners ul li{min-width:250px}}
+
+@media screen and (max-width: 400px){
+header{padding:10px 0}
+header .container .logo{float:none;text-align:center}
+header .container .logo img{float:none;padding:0}
+header .container .logo .pais{display:none}
+header .container .nav-mobil,header .container .nav-mobile{width:60%}
+.page-title{padding:10em 0}
+.page-title .container h1{font-size:4em}
+.container ul.botones li{margin:1em 0 !important}
+.developers{background:none}
+.developers .container .title{text-align:inherit}
+.developers .container .title h1{font-size:2.5em}
+.developers .container .title p{width:100%}
+.developers .container .title ul{width:50%;margin:0 auto}
+section.wrapper .boxes ul{width:100%;margin:0 0 25px 0}
+section.wrapper .boxes ul li:last-child{width:initial}
+section .integrate{background-image:none;background-color:#F6F7F8}
+section .integrate .container p{padding:0 !important}
+section .beneficios ul.nav-two li{width:100%;margin:50px 0}
+section .beneficios .one .right img{width:100%}
+section .beneficios .two .container .left{width:100% !important;padding:2em 0}
+section .beneficios .two .container .left .igv{background:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;overflow:hidden;width:initial !important}
+section .beneficios .two .container .left .igv img{width:100%}
+section .beneficios .two .container .right{width:100% !important;text-align:center}
+section .beneficios .three .container{text-align:center}
+section .beneficios .three .container p{width:100%}
+section .beneficios .three .container ul li:first-child{background:#0AA6A9}
+section .beneficios .four{background:-webkit-radial-gradient(left bottom, circle, #223D49 25%, #1C1C1C)}
+section .phones{background-image:none}
+section .phones ul{height:420px}
+section .medio .barra .right img{width:100% !important}
+section .dev-bottom .container ul{width:100%;padding-left:0;padding-right:0}}
+
+
+
