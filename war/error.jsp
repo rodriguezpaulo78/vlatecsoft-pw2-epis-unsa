@@ -40,7 +40,7 @@
 				<li>
 					<a href="informacion.jsp">Nosotros</a>
 					<ul class="children">
-						<li><a href="nosotros.jsp">Â¿Quiénes somos?</a></li>
+						<li><a href="nosotros.jsp">¿Quiénes somos?</a></li>
 						<li><a href="#">Misión y Visión</a></li>
 						<li><a href="javascript:void(0);" id="opener" class="boton">Escríbenos</a></li>
 					</ul>
@@ -67,7 +67,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" target="_blank">Distribuidores</a>
+					<a>Distribuidores</a>
 					<ul class="children" >
 						<li><a href="#">Registro</a></li>
 						<li><a href="#">Extranet-Actualización de Datos</a></li>
@@ -84,9 +84,9 @@
 				<li>
 					<a href="informacion.jsp">Nosotros</a>
 					<ul class="children">
-						<li><a href="nosotros.jsp">Â¿Quiénes somos?</a></li>
+						<li><a href="nosotros.jsp">¿Quiénes somos?</a></li>
 						<li><a href="#">Misión y Visión</a></li>
-						<li class="boton"><a  href="javascript:void(0);" id="opener" class="boton">EscrÃ­benos</a></li>
+						<li class="boton"><a  href="javascript:void(0);" id="opener" class="boton">Escríbenos</a></li>
 					</ul>
 				</li>
 				<li>
@@ -108,7 +108,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" target="_blank">Distribuidores</a>
+					<a>Distribuidores</a>
 					<ul class="children">
 						<li><a href="#">Registro</a></li>
 						<li><a href="#">Extranet-Actualización de Datos</a></li>
@@ -116,7 +116,7 @@
 					</ul>
 				</li>
 				
-				<li><a href="contacto.jsp">ContÃ¡ctanos</a></li>
+				<li><a href="contacto.jsp">Contáctanos</a></li>
 				<li><a href="#" target="_blank">Iniciar Sesión</a></li>
 			</ul>
 		</div>
@@ -153,7 +153,7 @@
 			<li><a href="productos.jsp"><img src="images/1.jpg" alt="Vlatecsoft Productos"></a></li>
 			<li><h3>Hardware</h3></li>
 			<li><p>Te ofrecemos lo ultimo del mercado en Tecnología.</p></li>
-			<li><a class="more" href="productos.jsp">Leer mÃ¡s</a></li>
+			<li><a class="more" href="productos.jsp">Leer más</a></li>
 		</ul>
 		<ul>
 			<li><a href="compras.jsp"><img src="images/2.jpg" alt="Vlatecsoft Tienda"></a></li>
@@ -180,7 +180,6 @@
 		<div class="container">
 		</div>
 </div>
-
 <footer>
 	<div class="container">
 		<div class="box one">
@@ -195,7 +194,7 @@
 			<ul>
 				<li><a href="productos.jsp">Lista de Productos</a></li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
-				<li><a href="servicio.jsp">Servicio Tecnico</a></li>
+				<li><a href="servicio.jsp">Sérvicio Tecnico</a></li>
 				<li><a href="informacion.jsp">Información de la Empresa</a></li>
 			</ul>
 		</div>
@@ -203,19 +202,16 @@
 			<h3>Soporte</h3>
 			<ul>
 				<li><a href="contacto.jsp">Contacto</a></li>
-				<li>LlÃ¡manos (+511) 416 - 2018</li>
+				<li>Llámanos (+511) 416 - 2018</li>
 			</ul>
 		</div>
 		<div class="box four">
 			<ul>
 				<ul class="redes">
-					<li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
-					<li><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
-					<li><a href="#" target="_blank"><i class="icon-linkedin"></i></a></li>
+					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
-				<li class="mixpanel">
-					<a href="https://mixpanel.com/f/partner" target="_blank"><img src="badge_light.png" alt="Mobile Analytics" /></a>
-				</li>
 				<li>&copy; VlatecSoft</li>
 				<li>Todos los derechos reservados</li>
 			</ul>
@@ -234,7 +230,7 @@
 			<div class="container">
 				<ul>
 				<li><a href="productos.jsp">Lista de Productos</a></li>
-				<li><a href="compras.jsp">Compras en LÃ­nea</a></li>
+				<li><a href="compras.jsp">Compras en Línea</a></li>
 				<li><a href="servicio.jsp">Servicio Técnico</a></li>
 				<li><a href="informacion.jsp">Información de la Empresa</a></li>
 				</ul>
@@ -243,20 +239,17 @@
 			<div class="container">
 				<ul>
 					<li><a href="contacto.jsp">Contacto</a></li>
-					<li>LlÃ¡manos (+511) 416 - 2018</li>
+					<li>Llámanos (+511) 416 - 2018</li>
 				</ul>
 			</div>
 		</div>
 		<div class="container">
 			<ul>
 				<ul class="redes">
-					<li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
-					<li><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
-					<li><a href="#" target="_blank"><i class="icon-linkedin"></i></a></li>
+					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
-				<li class="mixpanel">
-					<a href="https://mixpanel.com/f/partner" target="_blank"><img src="badge_light.png" alt="Mobile Analytics" /></a>
-				</li>
 				<li>&copy; VlatecSoft</li>
 				<li>Todos los derechos reservados</li>
 			</ul>

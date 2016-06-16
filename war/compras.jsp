@@ -39,10 +39,10 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="informacion.jsp">Nosotros</a>
+					<a href="galeria.jsp">Nosotros</a>
 					<ul class="children">
 						<li><a href="nosotros.jsp">¿Quiénes somos?</a></li>
-						<li><a href="#">Misión y Visión</a></li>
+						<li><a href="galeria.jsp">Galería</a></li>
 						<li><a href="javascript:void(0);" id="opener" class="boton">Escríbenos</a></li>
 					</ul>
 				</li>
@@ -68,25 +68,24 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" target="_blank">Distribuidores</a>
-					<ul class="children" >
+					<a>Distribuidores</a>
+					<ul class="children">
 						<li><a href="#">Registro</a></li>
-						<li><a href="#">Extranet-Actualización de Datos</a></li>
+						<li><a href="login-distribuidores.jsp">Extranet-Actualización de Datos</a></li>
 						<li><a href="#">Términos</a></li>
 					</ul>
-				</li>
-				<li><a href="contacto.jsp">Contáctanos</a></li>
-				<li><a href="#" target="_blank">Iniciar Sesión</a></li>
+				</li>				<li><a href="contacto.jsp">Contáctanos</a></li>
+				<li><a href="login-cliente.jsp">Iniciar Sesión</a></li>
 			</ul>
 		</nav>
 		<div class="nav-mobil">
 			<i class="icon-cancel"></i>
 			<ul>
 				<li>
-					<a href="informacion.jsp">Nosotros</a>
+					<a href="galeria.jsp">Nosotros</a>
 					<ul class="children">
 						<li><a href="nosotros.jsp">¿Quiénes somos?</a></li>
-						<li><a href="#">Misión y Visión</a></li>
+						<li><a href="galeria.jsp">Galería</a></li>
 						<li class="boton"><a  href="javascript:void(0);" id="opener" class="boton">Escríbenos</a></li>
 					</ul>
 				</li>
@@ -109,16 +108,16 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" target="_blank">Distribuidores</a>
+					<a>Distribuidores</a>
 					<ul class="children">
 						<li><a href="#">Registro</a></li>
-						<li><a href="#">Extranet-Actualización de Datos</a></li>
+						<li><a href="login-distribuidores.jsp">Extranet-Actualización de Datos</a></li>
 						<li><a href="#">Términos</a></li>
 					</ul>
 				</li>
+				
 				<li><a href="contacto.jsp">Contáctanos</a></li>
-			
-				<li><a href="#" target="_blank">Iniciar Sesión</a></li>
+				<li><a href="login-cliente.jsp">Iniciar Sesión</a></li>
 			</ul>
 		</div>
 	</div>
@@ -167,13 +166,10 @@
 		<div class="box four">
 			<ul>
 				<ul class="redes">
-					<li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
-					<li><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
-					<li><a href="#" target="_blank"><i class="icon-linkedin"></i></a></li>
+					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
-				<li class="mixpanel">
-					<a href="https://mixpanel.com/f/partner" target="_blank"><img src="badge_light.png" alt="Mobile Analytics" /></a>
-				</li>
 				<li>&copy; VlatecSoft</li>
 				<li>Todos los derechos reservados</li>
 			</ul>
@@ -208,13 +204,10 @@
 		<div class="container">
 			<ul>
 				<ul class="redes">
-					<li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
-					<li><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
-					<li><a href="#" target="_blank"><i class="icon-linkedin"></i></a></li>
+					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
-				<li class="mixpanel">
-					<a href="https://mixpanel.com/f/partner" target="_blank"><img src="badge_light.png" alt="Mobile Analytics" /></a>
-				</li>
 				<li>&copy; VlatecSoft</li>
 				<li>Todos los derechos reservados</li>
 			</ul>

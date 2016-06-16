@@ -40,10 +40,10 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="informacion.jsp">Nosotros</a>
+					<a href="galeria.jsp">Nosotros</a>
 					<ul class="children">
 						<li><a href="nosotros.jsp">¿Quiénes somos?</a></li>
-						<li><a href="#">Misión y Visión</a></li>
+						<li><a href="galeria.jsp">Galería</a></li>
 						<li><a href="javascript:void(0);" id="opener" class="boton">Escríbenos</a></li>
 					</ul>
 				</li>
@@ -69,25 +69,25 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" target="_blank">Distribuidores</a>
-					<ul class="children" >
+					<a href="login-distribuidor.jsp">Distribuidores</a>
+					<ul class="children">
 						<li><a href="#">Registro</a></li>
-						<li><a href="#">Extranet-Actualización de Datos</a></li>
+						<li><a href="distribuidores.jsp">Extranet-Actualización de Datos</a></li>
 						<li><a href="#">Términos</a></li>
 					</ul>
 				</li>
 				<li><a href="contacto.jsp">Contáctanos</a></li>
-				<li><a href="#" target="_blank">Iniciar Sesión</a></li>
+				<li><a href="login-cliente.jsp">Iniciar Sesión</a></li>
 			</ul>
 		</nav>
 		<div class="nav-mobil">
 			<i class="icon-cancel"></i>
 			<ul>
 				<li>
-					<a href="informacion.jsp">Nosotros</a>
+					<a href="galeria.jsp">Nosotros</a>
 					<ul class="children">
 						<li><a href="nosotros.jsp">¿Quiénes somos?</a></li>
-						<li><a href="#">Misión y Visión</a></li>
+						<li><a href="galeria.jsp">Galería</a></li>
 						<li class="boton"><a  href="javascript:void(0);" id="opener" class="boton">Escríbenos</a></li>
 					</ul>
 				</li>
@@ -110,16 +110,16 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" target="_blank">Distribuidores</a>
+					<a href="login-distribuidor.jsp">Distribuidores</a>
 					<ul class="children">
 						<li><a href="#">Registro</a></li>
-						<li><a href="#">Extranet-Actualización de Datos</a></li>
+						<li><a href="distribuidores.jsp">Extranet-Actualización de Datos</a></li>
 						<li><a href="#">Términos</a></li>
 					</ul>
 				</li>
 				
 				<li><a href="contacto.jsp">Contáctanos</a></li>
-				<li><a href="#" target="_blank">Iniciar Sesión</a></li>
+				<li><a href="login-cliente.jsp">Iniciar Sesión</a></li>
 			</ul>
 		</div>
 	</div>
@@ -127,35 +127,31 @@
 </header>
 
 <div class="top1">
-	<div class="page-title2">
-		<div class="container1">
-			<div class="h1color"><h1>¡Contáctanos!</h1></div>
-			<h4>Llena los datos para responder a tu consulta.</h4>
-		</div>
-	</div>
-	
-<div id="one" class="section one">
+		<div class="page-title2">
+			<div class="container1">
+				<h1>¡Contáctanos!</h1>
+				<h4>Llena los datos para responder a tu consulta.</h4>
+			</div>
+		
 	<div class="container1">
-	
-	<fieldset>
-	<form  action="savecontacto" method="post">
-	  
-	   <label for="name">Nombre:</label>
-	   <input style="font-size:16px; text-align:left;color:black;background-color:#ffffff;" name="name" placeholder="Nombre" required><br />
-	 
-		<label for="email">E-mail:</label>
-		<input style="font-size:16px; text-align:left;color:black;background-color:#ffffff; name="email" placeholder="ejemplo@gmail.com" type="email" required><br />
-	 	
-	 	<label for="message">Tu comentario:</label><br />
-		<textarea  style="font-size:16px; text-align:left;color:black;background-color:#ffffff; id="message" placeholder="Escribenos un Comentario..." class="input" name="comentary" rows="10" cols="40" required></textarea><br />
-	 		
-	    <div class="g-recaptcha" data-theme="dark" data-sitekey="6LfociETAAAAABH0CYbyFSEsR2iX6MAP5WsqOPis"></div>
-	    <input style="color: #ffffff; background-color: #338790" type="submit" value="Enviar" />
-	    <input  style="color: #ffffff; background-color: #338790" type="reset" value="Borrar" />
-	</form>		
-	</fieldset>
-</div>
-
+		<fieldset>
+		<form  action="savecontacto" method="post">
+		  
+		   <label for="name">Nombre:</label>
+		   <input style="font-size:16px; text-align:left;color:black;background-color:#ffffff;" name="name" placeholder="Nombre" required><br />
+		 
+			<label for="email">E-mail:</label>
+			<input style="font-size:16px; text-align:left;color:black;background-color:#ffffff; name="email" placeholder="ejemplo@gmail.com" type="email" required><br />
+		 	
+		 	<label for="message">Tu comentario:</label><br />
+			<textarea  style="font-size:16px; text-align:left;color:black;background-color:#ffffff; id="message" placeholder="Escribenos un Comentario..." class="input" name="comentary" rows="10" cols="40" required></textarea><br />
+		 		
+		    <div class="g-recaptcha" data-theme="dark" data-sitekey="6LfociETAAAAABH0CYbyFSEsR2iX6MAP5WsqOPis"></div>
+		    <input style="color: #ffffff; background-color: #338790" type="submit" value="Enviar" />
+		    <input  style="color: #ffffff; background-color: #338790" type="reset" value="Borrar" />
+		</form>		
+		</fieldset>
+		
 </div>
 </div>
 </div>
@@ -197,13 +193,10 @@
 		<div class="box four">
 			<ul>
 				<ul class="redes">
-					<li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
-					<li><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
-					<li><a href="#" target="_blank"><i class="icon-linkedin"></i></a></li>
+					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
-				<li class="mixpanel">
-					<a href="https://mixpanel.com/f/partner" target="_blank"><img src="badge_light.png" alt="Mobile Analytics" /></a>
-				</li>
 				<li>&copy; VlatecSoft</li>
 				<li>Todos los derechos reservados</li>
 			</ul>
@@ -238,13 +231,10 @@
 		<div class="container">
 			<ul>
 				<ul class="redes">
-					<li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
-					<li><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
-					<li><a href="#" target="_blank"><i class="icon-linkedin"></i></a></li>
+					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
-				<li class="mixpanel">
-					<a href="https://mixpanel.com/f/partner" target="_blank"><img src="badge_light.png" alt="Mobile Analytics" /></a>
-				</li>
 				<li>&copy; VlatecSoft</li>
 				<li>Todos los derechos reservados</li>
 			</ul>

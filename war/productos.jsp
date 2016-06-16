@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Productos| VLATECSOFT</title>
+	<title>Productos | VLATECSOFT</title>
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -33,95 +33,99 @@
 		</div>
 	
 		<div class="container">
-			<div class="logo">
-				<a href="index.html">
-					<img src="images/logo.jpg" alt="Vlatecsoft" title="Vlatecsoft">
-				</a>
-			</div>
-			<nav>
-				<ul>
-					<li>
-						<a href="informacion.jsp">Nosotros</a>
-						<ul class="children">
-							<li><a href="nosotros.jsp">¿Quiénes somos?</a></li>
-							<li><a href="#">Misión y Visión</a></li>
-							<li><a href="javascript:void(0);" id="opener" class="boton">Escríbenos</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="productos.jsp">Productos</a>
-						<ul class="children">
-							<li><a href="#">Productos según Tipo</a></li>
-							<li><a href="#">Productos según Marca</a></li>
-							<li><a href="#">Productos según Precio</a></li>
-						</ul>
-					</li>
-					<li><a href="compras.jsp">Compras en Línea</a></li>
-					
-					<li>
-						<a href="servicio.jsp">Servicio Técnico</a>
-						<ul class="children">
-							<li><a href="#">Preguntas Frecuentes del Cliente</a></li>
-							<li><a href="#">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
-							<li><a href="#">Atención de otras marcas</a></li>
-							<li><a href="#">Tipos de Garantía</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#" target="_blank">Distribuidores</a>
-						<ul class="children" >
-							<li><a href="#">Registro</a></li>
-							<li><a href="#">Extranet-Actualización de Datos</a></li>
-							<li><a href="#">Términos</a></li>
-						</ul>
-					</li>
-					<li><a href="contacto.jsp">Contáctanos</a></li>
-					<li><a href="#" target="_blank">Iniciar Sesión</a></li>
-				</ul>
-			</nav>
-			<div class="nav-mobil">
-				<i class="icon-cancel"></i>
-				<ul>
-					<li>
-						<a href="informacion.jsp">Nosotros</a>
-						<ul class="children">
-							<li><a href="nosotros.jsp">¿Quiénes somos?</a></li>
-							<li><a href="#">Misión y Visión</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="productos.jsp">Productos</a>
-						<ul class="children">
-							<li><a href="#">Productos según Tipo</a></li>
-							<li><a href="#">Productos según Marca</a></li>
-							<li><a href="#">Productos según Precio</a></li>
-						</ul>
-					</li>
-					<li><a href="compras.jsp">Compras en Línea</a></li>
-					<li>
-						<a href="servicio.jsp">Servicio Técnico</a>
-						<ul class="children">
-							<li><a href="#">Preguntas Frecuentes del Cliente</a></li>
-							<li><a href="#">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
-							<li><a href="#">Atención de otras marcas</a></li>
-							<li><a href="#">Tipos de Garantía</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#" target="_blank">Distribuidores</a>
-						<ul class="children">
-							<li><a href="#">Registro</a></li>
-							<li><a href="#">Extranet-Actualización de Datos</a></li>
-							<li><a href="#">Términos</a></li>
-						</ul>
-					</li>
-					<li><a href="contacto.jsp">Contáctanos</a></li>
-					<li><a href="#" target="_blank">Iniciar Sesión</a></li>
-				</ul>
-			</div>
+		<div class="logo">
+			<a href="index.html">
+				<img src="images/logo.jpg" alt="Vlatecsoft" title="Vlatecsoft">
+			</a>
 		</div>
-		<i class="icon-menu"></i>
-	</header>
+		<nav>
+			<ul>
+				<li>
+					<a href="galeria.jsp">Nosotros</a>
+					<ul class="children">
+						<li><a href="nosotros.jsp">¿Quiénes somos?</a></li>
+						<li><a href="galeria.jsp">Galería</a></li>
+						<li><a href="javascript:void(0);" id="opener" class="boton">Escríbenos</a></li>
+					</ul>
+				</li>
+				
+				<li>
+					<a href="productos.jsp">Productos</a>
+					<ul class="children">
+						<li><a href="#">Productos según Tipo</a></li>
+						<li><a href="#">Productos según Marca</a></li>
+						<li><a href="#">Productos según Precio</a></li>
+					</ul>
+				</li>
+				
+				<li><a href="compras.jsp">Compras en Línea</a></li>
+				
+				<li>
+					<a href="servicio.jsp">Servicio Técnico</a>
+					<ul class="children">
+						<li><a href="#">Preguntas Frecuentes del Cliente</a></li>
+						<li><a href="#">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
+						<li><a href="#">Atención de otras marcas</a></li>
+						<li><a href="#">Tipos de Garantía</a></li>
+					</ul>
+				</li>
+				<li>
+					<a>Distribuidores</a>
+					<ul class="children">
+						<li><a href="#">Registro</a></li>
+						<li><a href="login-distribuidores.jsp">Extranet-Actualización de Datos</a></li>
+						<li><a href="#">Términos</a></li>
+					</ul>
+				</li>
+				<li><a href="contacto.jsp">Contáctanos</a></li>
+				<li><a href="login-cliente.jsp">Iniciar Sesión</a></li>
+			</ul>
+		</nav>
+		<div class="nav-mobil">
+			<i class="icon-cancel"></i>
+			<ul>
+				<li>
+					<a href="galeria.jsp">Nosotros</a>
+					<ul class="children">
+						<li><a href="nosotros.jsp">¿Quiénes somos?</a></li>
+						<li><a href="galeria.jsp">Galería</a></li>
+						<li class="boton"><a  href="javascript:void(0);" id="opener" class="boton">Escríbenos</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="productos.jsp">Productos</a>
+					<ul class="children">
+						<li><a href="#">Productos según Tipo</a></li>
+						<li><a href="#">Productos según Marca</a></li>
+						<li><a href="#">Productos según Precio</a></li>
+					</ul>
+				</li>
+				<li><a href="compras.jsp">Compras en Línea</a></li>
+				<li>
+					<a href="servicio.jsp">Servicio Técnico</a>
+					<ul class="children">
+						<li><a href="#">Preguntas Frecuentes del Cliente</a></li>
+						<li><a href="#">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
+						<li><a href="#">Atención de otras marcas</a></li>
+						<li><a href="#">Tipos de Garantía</a></li>
+					</ul>
+				</li>
+				<li>
+					<a>Distribuidores</a>
+					<ul class="children">
+						<li><a href="#">Registro</a></li>
+						<li><a href="login-distribuidores.jsp">Extranet-Actualización de Datos</a></li>
+						<li><a href="#">Términos</a></li>
+					</ul>
+				</li>
+				
+				<li><a href="contacto.jsp">Contáctanos</a></li>
+				<li><a href="login-cliente.jsp">Iniciar Sesión</a></li>
+			</ul>
+		</div>
+	</div>
+	<i class="icon-menu"></i>
+</header>
 	
 	<div class="top-beneficios">
 		<div class="container">
@@ -255,13 +259,10 @@
 		<div class="box four">
 			<ul>
 				<ul class="redes">
-					<li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
-					<li><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
-					<li><a href="#" target="_blank"><i class="icon-linkedin"></i></a></li>
+					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
-				<li class="mixpanel">
-					<a href="https://mixpanel.com/f/partner" target="_blank"><img src="badge_light.png" alt="Mobile Analytics" /></a>
-				</li>
 				<li>&copy; VlatecSoft</li>
 				<li>Todos los derechos reservados</li>
 			</ul>
@@ -296,13 +297,10 @@
 		<div class="container">
 			<ul>
 				<ul class="redes">
-					<li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
-					<li><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
-					<li><a href="#" target="_blank"><i class="icon-linkedin"></i></a></li>
+					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
-				<li class="mixpanel">
-					<a href="https://mixpanel.com/f/partner" target="_blank"><img src="badge_light.png" alt="Mobile Analytics" /></a>
-				</li>
 				<li>&copy; VlatecSoft</li>
 				<li>Todos los derechos reservados</li>
 			</ul>
