@@ -27,11 +27,11 @@ public class UpdateCliente extends HttpServlet {
 				clientes.get(i).setContest(false);
 			else
 				clientes.get(i).setContest(true);
-			resp.sendRedirect("update-distribuidor.jsp");
+			resp.sendRedirect("update-cliente.jsp");
 			
 		}catch(Exception e){
 			System.out.println(e);
-			resp.sendRedirect("update-distribuidor.jsp");
+			resp.sendRedirect("update-cliente.jsp");
 		}finally{
 			pm.close();
 		}

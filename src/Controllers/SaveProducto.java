@@ -12,9 +12,9 @@ import javax.servlet.http.*;
 public class SaveProducto extends HttpServlet {
 	public void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
-		String grupo = req.getParameter("grupo");
+		String grupo = req.getParameter("Continent");
 		String marca = req.getParameter("marca");
-		String linea = req.getParameter("linea");
+		String linea = req.getParameter("Country");
 		String item = req.getParameter("item");
 		String descripcion = req.getParameter("descripcion");
 		String fecha = req.getParameter("fecha");

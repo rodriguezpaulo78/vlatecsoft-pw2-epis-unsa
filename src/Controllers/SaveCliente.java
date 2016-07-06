@@ -19,7 +19,7 @@ public class SaveCliente extends HttpServlet {
 		String user = req.getParameter("user");
 		String pass = req.getParameter("pass");
 		
-		Cliente p = new Cliente( nombres,  apellidos,  fecha,  sexo,  user,  pass, false);
+		Cliente p = new Cliente( nombres,  apellidos,  fecha,  sexo,  user,  pass, true);
 		
 		PersistenceManager pm = PMF.get().getPersistenceManager();
 		resp.setContentType("text/html");

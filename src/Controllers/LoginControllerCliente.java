@@ -29,7 +29,7 @@ public class LoginControllerCliente extends HttpServlet {
 		AuthenticatorAdmin authenticator = new AuthenticatorAdmin();
 		String result = authenticator.authenticate(username, password);
 		if (result.equals("success")) {
-			rd = request.getRequestDispatcher("/index.html");
+			rd = request.getRequestDispatcher("/index.jsp");
 			Users user = new Users(username, password);
 			request.setAttribute("user", user);
 		} else {

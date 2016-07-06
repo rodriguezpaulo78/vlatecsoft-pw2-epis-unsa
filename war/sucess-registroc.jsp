@@ -25,7 +25,7 @@
 <body>
 	<center>
 	<h2><font color="white" face="arial">Cuenta Creada con éxito, Inicia Sesión para continuar.</font></h2>
-	<a href="index.html">
+	<a href="index.jsp">
 				<img src="images/logo.jpg" alt="Vlatecsoft" title="Vlatecsoft">
 			</a>
 	<br><br>

@@ -10,7 +10,6 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.jpg">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery-ui.js"></script>
@@ -38,7 +37,9 @@
 					<a>Clientes</a>
 					<ul class="children">
 						<li><a href="consulta-clientes.jsp">Lista de Clientes</a></li>
+						<li><a href="update-cliente.jsp">Actualizar a un Cliente</a></li>
 						<li><a href="eliminar-cliente.jsp">Eliminar a un Cliente</a></li>
+						
 					</ul>
 				</li>
 				
@@ -46,6 +47,7 @@
 					<a>Distribuidores</a>
 					<ul class="children">
 						<li><a href="consulta-distribuidores.jsp">Lista de Distribuidores</a></li>
+						<li><a href="update-distribuidor.jsp">Actualizar a un Distribuidor</a></li>
 						<li><a href="eliminar-distribuidor.jsp">Eliminar a un Distribuidor</a></li>
 					</ul>
 				</li>
@@ -69,6 +71,7 @@
 					<a>Clientes</a>
 					<ul class="children">
 						<li><a href="consulta-clientes.jsp">Lista de Clientes</a></li>
+						<li><a href="update-cliente.jsp">Actualizar a un Cliente</a></li>
 						<li><a href="eliminar-cliente.jsp">Eliminar a un Cliente</a></li>
 					</ul>
 				</li>
@@ -77,6 +80,7 @@
 					<a>Distribuidores</a>
 					<ul class="children">
 						<li><a href="consulta-distribuidores.jsp">Lista de Distribuidores</a></li>
+						<li><a href="update-distribuidor.jsp">Actualizar a un Distribuidor</a></li>
 						<li><a href="eliminar-distribuidor.jsp">Eliminar a un Distribuidor</a></li>
 					</ul>
 				</li>
@@ -97,46 +101,55 @@
 	</div>
 	<i class="icon-menu"></i>
 </header>
-<div class="top">
+
+<div class="top2">
 	<div class="page-title">
 		<div class="container">
-			<div class="h1color"><h1>Lista de Mensajes</h1></div>
+			<div class="h1color"><h1>Lista de Distribuidores</h1></div>
 		</div>
 		<div class="container">
-			<div class="h1color">
-<%@ page import="ServicesModel.*" import="java.util.List"
+			<div class="datagrid1">
+			<%@ page import="ServicesModel.*" import="java.util.List"
 	import="javax.jdo.Query" import="javax.jdo.PersistenceManager"
 %>
 <% 	PersistenceManager pm = PMF.get().getPersistenceManager();
 	Query q = pm.newQuery(Distribuidor.class);
 	List<Distribuidor> p = (List<Distribuidor>) q.execute();%>
 	<table border='4'>
-	<tr>
+	<THEAD><tr>
 		<th WIDTH="30"> N </th>
-		<th WIDTH="200"> Nombre </th>
-		<th WIDTH="250"> Correo </th>
-		<th WIDTH="450"> Comentario </th>
-		<th WIDTH="120"> Estado </th>
-		<th WIDTH="120"> Opcion </th>
-	</tr>
+		<th WIDTH="100"> Apellido Paterno </th>
+		<th WIDTH="100"> Apellido Materno </th>
+		<th WIDTH="150"> Nombre </th>
+		<th WIDTH="100"> DNI </th>
+		<th WIDTH="200"> Email </th>
+		<th WIDTH="100"> Telefono </th>
+		<th WIDTH="150"> Usuario </th>
+		<th WIDTH="150"> Password </th>
+		<th WIDTH="150"> Estado </th>
+	</tr></THEAD>
 		<% for(int i=0;i<p.size();i++){ %>
-		<% String estado= (p.get(i).getContest())? "Contestado":"No Contestado"; %>
+		<% String estado= (p.get(i).getContest())? "Activo":"No Activo"; %>
 			<form>
+			<tbody>
 				<tr>
 					<td><%=i+1%></td>
 					<td><%=p.get(i).getApPat()%></td>
 					<td><%=p.get(i).getApMat()%></td>
+					<td><%=p.get(i).getNombre()%></td>
 					<td><%=p.get(i).getDni()%></td>
+					<td><%=p.get(i).getEmail()%></td>
+					<td><%=p.get(i).getTel()%></td>
+					<td><%=p.get(i).getUser()%></td>
+					<td><%=p.get(i).getPass().substring(0,1)+"*********"%></td>
 					<td><%=estado%></td>
-					<td></td>
 				</tr>
+				</tbody>
 			</form>
 		<%} %>
 		</table>
-	
-	</section>
 
-</div>
+			</div>
 		</div>
 	</div>
 </div>

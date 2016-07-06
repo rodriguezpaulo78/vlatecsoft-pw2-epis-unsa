@@ -26,7 +26,7 @@
 <body>
 	<center>
 	
-	<a href="index.html">
+	<a href="index.jsp">
 				<img src="images/logo.jpg" alt="Vlatecsoft" title="Vlatecsoft">
 			</a>
 	<div id="texto1">

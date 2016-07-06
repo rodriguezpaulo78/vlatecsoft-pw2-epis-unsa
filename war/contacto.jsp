@@ -48,7 +48,7 @@
 		  
 		    
 		    email:{  
-		         email:'email no valido' 
+		         email:'Email no valido' 
 		    }
 		} 		        
 		});       
@@ -67,7 +67,7 @@
 
 	<div class="container">
 		<div class="logo">
-			<a href="index.html">
+			<a href="index.jsp">
 				<img src="images/logo.jpg" alt="Vlatecsoft" title="Vlatecsoft">
 			</a>
 		</div>
@@ -180,11 +180,11 @@
 <span class="titSeccion">Contacto Principal y Usuario Web</span> 
 
 <div class="tablaTitulos"><span class="alignVert">Nombres</span></div>
-<div class="cellInput"><input type="text" class="textBox"  id="name" size="50" name="name" ></div>
+<div class="cellInput"><input type="text" class="textBox"  maxlength="20" id="name" size="50" name="name" ></div>
 <div class="clean"></div>
 
 <div class="tablaTitulos"><span class="alignVert">E-mail</span></div>
-<div class="cellInput"><input type="text" class="textBox" size="50"  id="email" name="email" ></div>
+<div class="cellInput"><input type="text" class="textBox" maxlength="25" size="50"  id="email" name="email" ></div>
 <div class="clean"></div>          
 
 <div class="tablaTitulos"><span class="alignVert">Tu Comentario</span></div>

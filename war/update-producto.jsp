@@ -8,7 +8,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.jpg">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery-ui.js"></script>
@@ -32,7 +32,7 @@
 
 	<div class="container">
 		<div class="logo">
-			<a href="index.html">
+			<a href="index.jsp">
 				<img src="images/logo.jpg" alt="Vlatecsoft" title="Vlatecsoft">
 			</a>
 		</div>
@@ -95,43 +95,55 @@
 
 
 <section class="wrapper">
-<div class="top">
+<div class="top2">
 	<div class="page-title">
 		<div class="container">
-			<div class="h1color"><h1>Cambiar estado</h1></div>
+			<div class="h1color"><h1>Actualizar Productos</h1></div>
 		</div>
 		<div class="container">
-			<div class="h1color">
-<%@ page import="ServicesModel.*" import="java.util.List"
+	
+		
+			<div class="datagrid1">
+			<%@ page import="ServicesModel.*" import="java.util.List"
 	import="javax.jdo.Query" import="javax.jdo.PersistenceManager"
 %>
 <% 	PersistenceManager pm = PMF.get().getPersistenceManager();
-	Query q = pm.newQuery(Contacto.class);
-	List<Contacto> p = (List<Contacto>) q.execute();%>
+	Query q = pm.newQuery(Producto.class);
+	List<Producto> p = (List<Producto>) q.execute();%>
 	<table border='4'>
-	<tr>
+	<THEAD><tr>
 		<th WIDTH="30"> N </th>
-		<th WIDTH="200"> Nombre </th>
-		<th WIDTH="250"> Correo </th>
-		<th WIDTH="450"> Comentario </th>
-		<th WIDTH="120"> Estado </th>
-		<th WIDTH="120"> Opcion </th>
-	</tr>
+		<th WIDTH="200"> Grupo </th>
+		<th WIDTH="100"> Marca </th>
+		<th WIDTH="150"> Linea </th>
+		<th WIDTH="120"> Item </th>
+		<th WIDTH="300"> Descripción </th>
+		<th WIDTH="100"> Fecha </th>
+		<th WIDTH="100"> Estado </th>
+		<th WIDTH="100"> Opcion </th>
+		
+	</tr></THEAD>
 		<% for(int i=0;i<p.size();i++){ %>
-		<% String estado= (p.get(i).getContest())? "Contestado":"No Contestado"; %>
-			<form action="updateCliente" method="post">
+		<% String estado= (p.get(i).getContest())? " Disponible":"No Disponible"; %>
+			<form action="updateProducto" method="post">
+			<tbody>
 				<tr>
 					<input type="hidden"  name="indice" value="<%=i+1%>">
 					<td><%=i+1%></td>
-					<td><%=p.get(i).getName()%></td>
-					<td><%=p.get(i).getEmail()%></td>
-					<td><%=p.get(i).getComentary()%></td>
+					<td><%=p.get(i).getGrupo()%></td>
+					<td><%=p.get(i).getMarca()%></td>
+					<td><%=p.get(i).getLinea()%></td>
+					<td><%=p.get(i).getItem()%></td>
+					<td><%=p.get(i).getDescripcion()%></td>
+					<td><%=p.get(i).getFecha()%></td>
 					<td><%=estado%></td>
-					<td><input style='background-color: #FF9900' type='submit' value='Cambiar'></td>
+					<td><input style='color:#fff; background-color: #FF9900' type='submit' value='Cambiar'></td>
 				</tr>
+				</tbody>
 			</form>
 		<%} %>
 		</table>
+
 			</div>
 		</div>
 	</div>

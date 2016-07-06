@@ -8,7 +8,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.jpg">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery-ui.js"></script>
@@ -32,7 +32,7 @@
 
 	<div class="container">
 		<div class="logo">
-			<a href="index.html">
+			<a href="index.jsp">
 				<img src="images/logo.jpg" alt="Vlatecsoft" title="Vlatecsoft">
 			</a>
 		</div>
@@ -50,14 +50,14 @@
 				<li><a href="update-producto.jsp">Actualizar Producto</a></li>
 				
 				<li>
-					<a href="delete-producto.jsp">Eliminar Producto</a>
+					<a href="eliminar-producto.jsp">Eliminar Producto</a>
 				</li>
 				<li>
 					<a>Usuario</a>
 					<ul class="children">
 						<li><a href="informacion-distribuidor.jsp">Información de la Cuenta</a></li>
 						<li><a href="up-distribuidor.jsp">Actualizar Información</a></li>
-						<li><a href="delete-distribuidor.jsp">Eliminar Cuenta</a></li>
+						<li><a href="del-distribuidor.jsp">Eliminar Cuenta</a></li>
 						<li><a href="index.html">Cerrar Sesión</a></li>
 					</ul>
 				</li>
@@ -83,7 +83,7 @@
 					<ul class="children">
 						<li><a href="informacion-distribuidor.jsp">Información de la Cuenta</a></li>
 						<li><a href="up-distribuidor.jsp">Actualizar Información</a></li>
-						<li><a href="delete-distribuidor.jsp">Eliminar Cuenta</a></li>
+						<li><a href="del-distribuidor.jsp">Eliminar Cuenta</a></li>
 						<li><a href="index.html">Cerrar Sesión</a></li>
 					</ul>
 				</li>
@@ -97,7 +97,7 @@
 <div class="top">
 	<div class="page-title">
 		<div class="container">
-			<div class="h1color"><h1>Bienvenido</h1></div>
+			<div class="h1color"><h1>Bienvenido Distribuidor</h1></div>
 		</div>
 	</div>
 </div>
@@ -108,7 +108,7 @@
 		<div class="box1 four1">
 			<ul>
 				<ul class="redes">
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://www.facebook.com/Vlatec-Soft-1450201235273579/"><i class="icon-facebook"></i></a></li>
 					<li><a href="#"><i class="icon-twitter"></i></a></li>
 					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
@@ -122,7 +122,7 @@
 		<div class="container">
 			<ul>
 				<ul class="redes">
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://www.facebook.com/Vlatec-Soft-1450201235273579/"><i class="icon-facebook"></i></a></li>
 					<li><a href="#"><i class="icon-twitter"></i></a></li>
 					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>

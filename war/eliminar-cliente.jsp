@@ -8,7 +8,6 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.jpg">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery-ui.js"></script>
@@ -36,7 +35,9 @@
 					<a>Clientes</a>
 					<ul class="children">
 						<li><a href="consulta-clientes.jsp">Lista de Clientes</a></li>
+						<li><a href="update-cliente.jsp">Actualizar a un Cliente</a></li>
 						<li><a href="eliminar-cliente.jsp">Eliminar a un Cliente</a></li>
+						
 					</ul>
 				</li>
 				
@@ -44,6 +45,7 @@
 					<a>Distribuidores</a>
 					<ul class="children">
 						<li><a href="consulta-distribuidores.jsp">Lista de Distribuidores</a></li>
+						<li><a href="update-distribuidor.jsp">Actualizar a un Distribuidor</a></li>
 						<li><a href="eliminar-distribuidor.jsp">Eliminar a un Distribuidor</a></li>
 					</ul>
 				</li>
@@ -67,6 +69,7 @@
 					<a>Clientes</a>
 					<ul class="children">
 						<li><a href="consulta-clientes.jsp">Lista de Clientes</a></li>
+						<li><a href="update-cliente.jsp">Actualizar a un Cliente</a></li>
 						<li><a href="eliminar-cliente.jsp">Eliminar a un Cliente</a></li>
 					</ul>
 				</li>
@@ -75,6 +78,7 @@
 					<a>Distribuidores</a>
 					<ul class="children">
 						<li><a href="consulta-distribuidores.jsp">Lista de Distribuidores</a></li>
+						<li><a href="update-distribuidor.jsp">Actualizar a un Distribuidor</a></li>
 						<li><a href="eliminar-distribuidor.jsp">Eliminar a un Distribuidor</a></li>
 					</ul>
 				</li>
@@ -96,44 +100,56 @@
 	<i class="icon-menu"></i>
 </header>
 
-<div class="top">
+
+<div class="top2">
 	<div class="page-title">
 		<div class="container">
 			<div class="h1color"><h1>Eliminar Clientes</h1></div>
 		</div>
 		<div class="container">
-			<div class="h1color">
-			
-<%@ page import="ServicesModel.*" import="java.util.List"
+	
+		
+			<div class="datagrid1">
+			<%@ page import="ServicesModel.*" import="java.util.List"
 	import="javax.jdo.Query" import="javax.jdo.PersistenceManager"
 %>
 <% 	PersistenceManager pm = PMF.get().getPersistenceManager();
 	Query q = pm.newQuery(Cliente.class);
 	List<Cliente> p = (List<Cliente>) q.execute();%>
 	<table border='4'>
-	<tr>
+	<THEAD><tr>
 		<th WIDTH="30"> N </th>
-		<th WIDTH="200"> Nombres </th>
-		<th WIDTH="250"> Apellidos </th>
-		<th WIDTH="450"> Fecha </th>
+		<th WIDTH="300"> Nombres </th>
+		<th WIDTH="300"> Apellidos </th>
+		<th WIDTH="150"> Fecha de Nacimiento </th>
+		<th WIDTH="120"> Sexo </th>
+		<th WIDTH="150"> User </th>
+		<th WIDTH="200"> Pass </th>
 		<th WIDTH="120"> Estado </th>
 		<th WIDTH="120"> Opcion </th>
-	</tr>
+		
+	</tr></THEAD>
 		<% for(int i=0;i<p.size();i++){ %>
-		<% String estado= (p.get(i).getContest())? "Contestado":"No Contestado"; %>
+		<% String estado= (p.get(i).getContest())? " Activo":"No Activo"; %>
 			<form action="removeCliente" method="post">
+			<tbody>
 				<tr>
 					<input type="hidden"  name="indice" value="<%=i+1%>">
 					<td><%=i+1%></td>
 					<td><%=p.get(i).getNombres()%></td>
 					<td><%=p.get(i).getApellidos()%></td>
 					<td><%=p.get(i).getFecha()%></td>
+					<td><%=p.get(i).getSexo()%></td>
+					<td><%=p.get(i).getUser()%></td>
+					<td><%=p.get(i).getPass().substring(0,1)+"*********"%></td>
 					<td><%=estado%></td>
-					<td><input style='background-color: #FF9900' type='submit' value='Eliminar'></td>
+					<td><input style='color:#fff; background-color: #FF9900' type='submit' value='Eliminar'></td>
 				</tr>
+				</tbody>
 			</form>
 		<%} %>
 		</table>
+
 			</div>
 		</div>
 	</div>

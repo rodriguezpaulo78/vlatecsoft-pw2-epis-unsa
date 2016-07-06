@@ -4,14 +4,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>VLATECSOFT | Galería</title>
-	<link rel="icon" type="image/jpg" sizes="16x16" href="favicon-16x16.jpg">
+	<title>VLATECSOFT | Tecnología en tus manos</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.jpg">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery-ui.js"></script>
+	
 	<meta name="description" content="Ofrece lo último en Hardware al alcance de tus manos.">
 	<meta property="og:site_name" content="VLATECSOFT | Tecnología en tus manos"/>
 	<meta property="og:url" content="http://1-dot-vlatecsoft.appspot.com"/>
@@ -22,9 +22,7 @@
 </head>
 
 <body>
-
-	<div class="top-legal">
-	<header>
+<header>
 	<div id="lightbox" class="shadow">
 	<div class="mensaje">
 		<span><i class="icon-cancel"></i></span>
@@ -52,16 +50,16 @@
 				<li>
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
-						<li><a href="#">Productos según Tipo</a></li>
-						<li><a href="#">Productos según Marca</a></li>
-						<li><a href="#">Productos según Precio</a></li>
+						<li><a href="productos-tipo.jsp">Productos según Tipo</a></li>
+						<li><a href="productos-marca.jsp">Productos según Marca</a></li>
+						<li><a href="productos-precio.jsp">Productos según Precio</a></li>
 					</ul>
 				</li>
 				
 				<li><a href="compras.jsp">Compras en Línea</a></li>
 				
 				<li>
-					<a href="servicio.jsp">Servicio Técnico</a>
+					<a href="servicio-pfc.jsp">Servicio Técnico</a>
 					<ul class="children">
 						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
 						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
@@ -75,7 +73,7 @@
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
 						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
-						<li><a href="archivos/deltron.pdf">Términos</a></li>
+						<li><a href="archivos/terminos.pdf">Términos</a></li>
 					</ul>
 				</li>
 				<li><a href="contacto.jsp">Contáctanos</a></li>
@@ -96,14 +94,14 @@
 				<li>
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
-						<li><a href="#">Productos según Tipo</a></li>
-						<li><a href="#">Productos según Marca</a></li>
-						<li><a href="#">Productos según Precio</a></li>
+						<li><a href="productos-tipo.jsp">Productos según Tipo</a></li>
+						<li><a href="productos-marca.jsp">Productos según Marca</a></li>
+						<li><a href="productos-precio.jsp">Productos según Precio</a></li>
 					</ul>
 				</li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
 				<li>
-					<a href="servicio.jsp">Servicio Técnico</a>
+					<a href="servicio-pfc.jsp">Servicio Técnico</a>
 					<ul class="children">
 						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
 						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
@@ -117,7 +115,7 @@
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
 						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
-						<li><a href="archivos/deltron.pdf">Términos</a></li>
+						<li><a href="archivos/terminos.pdf">Términos</a></li>
 					</ul>
 					</ul>
 				</li>
@@ -130,108 +128,112 @@
 	<i class="icon-menu"></i>
 </header>
 
-	<div class="container">
-		<div class="title">
-			<h1>VLATECSOFT</h1>
-			<h3>Aquí encontrarás lo que estás buscando.</h3>
-			<center>
-			<video src="archivos/vlatecsoft.webm" controls="" ></video>
-			</center>
+<div class="top">
+	<div class="page-title">
+		<div class="container">
+			<div class="h1color"><h1>¡Sé Parte de Vlatecsoft!</h1></div>
+			<h4>Regístrate para obtener beneficios o unirte a nuestro equipo de trabajo.</h4>
+			<ul id="botones" class="botones">
+				<li><a href="registro-cliente.jsp">Regístrate Aquí Cliente</a></li>
+			</ul>
 		</div>
 	</div>
-	</div>
-	
-	<div class="franja1">
-		<div class="container"><p>Galería de Imágenes</p></div>
-	</div>
-	
-	<div class="container"><center>
-	<div class="franja2">
-		<div class="container"><p>Ofertas Vlatecsoft</p></div>
-	</div>
-	
-	
-	<div id="cp_widget_f4e8b72e-518a-4a4b-bf48-76f132bb836c">...</div><script type="text/javascript">
-var cpo = []; cpo["_object"] ="cp_widget_f4e8b72e-518a-4a4b-bf48-76f132bb836c"; cpo["_fid"] = "AgAANnN7RWTd";
-var _cpmp = _cpmp || []; _cpmp.push(cpo);
-(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
-cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
-var c = document.getElementsByTagName("script")[0];
-c.parentNode.insertBefore(cp, c); })(); </script>
+</div>
 
-	<div class="franja2">
-		<div class="container"><p>Accesorios Hardware para Computadora</p></div>
+<div class="franja">
+		<div class="container">
+		</div>
+</div>
+
+<section class="wrapper">
+	<div class="phones">
+		<div class="container">
+			<div class="title">
+				<h1>Lista de Productos Disponibles.</h1>
+				<h3>Tabla de Productos Disponibles según el orden de registro.</h3>
+				
+			<div class="datagrid1">
+			<%@ page import="ServicesModel.*" import="java.util.List"
+	import="javax.jdo.Query" import="javax.jdo.PersistenceManager"
+%>
+<% 	PersistenceManager pm = PMF.get().getPersistenceManager();
+	Query q = pm.newQuery(Producto.class);
+	List<Producto> p = (List<Producto>) q.execute();%>
+	<table border='4'>
+	<THEAD><tr>
+		<th WIDTH="30"> N </th>
+		<th WIDTH="200"> Grupo </th>
+		<th WIDTH="100"> Marca </th>
+		<th WIDTH="150"> Linea </th>
+		<th WIDTH="120"> Item </th>
+		<th WIDTH="300"> Descripción </th>
+		<th WIDTH="100"> Fecha </th>
+		<th WIDTH="100"> Estado </th>
+	</tr></THEAD>
+		<% for(int i=0;i<p.size();i++){ %>
+		<% String estado= (p.get(i).getContest())? "Disponible":"No Disponible"; %>
+			<form>
+			<tbody>
+				<tr>
+					<td><%=i+1%></td>
+					<td><%=p.get(i).getGrupo()%></td>
+					<td><%=p.get(i).getMarca()%></td>
+					<td><%=p.get(i).getLinea()%></td>
+					<td><%=p.get(i).getItem()%></td>
+					<td><%=p.get(i).getDescripcion()%></td>
+					<td><%=p.get(i).getFecha()%></td>
+					<td><%=estado%></td>
+				</tr>
+				</tbody>
+			</form>
+		<%} %>
+		</table>
+
+			</div>
 	</div>
-	
-		
-	<div class="franja2">
-		<div class="container"><p>Impresoras</p></div>
+		</div>
 	</div>
-	
-	<div class="franja2">
-		<div class="container"><p>Consolas para Videojuegos</p></div>
-	</div>
-	
-	</center></div>
-	
-	<div class="franja1">
-		<div class="container"><p>Documentos</p></div>
-	</div>
-	
-	<div class="container"><center>
-	 <div class="datagrid">
-	 <table>
-		<thead><tr><th>Título</th><th>Descarga</th></tr></thead>
-		<tbody>
-		<tr>
-			<td>Doc1</td>
-			<td width="80px"><a href="archivos/nocas.pdf"><img src="images/pdf.jpg"></a></td>
-		</tr>
-		<tr class="alt">
-			<td>Doc2</td>
-			<td><a href="archivos/nocas.pdf"><img src="images/powerpoint.jpg"></a></td>
-		</tr>
-		<tr>
-			<td>Doc3</td>
-			<td><a href="archivos/nocas.pdf"><img src="images/pdf.jpg"></a></td>
-		</tr>
-		<tr class="alt">
-			<td>Doc4</td>
-			<td><a href="archivos/nocas.pdf"><img src="images/word.png"></a></td>
-		</tr>
-		<tr>
-			<td>Doc5</td>
-			<td><a href="archivos/nocas.pdf"><img src="images/excel.png"></a></td>
-		</tr>
-		<tr class="alt">
-			<td>Doc4</td>
-			<td><a href="archivos/nocas.pdf"><img src="images/word.png"></a></td>
-		</tr>
-		<tr>
-			<td>Doc1</td>
-			<td width="80px"><a href="archivos/nocas.pdf"><img src="images/pdf.jpg"></a></td>
-		</tr>
-		<tr>
-			<td>Doc1</td>
-			<td width="80px"><a href="archivos/nocas.pdf"><img src="images/pdf.jpg"></a></td>
-		</tr>
-		<tr class="alt">
-			<td>Doc4</td>
-			<td><a href="archivos/nocas.pdf"><img src="images/word.png"></a></td>
-		</tr>
-		<tr class="alt">
-			<td>Doc4</td>
-			<td><a href="archivos/nocas.pdf"><img src="images/word.png"></a></td>
-		</tr>
-		</tbody>
-	</table></div>
-	</div></center>
 	
 	<div class="franja">
-		<div class="container"></div>
+		<div class="container">
+		</div>
 	</div>
 	
-	<footer>
+	<div class="container boxes">
+		<h1>La mejor opción para comprar Hardware</h1>
+		<ul>
+			<li><a href="productos.jsp"><img src="images/1.jpg" alt="Vlatecsoft Productos"></a></li>
+			<li><h3>Hardware</h3></li>
+			<li><p>Te ofrecemos lo ultimo del mercado en Tecnología.</p></li>
+			<li><a class="more" href="productos.jsp">Leer más</a></li>
+		</ul>
+		<ul>
+			<li><a href="compras.jsp"><img src="images/2.jpg" alt="Vlatecsoft Tienda"></a></li>
+			<li><h3>Tienda Online</h3></li>
+			<li><p>Te brindamos la posibilidad de comprar tus productos en Linea.</p></li>
+			<li><a class="more" href="compras.jsp">Leer más</a></li>
+		</ul>
+		<ul>
+			<li><a href="servicio-pfc.jsp"><img src="images/3.jpg" alt="Vlatecsoft servicio"></a></li>
+			<li><h3>Servicio Técnico</h3></li>
+			<li><p>Te ofrecemos un servicio Post Venta eficaz.</p></li>
+			<li><a class="more" href="servicio-pfc.jsp">Leer más</a></li>
+		</ul>
+		<ul class="last">
+			<li><a href="nosotros.jsp"><img src="images/4.jpg" alt="Vlatecsoft información"></a></li>
+			<li><h3>Vlatecsoft</h3></li>
+			<li><p>Ponte al tanto de lo ultimo en Tecnología.</p></li>
+			<li><a class="more" href="nosotros.jsp">Leer más</a></li>
+		</ul>
+	</div>
+</section>
+
+<div class="franja">
+		<div class="container">
+		</div>
+</div>
+
+<footer>
 	<div class="container">
 		<div class="box one">
 			<h3>VlatecSoft</h3>
@@ -245,7 +247,7 @@ c.parentNode.insertBefore(cp, c); })(); </script>
 			<ul>
 				<li><a href="productos.jsp">Lista de Productos</a></li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
-				<li><a href="servicio.jsp">Sérvicio Tecnico</a></li>
+				<li><a href="servicio-pfc.jsp">Sérvicio Tecnico</a></li>
 				<li><a href="galeria.jsp">Información de la Empresa</a></li>
 			</ul>
 		</div>
@@ -253,13 +255,14 @@ c.parentNode.insertBefore(cp, c); })(); </script>
 			<h3>Soporte</h3>
 			<ul>
 				<li><a href="contacto.jsp">Contacto</a></li>
-				<li>Llámanos (+511) 416 - 2018</li>
+				<li>Llámanos (+51) 959 096 704 </li>
+				<li>vlatecsoft@hotmail.com</li>
 			</ul>
 		</div>
 		<div class="box four">
 			<ul>
 				<ul class="redes">
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://www.facebook.com/Vlatec-Soft-1450201235273579/"><i class="icon-facebook"></i></a></li>
 					<li><a href="#"><i class="icon-twitter"></i></a></li>
 					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
@@ -282,7 +285,7 @@ c.parentNode.insertBefore(cp, c); })(); </script>
 				<ul>
 				<li><a href="productos.jsp">Lista de Productos</a></li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
-				<li><a href="servicio.jsp">Servicio Técnico</a></li>
+				<li><a href="servicio-pfc.jsp">Servicio Técnico</a></li>
 				<li><a href="galeria.jsp">Información de la Empresa</a></li>
 				</ul>
 			</div>
@@ -290,14 +293,15 @@ c.parentNode.insertBefore(cp, c); })(); </script>
 			<div class="container">
 				<ul>
 					<li><a href="contacto.jsp">Contacto</a></li>
-					<li>Llámanos (+511) 416 - 2018</li>
+					<li>Llámanos (+51) 959 096 704 </li>
+					<li>vlatecsoft@hotmail.com</li>
 				</ul>
 			</div>
 		</div>
 		<div class="container">
 			<ul>
 				<ul class="redes">
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://www.facebook.com/Vlatec-Soft-1450201235273579/"><i class="icon-facebook"></i></a></li>
 					<li><a href="#"><i class="icon-twitter"></i></a></li>
 					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
