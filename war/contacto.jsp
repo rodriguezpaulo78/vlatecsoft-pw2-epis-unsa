@@ -4,22 +4,56 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>VLATECSOFT | Tecnología en tus manos</title>
+	<title>VLATECSOFT | Contacto</title>
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.jpg">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery-1.6.2.js" type="text/javascript"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src="js/jquery.validate.js" type="text/javascript"></script>
+	<script src="js/messages_es.js" type="text/javascript"></script>
 	
 	<meta name="description" content="Ofrece lo último en Hardware al alcance de tus manos.">
 	<meta property="og:site_name" content="VLATECSOFT | Tecnología en tus manos"/>
-	<meta property="og:url" content="http://vlatecsoft-pw2episunsa.rhcloud.com"/>
+	<meta property="og:url" content="http://1-dot-vlatecsoft.appspot.com"/>
 	<meta property="og:title" content="VLATECSOFT | Tecnología en tus manos"/>
 	<meta property="og:type" content="website"/>
-	<meta property="og:image" content="http://vlatecsoft-pw2episunsa.rhcloud.com/images/default.png"/>
+	<meta property="og:image" content="http://1-dot-vlatecsoft.appspot.com/images/default.png"/>
 	<meta property="og:description" content="Ofrece lo último en Hardware al alcance de tus manos."/>
+	<script>
+	/* **********************  validacion del formulario  ****************** */
+	$(document).ready(function(){
+
+		$("#frm_registro").validate({  
+		rules:{  
+		   name:{  
+		        required:true
+		    },
+		    
+		    /* *** contacto 1 **  */
+			comentary:{  
+		        required:true
+		    },
+		    email:{  
+		        required:true ,
+		        email:true  
+		    }
+		
+		},
+		   messages: {
+		  
+		    
+		    email:{  
+		         email:'email no valido' 
+		    }
+		} 		        
+		});       
+		});  
+	</script>
 </head>
 
 <body>
@@ -60,20 +94,21 @@
 				<li><a href="compras.jsp">Compras en Línea</a></li>
 				
 				<li>
-					<a href="servicio.jsp">Servicio Técnico</a>
+					<a>Servicio Técnico</a>
 					<ul class="children">
-						<li><a href="#">Preguntas Frecuentes del Cliente</a></li>
-						<li><a href="#">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
-						<li><a href="#">Atención de otras marcas</a></li>
-						<li><a href="#">Tipos de Garantía</a></li>
+						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
+						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
+						<li><a href="servicio-hla.jsp">Horarios y Lugares de Atención</a></li>
+						<li><a href="servicio-tdg.jsp">Tipos de Garantía</a></li>
+						<li><a href="archivos/nocas.pdf">Atención de otras marcas</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="login-distribuidor.jsp">Distribuidores</a>
+					<a>Distribuidores</a>
 					<ul class="children">
-						<li><a href="#">Registro</a></li>
-						<li><a href="distribuidores.jsp">Extranet-Actualización de Datos</a></li>
-						<li><a href="#">Términos</a></li>
+						<li><a href="registro-distribuidor.jsp">Registro</a></li>
+						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
+						<li><a href="archivos/deltron.pdf">Términos</a></li>
 					</ul>
 				</li>
 				<li><a href="contacto.jsp">Contáctanos</a></li>
@@ -101,20 +136,22 @@
 				</li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
 				<li>
-					<a href="servicio.jsp">Servicio Técnico</a>
+					<a>Servicio Técnico</a>
 					<ul class="children">
-						<li><a href="#">Preguntas Frecuentes del Cliente</a></li>
-						<li><a href="#">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
-						<li><a href="#">Atención de otras marcas</a></li>
-						<li><a href="#">Tipos de Garantía</a></li>
+						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
+						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
+						<li><a href="servicio-hla.jsp">Horarios y Lugares de Atención</a></li>
+						<li><a href="servicio-tdg.jsp">Tipos de Garantía</a></li>
+						<li><a href="archivos/nocas.pdf">Atención de otras marcas</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="login-distribuidor.jsp">Distribuidores</a>
+					<a>Distribuidores</a>
 					<ul class="children">
-						<li><a href="#">Registro</a></li>
-						<li><a href="distribuidores.jsp">Extranet-Actualización de Datos</a></li>
-						<li><a href="#">Términos</a></li>
+						<li><a href="registro-districondicion que debe cumplir el primer campo del formulariobuidor.jsp">Registro</a></li>
+						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
+						<li><a href="archivos/deltron.pdf">Términos</a></li>
+					</ul>
 					</ul>
 				</li>
 				
@@ -127,38 +164,43 @@
 </header>
 
 <div class="top1">
-		<div class="page-title2">
-			<div class="container1">
-				<h1>¡Contáctanos!</h1>
-				<h4>Llena los datos para responder a tu consulta.</h4>
-			</div>
-		
-	<div class="container1">
-		<fieldset>
-		<form  action="savecontacto" method="post">
-		  
-		   <label for="name">Nombre:</label>
-		   <input style="font-size:16px; text-align:left;color:black;background-color:#ffffff;" name="name" placeholder="Nombre" required><br />
-		 
-			<label for="email">E-mail:</label>
-			<input style="font-size:16px; text-align:left;color:black;background-color:#ffffff; name="email" placeholder="ejemplo@gmail.com" type="email" required><br />
-		 	
-		 	<label for="message">Tu comentario:</label><br />
-			<textarea  style="font-size:16px; text-align:left;color:black;background-color:#ffffff; id="message" placeholder="Escribenos un Comentario..." class="input" name="comentary" rows="10" cols="40" required></textarea><br />
-		 		
-		    <div class="g-recaptcha" data-theme="dark" data-sitekey="6LfociETAAAAABH0CYbyFSEsR2iX6MAP5WsqOPis"></div>
-		    <input style="color: #ffffff; background-color: #338790" type="submit" value="Enviar" />
-		    <input  style="color: #ffffff; background-color: #338790" type="reset" value="Borrar" />
-		</form>		
-		</fieldset>
-		
-</div>
-</div>
+		<div id="headForm"><!--Cabecera del formulario -->
 </div>
 
+<div id="div_registro" class="containerreg"><!--formulario  inicio-->
+<span class="titlereg"> Contáctanos</span> 
+<center><span class="italicText">Todos los campos son obligatorios *</span></center>    
 
+       
+<div id="areaForm">	<!--Area del formulario  Inicio-->	
+       
+<form class="" id="frm_registro" name="frm_registro" method="POST" action="saveContacto" novalidate>	
+						
+<!--	****************** contacto y Usuario Web************************	-->
+<span class="titSeccion">Contacto Principal y Usuario Web</span> 
 
+<div class="tablaTitulos"><span class="alignVert">Nombres</span></div>
+<div class="cellInput"><input type="text" class="textBox"  id="name" size="50" name="name" ></div>
+<div class="clean"></div>
 
+<div class="tablaTitulos"><span class="alignVert">E-mail</span></div>
+<div class="cellInput"><input type="text" class="textBox" size="50"  id="email" name="email" ></div>
+<div class="clean"></div>          
+
+<div class="tablaTitulos"><span class="alignVert">Tu Comentario</span></div>
+<div class="cellInput"><textarea name="comentary" id="comentary" rows="10" cols="50" ></textarea><br /></div>
+<div class="clean"></div><div class="clean"></div>
+<input style="margin: 0 auto;"type="submit" name="guardar" id="guardar" value="Guardar">
+<input  style="color: #ffffff; margin: 0 auto;background-color: #338790" type="reset" value="Borrar" />
+
+<br><br>
+<div class="g-recaptcha" id="captcha "data-theme="dark" data-sitekey="6LfociETAAAAABH0CYbyFSEsR2iX6MAP5WsqOPis"></div>
+
+<div class="clean"></div>
+</form>
+</div> <!--Area del formulario  Fin-->  
+</div>
+<br><br>
 
 <div class="franja">
 		<div class="container">
@@ -179,8 +221,8 @@
 			<ul>
 				<li><a href="productos.jsp">Lista de Productos</a></li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
-				<li><a href="servicio.jsp">Sérvicio Tecnico</a></li>
-				<li><a href="informacion.jsp">Información de la Empresa</a></li>
+				<li><a href="servicio-pfc.jsp">Sérvicio Tecnico</a></li>
+				<li><a href="galeria.jsp">Información de la Empresa</a></li>
 			</ul>
 		</div>
 		<div class="box three">
@@ -216,8 +258,8 @@
 				<ul>
 				<li><a href="productos.jsp">Lista de Productos</a></li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
-				<li><a href="servicio.jsp">Servicio Técnico</a></li>
-				<li><a href="informacion.jsp">Información de la Empresa</a></li>
+				<li><a href="servicio-pfc.jsp">Servicio Técnico</a></li>
+				<li><a href="galeria.jsp">Información de la Empresa</a></li>
 				</ul>
 			</div>
 			<h3>Soporte <i class="icon-down-open"></i></h3>

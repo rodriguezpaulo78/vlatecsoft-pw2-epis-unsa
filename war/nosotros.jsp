@@ -4,21 +4,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Nosotros | VLATECSOFT</title>
+	<title>VLATECSOFT | Nosotros</title>
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.jpg">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery-ui.js"></script>
 	<meta name="description" content="Ofrece lo último en Hardware al alcance de tus manos.">
 	<meta property="og:site_name" content="VLATECSOFT | Tecnología en tus manos"/>
-	<meta property="og:url" content="http://vlatecsoft-pw2episunsa.rhcloud.com"/>
+	<meta property="og:url" content="http://1-dot-vlatecsoft.appspot.com"/>
 	<meta property="og:title" content="VLATECSOFT | Tecnología en tus manos"/>
 	<meta property="og:type" content="website"/>
-	<meta property="og:image" content="http://vlatecsoft-pw2episunsa.rhcloud.com/images/default.png"/>
+	<meta property="og:image" content="http://1-dot-vlatecsoft.appspot.com/images/default.png"/>
 	<meta property="og:description" content="Ofrece lo último en Hardware al alcance de tus manos."/>
-
 </head>
 
 <body>
@@ -61,18 +61,19 @@
 				<li>
 					<a href="servicio.jsp">Servicio Técnico</a>
 					<ul class="children">
-						<li><a href="#">Preguntas Frecuentes del Cliente</a></li>
-						<li><a href="#">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
-						<li><a href="#">Atención de otras marcas</a></li>
-						<li><a href="#">Tipos de Garantía</a></li>
+						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
+						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
+						<li><a href="servicio-hla.jsp">Horarios y Lugares de Atención</a></li>
+						<li><a href="servicio-tdg.jsp">Tipos de Garantía</a></li>
+						<li><a href="archivos/nocas.pdf">Atención de otras marcas</a></li>
 					</ul>
 				</li>
 				<li>
 					<a>Distribuidores</a>
 					<ul class="children">
-						<li><a href="#">Registro</a></li>
-						<li><a href="login-distribuidores.jsp">Extranet-Actualización de Datos</a></li>
-						<li><a href="#">Términos</a></li>
+						<li><a href="registro-distribuidor.jsp">Registro</a></li>
+						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
+						<li><a href="archivos/deltron.pdf">Términos</a></li>
 					</ul>
 				</li>
 				<li><a href="contacto.jsp">Contáctanos</a></li>
@@ -102,18 +103,20 @@
 				<li>
 					<a href="servicio.jsp">Servicio Técnico</a>
 					<ul class="children">
-						<li><a href="#">Preguntas Frecuentes del Cliente</a></li>
-						<li><a href="#">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
-						<li><a href="#">Atención de otras marcas</a></li>
-						<li><a href="#">Tipos de Garantía</a></li>
+						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
+						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
+						<li><a href="servicio-hla.jsp">Horarios y Lugares de Atención</a></li>
+						<li><a href="servicio-tdg.jsp">Tipos de Garantía</a></li>
+						<li><a href="archivos/nocas.pdf">Atención de otras marcas</a></li>
 					</ul>
 				</li>
 				<li>
 					<a>Distribuidores</a>
 					<ul class="children">
-						<li><a href="#">Registro</a></li>
-						<li><a href="login-distribuidores.jsp">Extranet-Actualización de Datos</a></li>
-						<li><a href="#">Términos</a></li>
+						<li><a href="registro-distribuidor.jsp">Registro</a></li>
+						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
+						<li><a href="archivos/deltron.pdf">Términos</a></li>
+					</ul>
 					</ul>
 				</li>
 				
@@ -124,7 +127,7 @@
 	</div>
 	<i class="icon-menu"></i>
 </header>
-	
+
 <section>
 	<div class="nosotros">
 		<div class="container">
@@ -132,86 +135,86 @@
 				<h1>Nosotros</h1>
 				<h2>Conoce al equipo de Vlatecsoft. Un grupo altamente competitivo y obsesionado por brindar lo mejor al cliente.</h2>
 			</div>
+			
+			
 			<div>
-				<img src="images/equipo.png" alt="Culqi equipo" title="Culqi equipo">
+				<img src="images/equipo.png" alt="Vlatecsoft equipo" title="Culqi equipo">
 			</div>
 		</div>
 	</div>
 	<div class="container">
 		<div class="historia">
-			<h1>Nuestra historia</h1>
+			<h1>Grupo Vlatecsoft</h1>
 			<div class="box left">
-				<p>Breve Reseña de la Historia de Vlatecsoft</p>
-			</div>
+				<p>Vlatecsoft es la nueva Tienda del Perú, con variedad de productos tecnológicos donde podrás encontrar al mejor precio del mercado.
+					Te ofrecemos la MAYOR diversidad de productos tecnológicos de las MEJORES marcas del mundo, al mejor precio.
+					El 100% de nuestros productos cuentan con garantía de fábrica. Si tu producto llegara a presentar una falla, te lo cambiaremos o haremos la devolución íntegra de tu dinero (en caso el producto ya no esté disponible, previa verificación con el Servicio Técnico), tu experiencia DEBE ser la mejor.			</div>
 			<div class="box right">
-				<p class="right">Breve Reseña de la Historia de Vlatecsoft</p>
-			</div>
+				<p class="right"><u>Misión</u><br>Satisfacer las necesidades tecnológicas de nuestros clientes con productos de alta calidad a través de un servicio eficiente y precios competitivos.			</div>
 		</div>
+		
+		<div class="franja">
+		<div class="container">
+		</div>
+	</div>
+		
 		<div class="equipo">
-			<h1>El equipo</h1>
+			<h1>El equipo responsable de la página web.</h1>
 			<div class="perfiles">
 				<ul class="amparo">
-					<li><img src="images/persona.jpg" alt="Persona"></li>
+					<li><img src="images/axel.jpg" alt="Arturo"></li>
 					<li class="name">
-						<h5>PERSONA1</h5>
-						<span>Descripción</span>
+						<h5>Arturo</h5>
+						<span>Integrante del Grupo</span>
 						
 					</li>
 				</ul>
 				<ul class="nicolas">
-					<li><img src="images/persona.jpg" alt="Persona"></li>
+					<li><img src="images/danilo.jpg" alt="Danilo"></li>
 					<li class="name">
-						<h5>PERSONA2</h5>
-						<span>Descripción</span>
+						<h5>Danilo</h5>
+						<span>Integrante del Grupo</span>
 						
 					</li>
 				</ul>
 				<ul class="carlos">
-					<li><img src="images/persona.jpg" alt="Persona"></li>
+					<li><img src="images/carlos.jpg" alt="Carlos"></li>
 					<li class="name">
-						<h5>PERSONA3</h5>
-						<span>Descripción</span>
+						<h5>Carlos</h5>
+						<span>Integrante del Grupo</span>
 						
 					</li>
 				</ul>
-				<ul class="luis">
-					<li><img src="images/persona.jpg" alt="Persona"></li>
-					<li class="name">
-						<h5>PERSONA4</h5>
-						<span>Descripción</span>
-						
-					</li>
-				</ul>
+				
 				<ul class="william">
-					<li><img src="images/persona.jpg" alt="Persona"></li>
+					<li><img src="images/paulo.jpg" alt="Paulo"></li>
 					<li class="name">
-						<h5>PERSONA5</h5>
-						<span>Descripción</span>
 						
+						<h5>Paulo</h5>
+						<span>Representante del Grupo</span>
 					</li>
 				</ul>
-				<ul class="oscar">
-					<li><img src="images/persona.jpg" alt="Persona"></li>
-					<li class="name">
-						<h5>PERSONA6</h5>
-						<span>Descripción</span>
-						
-					</li>
-				</ul>
+				
 			</div>
+		</div>
+	</div>
+	
+	<div class="franja">
+		<div class="container">
 		</div>
 	</div>
 	
 	<div class="ubicacion">
 		<div class="container">
 			<img src="images/icon-ubicacion.png" alt="">
-			<h1>Ubicación de la Empresa</h1>
-			<h3>Dirección de la Empresa</h3>
+			<h1>Ubicados en Arequipa, Perú.</h1>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.4537387721293!2d-71.53217328497392!3d-16.401766442556053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a55c4e099d5%3A0xb64798c1831690dd!2sCompuplaza!5e0!3m2!1ses!2ses!4v1467602902680" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<h3>Octavio Muñoz Najar 223 Interior 206 - Centro Comercial Compuplaza.</h3>
 		</div>
 		<hr>
 		<div class="container">
 			<p><span>Únete al equipo.</span><br>
-			Ayúdanos a construir la plataforma de pagos más importante de América Latina.<br></p>
+			Ayúdanos a ser la mejor empresa en venta de Hardware a nivel nacional.<br></p>
 			<i><a href="#">Próximamente</a></i>
 		</div>
 	</div>
@@ -240,7 +243,7 @@
 				<li><a href="productos.jsp">Lista de Productos</a></li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
 				<li><a href="servicio.jsp">Sérvicio Tecnico</a></li>
-				<li><a href="informacion.jsp">Información de la Empresa</a></li>
+				<li><a href="galeria.jsp">Información de la Empresa</a></li>
 			</ul>
 		</div>
 		<div class="box three">
@@ -277,7 +280,7 @@
 				<li><a href="productos.jsp">Lista de Productos</a></li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
 				<li><a href="servicio.jsp">Servicio Técnico</a></li>
-				<li><a href="informacion.jsp">Información de la Empresa</a></li>
+				<li><a href="galeria.jsp">Información de la Empresa</a></li>
 				</ul>
 			</div>
 			<h3>Soporte <i class="icon-down-open"></i></h3>

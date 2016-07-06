@@ -252,17 +252,30 @@ samp {
 button,
 input,
 optgroup,
-select,
 textarea {
   color: inherit; /* 1 */
   font: inherit; /* 2 */
   margin: 0; /* 3 */
+  padding: 5px;
+  font-size: 12px;
 }
 
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
 
+select{
+	/*  font-family: arial, verdana, sans-serif;*/
+	background-color: #D9D9D9;
+	padding: 5px;
+	margin-left: 0px;
+	border-radius: 6px;
+	font-size: 12px;
+	color: #4c4c4c;
+	border: 1px solid  #98ABBC;
+	  }
+
+/*	
 button {
   overflow: visible;
 }
@@ -274,8 +287,7 @@ button {
  * Correct `select` style inheritance in Firefox.
  */
 
-button,
-select {
+button {
   text-transform: none;
 }
 
@@ -293,6 +305,8 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button; /* 2 */
   cursor: pointer; /* 3 */
+ width:125px;
+   
 }
 
 /**
@@ -346,6 +360,15 @@ input[type="radio"] {
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
+}
+
+input[type='text']{
+	border: 1px solid #98ABBC;
+	color:#4c4c4c;
+	resize: none;
+	background-color: #D9D9D9;
+	border-radius: 4px;
+	height: 18px;
 }
 
 /**
@@ -424,5 +447,10 @@ table {
 td,
 th {
   padding: 0;
+}
+
+video{
+	width:50%;
+	height:50%;
 }
 

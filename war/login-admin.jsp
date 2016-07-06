@@ -8,6 +8,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.jpg">
 	<link rel="stylesheet" type="text/css" href="../css/jquery-ui-themes-1.11.2/themes/dot-luv/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="../css/iniciarSesionUsuario.css">
+	
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery-ui.js"></script>
@@ -25,13 +26,22 @@
 
 <body>
 	<center>
-	<div id="texto">
+	
+	<a href="index.html">
+				<img src="images/logo.jpg" alt="Vlatecsoft" title="Vlatecsoft">
+			</a>
+	<div id="texto1">
+	<h1><font color="white" face="arial">Bienvenido.</font></h1>
+	</div>
+	
+	
+	<div id="textodis">
 	<h1><font color="white" face="arial">ACCESO DE ADMINISTRADORES</font></h1>
 	</div>
 
 	<div id="form-main">
 		<div id="form-div">
-			<form class="form" action="LoginController" method="post">
+			<form class="form" action="loginControllerAdmin" method="post">
 			<p class="name">
 				<input type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" name="username" id="usuario" placeholder="Nombre de usuario" maxlength="12" required="required" autofocus="autofocus"/>
 			</p>
@@ -42,6 +52,8 @@
 			</form>
 		</div>
 	</div>
+
+	
 	</center>
 	
 </body>

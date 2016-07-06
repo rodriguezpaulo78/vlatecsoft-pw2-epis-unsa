@@ -14,11 +14,10 @@ public class SaveContacto extends HttpServlet {
 			throws IOException {
 		
 		String name = req.getParameter("name");
-		String lastname = req.getParameter("lastname");
 		String email = req.getParameter("email");
 		String comentary = req.getParameter("comentary");
 		
-		Contacto p = new Contacto(name, lastname, email, comentary);
+		Contacto p = new Contacto(name, email, comentary,false);
 		
 		PersistenceManager pm = PMF.get().getPersistenceManager();
 		resp.setContentType("text/html");

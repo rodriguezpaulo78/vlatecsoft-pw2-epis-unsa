@@ -4,6 +4,33 @@ xmlns="http://java.sun.com/xml/ns/javaee"
 xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+	<servlet>
+		<servlet-name>LoginControllerAdmin</servlet-name>
+		<servlet-class>Controllers.LoginControllerAdmin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginControllerAdmin</servlet-name>
+		<url-pattern>/loginControllerAdmin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LoginControllerDistribuidor</servlet-name>
+		<servlet-class>Controllers.LoginControllerDistribuidor</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginControllerDistribuidor</servlet-name>
+		<url-pattern>/loginControllerDistribuidor</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LoginControllerCliente</servlet-name>
+		<servlet-class>Controllers.LoginControllerCliente</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginControllerCliente</servlet-name>
+		<url-pattern>/loginControllerCliente</url-pattern>
+	</servlet-mapping>
+	
+	
 	<servlet>
 		<servlet-name>SaveContacto</servlet-name>
 		<servlet-class>Controllers.SaveContacto</servlet-class>
@@ -11,17 +38,110 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	
 	<servlet-mapping>
 		<servlet-name>SaveContacto</servlet-name>
-		<url-pattern>/savecontacto</url-pattern>
+		<url-pattern>/saveContacto</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>SaveDistribuidor</servlet-name>
+		<servlet-class>Controllers.SaveDistribuidor</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveDistribuidor</servlet-name>
+		<url-pattern>/saveDistribuidor</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SaveCliente</servlet-name>
+		<servlet-class>Controllers.SaveCliente</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveCliente</servlet-name>
+		<url-pattern>/saveCliente</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SaveProducto</servlet-name>
+		<servlet-class>Controllers.SaveProducto</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveProducto</servlet-name>
+		<url-pattern>/saveProducto</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetListDistribuidor</servlet-name>
+		<servlet-class>Controllers.GetListDistribuidor</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetListDistribuidor</servlet-name>
+		<url-pattern>/getlistDistribuidor</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+      <servlet-name>RemoveContacto</servlet-name>
+      <servlet-class>Controllers.RemoveContacto</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>RemoveContacto</servlet-name>
+      <url-pattern>/removeContacto</url-pattern>
+   </servlet-mapping>
+   <servlet>
+		<servlet-name>RemoveDistribuidor</servlet-name>
+		<servlet-class>Controllers.RemoveDistribuidor</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RemoveDistribuidor</servlet-name>
+		<url-pattern>/removeDistribuidor</url-pattern>
+	</servlet-mapping>
+	<servlet>
+      <servlet-name>RemoveCliente</servlet-name>
+      <servlet-class>Controllers.RemoveCliente</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>RemoveCliente</servlet-name>
+      <url-pattern>/removeCliente</url-pattern>
+   </servlet-mapping>
+   <servlet>
+		<servlet-name>RemoveProducto</servlet-name>
+		<servlet-class>Controllers.RemoveProducto</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RemoveProducto</servlet-name>
+		<url-pattern>/removeProducto</url-pattern>
+	</servlet-mapping>
+   
+   <servlet>
+      <servlet-name>UpdateContacto</servlet-name>
+      <servlet-class>Controllers.UpdateContacto</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>UpdateContacto</servlet-name>
+      <url-pattern>/updateContacto</url-pattern>
+   </servlet-mapping>
+     <servlet>
+      <servlet-name>UpdateCliente</servlet-name>
+      <servlet-class>Controllers.UpdateCliente</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>UpdateCliente</servlet-name>
+      <url-pattern>/updateCliente</url-pattern>
+   </servlet-mapping>
+	 <servlet>
+      <servlet-name>UpdateDistribuidor</servlet-name>
+      <servlet-class>Controllers.UpdateDistribuidor</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>UpdateDistribuidor</servlet-name>
+      <url-pattern>/updateDistribuidor</url-pattern>
+   </servlet-mapping>
+	  <servlet>
+      <servlet-name>UpdateProducto</servlet-name>
+      <servlet-class>Controllers.UpdateProducto</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>UpdateProducto</servlet-name>
+      <url-pattern>/updateProducto</url-pattern>
+   </servlet-mapping>
+	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
-	<servlet>
-		<servlet-name>LoginController</servlet-name>
-		<servlet-class>Controllers.LoginController</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>LoginController</servlet-name>
-		<url-pattern>/LoginController</url-pattern>
-	</servlet-mapping>
+	
 </web-app>

@@ -4,29 +4,25 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>VLATECSOFT | Tecnología en tus manos</title>
+	<title>VLATECSOFT | Administradores</title>
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.jpg">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery-ui.js"></script>
 	<meta name="description" content="Ofrece lo último en Hardware al alcance de tus manos.">
 	<meta property="og:site_name" content="VLATECSOFT | Tecnología en tus manos"/>
-	<meta property="og:url" content="http://vlatecsoft-pw2episunsa.rhcloud.com"/>
+	<meta property="og:url" content="http://1-dot-vlatecsoft.appspot.com"/>
 	<meta property="og:title" content="VLATECSOFT | Tecnología en tus manos"/>
 	<meta property="og:type" content="website"/>
-	<meta property="og:image" content="http://vlatecsoft-pw2episunsa.rhcloud.com/images/default.png"/>
+	<meta property="og:image" content="http://1-dot-vlatecsoft.appspot.com/images/default.png"/>
 	<meta property="og:description" content="Ofrece lo último en Hardware al alcance de tus manos."/>
 </head>
 
 <body>
 <header>
-	<div id="lightbox" class="shadow">
-	<div class="mensaje">
-		<span><i class="icon-cancel"></i></span>
-	</div>
-	</div>
 
 	<div class="container">
 		<div class="logo">
@@ -37,28 +33,28 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="#">Clientes</a>
+					<a>Clientes</a>
 					<ul class="children">
-						<li><a href="#">Lista de Clientes</a></li>
-						<li><a href="#">Eliminar a un Cliente</a></li>
+						<li><a href="consulta-clientes.jsp">Lista de Clientes</a></li>
+						<li><a href="eliminar-cliente.jsp">Eliminar a un Cliente</a></li>
 					</ul>
 				</li>
 				
 				<li>
-					<a href="#">Distribuidores</a>
+					<a>Distribuidores</a>
 					<ul class="children">
-						<li><a href="#">Lista de Distribuidores</a></li>
-						<li><a href="#">Eliminar a un Distribuidor</a></li>
+						<li><a href="consulta-distribuidores.jsp">Lista de Distribuidores</a></li>
+						<li><a href="eliminar-distribuidor.jsp">Eliminar a un Distribuidor</a></li>
 					</ul>
 				</li>
 				
 				
 				<li>
-					<a href="#">Mensajes</a>
+					<a>Mensajes</a>
 					<ul class="children">
-						<li><a href="#">Lista de Mensajes</a></li>
-						<li><a href="#">Actualización de Mensajes</a></li>
-						<li><a href="#">Eliminación de Mensajes</a></li>
+						<li><a href="consulta-contacto.jsp">Lista de Mensajes</a></li>
+						<li><a href="update-contacto.jsp">Actualización de Mensajes</a></li>
+						<li><a href="eliminar-contacto.jsp">Eliminación de Mensajes</a></li>
 					</ul>
 				</li>
 				<li><a href="login-admin.jsp">Cerrar Sesión</a></li>
@@ -68,28 +64,28 @@
 			<i class="icon-cancel"></i>
 			<ul>
 				<li>
-					<a href="#">Clientes</a>
+					<a>Clientes</a>
 					<ul class="children">
-						<li><a href="#">Lista de Clientes</a></li>
-						<li><a href="#">Eliminar a un Cliente</a></li>
+						<li><a href="consulta-clientes.jsp">Lista de Clientes</a></li>
+						<li><a href="eliminar-cliente.jsp">Eliminar a un Cliente</a></li>
 					</ul>
 				</li>
 				
 				<li>
-					<a href="#">Distribuidores</a>
+					<a>Distribuidores</a>
 					<ul class="children">
-						<li><a href="#">Lista de Distribuidores</a></li>
-						<li><a href="#">Eliminar a un Distribuidor</a></li>
+						<li><a href="consulta-distribuidores.jsp">Lista de Distribuidores</a></li>
+						<li><a href="eliminar-distribuidor.jsp">Eliminar a un Distribuidor</a></li>
 					</ul>
 				</li>
 				
 				
 				<li>
-					<a href="#">Mensajes</a>
+					<a>Mensajes</a>
 					<ul class="children">
-						<li><a href="#">Lista de Mensajes</a></li>
-						<li><a href="#">Actualización de Mensajes</a></li>
-						<li><a href="#">Eliminación de Mensajes</a></li>
+						<li><a href="consulta-contacto.jsp">Lista de Mensajes</a></li>
+						<li><a href="update-contacto.jsp">Actualización de Mensajes</a></li>
+						<li><a href="eliminar-contacto.jsp">Eliminación de Mensajes</a></li>
 					</ul>
 				</li>
 				
