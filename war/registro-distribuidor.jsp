@@ -234,23 +234,23 @@
 	       
 	<span class="titSeccion">Contacto Principal</span> 
 	<div class="tablaTitulos"><span class="alignVert">Apellido Paterno</span></div>
-	<div class="cellInput"><input type="text" class="textBox" maxlength="12" size="40" name="apPat"></div>
+	<div class="cellInput"><input type="text" class="textBox" maxlength="12" size="30" name="apPat"></div>
 	<div class="clean"></div>
 	
 	<div class="tablaTitulos"><span class="alignVert">Apellido Materno</span></div>
-	<div class="cellInput"><input type="text" class="textBox"size="40" maxlength="12" name="apMat"></div>
+	<div class="cellInput"><input type="text" class="textBox"size="30" maxlength="12" name="apMat"></div>
 	<div class="clean"></div>
 	
 	<div class="tablaTitulos"><span class="alignVert">Nombres</span></div>
-	<div class="cellInput"><input type="text" class="textBox" maxlength="20"  size="50" name="nombre"></div>
+	<div class="cellInput"><input type="text" class="textBox" maxlength="20"  size="30" name="nombre"></div>
 	<div class="clean"></div>
 	
 	<div class="tablaTitulos"><span class="alignVert">Doc. Identidad</span></div>
-	<div class="cellInput"><input type="text" class="textBox" maxlength="8" name="dni"></div>
+	<div class="cellInput"><input type="text" class="textBox" maxlength="8" size="15"name="dni"></div>
 	<div class="clean"></div>
 	
 	<div class="tablaTitulos"><span class="alignVert">Email</span></div>
-	<div class="cellInput"><input type="text" class="textBox" maxlength="25" size="50" name="email"></div>
+	<div class="cellInput"><input type="text" class="textBox" maxlength="25" size="30" name="email"></div>
 	<div class="clean"></div>
 	
 	<div class="tablaTitulos"><span class="alignVert1">Tel&eacute;fono Movil</span></div>
@@ -270,19 +270,19 @@
 	
 	<span class="titSeccion">Usuario Web</span> 
 	<div class="tablaTitulos"><span class="alignVert">Usuario</span></div>
-	<div class="cellInput"><input type="text" class="textBox" maxlength="8" size="40" name="user"></div>
+	<div class="cellInput"><input type="text" class="textBox" maxlength="12" size="25" name="user"></div>
 	<div class="clean"></div>
 	
 	<div class="tablaTitulos"><span class="alignVert">Contraseña</span></div>
-	<div class="cellInput"><input type="password" class="textBox" maxlength="10" size="40" id="pass" name="pass"></div>
+	<div class="cellInput"><input type="password" class="textBox" maxlength="12" size="25" id="pass" name="pass"></div>
 	<div class="clean"></div>
 	
 	<div class="tablaTitulos"><span class="alignVert">Repita la Contraseña</span></div>
-	<div class="cellInput"><input type="password" class="textBox" maxlength="10" value="" size="40"   id ="cpass"name="cpass"></div>
+	<div class="cellInput"><input type="password" class="textBox" maxlength="12" value="" size="25"   id ="cpass"name="cpass"></div>
 	<div class="clean"></div>
 	<br>
 	<div align="center">
-	<span class="subtitle">T&eacute;rminos de garant&iacute;a</span>
+	<center><span class="subtitle">T&eacute;rminos de garant&iacute;a</span></center>
 	<div class="boxTerGaran">
 	    
 	TERMINOS DE GARANTIA<br><br>

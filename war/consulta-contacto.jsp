@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>VLATECSOFT | Tecnología en tus manos</title>
+	<title>VLATECSOFT | Administradores</title>
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.jpg">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -151,7 +151,7 @@
 		<div class="box1 four1">
 			<ul>
 				<ul class="redes">
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://www.facebook.com/Vlatec-Soft-1450201235273579/"><i class="icon-facebook"></i></a></li>
 					<li><a href="#"><i class="icon-twitter"></i></a></li>
 					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
@@ -165,7 +165,7 @@
 		<div class="container">
 			<ul>
 				<ul class="redes">
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://www.facebook.com/Vlatec-Soft-1450201235273579/"><i class="icon-facebook"></i></a></li>
 					<li><a href="#"><i class="icon-twitter"></i></a></li>
 					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>

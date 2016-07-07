@@ -73,7 +73,7 @@
 						<li><a href="informacion-distribuidor.jsp">Información de la Cuenta</a></li>
 						<li><a href="up-distribuidor.jsp">Actualizar Información</a></li>
 						<li><a href="del-distribuidor.jsp">Eliminar Cuenta</a></li>
-						<li><a href="index.html">Cerrar Sesión</a></li>
+						<li><a href="index.jsp">Cerrar Sesión</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -99,7 +99,7 @@
 						<li><a href="informacion-distribuidor.jsp">Información de la Cuenta</a></li>
 						<li><a href="up-distribuidor.jsp">Actualizar Información</a></li>
 						<li><a href="del-distribuidor.jsp">Eliminar Cuenta</a></li>
-						<li><a href="index.html">Cerrar Sesión</a></li>
+						<li><a href="index.jsp">Cerrar Sesión</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -119,7 +119,7 @@
 	<div id="areaForm">	<!--Area del formulario  Inicio-->	
 	        
 	<form class="" id="mainform" name="mainform" method="POST" action="saveProducto" onSubmit="return validarPasswd()">	
-	       >
+	       
 	<span class="titSeccion">Especificación de Producto</span> 
 	<div class="tablaTitulos"><span class="alignVert">Selecciona un Grupo</span></div>
 	<div class="cellInput">
@@ -144,30 +144,80 @@
 	<div class="tablaTitulos"><span class="alignVert" >Marca</span></div>
 	<div class="cellInput">
 		<select class="textBox" id="marca" name="marca" required>
-		 <option value="" selected>Sin especificar</option>
-		 <optgroup label="Microsoft"> 
-		<option value="m">Advance</option>
-		<option value="f">Alcatel</option>
+		<option value="" selected>Sin especificar</option>
+		<optgroup label="Motherboard"> 
+		<option value="Asus">Asus</option>
+		<option value="Gigabyte">Gigabyte</option>
 		</optgroup>
-		<option value="m">Amazon</option>
-		<option value="f">BenQ</option>
-		<option value="m">Cannon</option>
-		<option value="f">CDP</option>
-		<option value="m">Dell</option>
-		<option value="f">Epson</option>
-		<option value="m">Genius</option>
-		<option value="f">GigaByte</option>
-		<option value="m">HP</option>
-		<option value="f">Intel</option>
-		<option value="m">Lenovo</option>
-		<option value="f">LG</option>
-		<option value="m">Nvidia</option>
-		<option value="f">Panasonic</option>
-		<option value="m">Samsung</option>
-		<option value="f">Sony</option>
-		<option value="f">Toshiba</option>
-		<option value="m">XEROX</option>
-		<option value="f">ZTC</option>
+		<optgroup label="Microprocesador"> 
+		<option value="AMD">AMD</option>
+		<option value="Intel">Intel</option>
+		</optgroup>
+		<optgroup label="Memoria Ram"> 
+		<option value="Adata">Adata</option>
+		<option value="Corsair">Corsair</option>
+		<option value="Crucial">Crucial</option>
+		<option value="CTLife">CTLife</option>
+		<option value="Kingston">Kingston</option>
+		</optgroup>
+		<optgroup label="Disco Duro"> 
+		<option value="Buffalo">Buffalo</option>
+		<option value="Corsair">Corsair</option>
+		<option value="D-link">D-link</option>
+		<option value="Datta">Datta</option>
+		<option value="HP">HP</option>
+		<option value="Kingston">Kingston</option>
+		<option value="Toshiba">Toshiba</option>
+		</optgroup>
+		<optgroup label="Multimedia"> 
+		<option value="Advance">Advance</option>
+		<option value="Genius">Genius</option>
+		<option value="Halion">Halion</option>
+		<option value="Logitech">Logitech</option>
+		<option value="Microsoft">Microsoft</option>
+		</optgroup>
+		<optgroup label="Monitor"> 
+		<option value="Advance">Advance</option>
+		<option value="AOC">AOC</option>
+		<option value="Benq">Benq</option>
+		<option value="Dell">Dell</option>
+		<option value="LG">LG</option>
+		<option value="Samsung">Samsung</option>
+		</optgroup>
+		<optgroup label="Teclado"> 
+		<option value="Advance">Advance</option>
+		<option value="BenQ">BenQ</option>
+		<option value="Genius">Genius</option>
+		</optgroup>
+		<optgroup label="Mouse"> 
+		<option value="Advance">Advance</option>
+		<option value="Corsair">Corsair</option>
+		<option value="EVGA">EVGA</option>
+		<option value="Genius">Genius</option>
+		</optgroup>
+		<optgroup label="Impresora"> 
+		<option value="Canon">Canon</option>
+		<option value="Epson">Epson</option>
+		<option value="HP">HP</option>
+		<option value="Xerox">Xerox</option>
+		</optgroup>
+		<optgroup label="Desktop"> 
+		<option value="Advance">Advance</option>
+		<option value="Dell">Dell</option>
+		</optgroup>
+		<optgroup label="Notebook"> 
+		<option value="Dell">Dell</option>
+		<option value="Lenovo">Lenovo</option>
+		<option value="Panasonic">Panasonic</option>
+		<option value="Toshiba">Toshiba</option>
+		</optgroup>
+		<optgroup label="Consola"> 
+		<option value="Logitech">Logitech</option>
+		<option value="Microsoft">Microsoft</option>
+		<option value="Sony">Sony</option>
+		<option value="Nintendo">Nintendo</option>
+		</optgroup>
+		
 		
 		</select>
 	</div>

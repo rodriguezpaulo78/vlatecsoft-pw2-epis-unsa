@@ -18,6 +18,7 @@
 	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui-1.8.6.min.js"></script>
     <script type="text/javascript" src="js/jquery.ui.datepicker-es.js"></script>
+    
 	<meta name="description" content="Ofrece lo último en Hardware al alcance de tus manos.">
 	<meta property="og:site_name" content="VLATECSOFT | Tecnología en tus manos"/>
 	<meta property="og:url" content="http://1-dot-vlatecsoft.appspot.com"/>
@@ -25,7 +26,7 @@
 	<meta property="og:type" content="website"/>
 	<meta property="og:image" content="http://1-dot-vlatecsoft.appspot.com/images/default.png"/>
 	<meta property="og:description" content="Ofrece lo último en Hardware al alcance de tus manos."/>
-	<script type="text/javascript">
+	<script>
 	$(function() {
 		$('#fecha').datepicker({dateFormat: 'yy-mm-dd', changeMonth: true, changeYear: true, yearRange: '-100:+0'});
 	});
@@ -61,49 +62,6 @@
 		}
 	}
 	</script>
-	<script>
-	/* **********************  validacion del formulario  ****************** */
-	$(document).ready(function(){
-
-$("#frm_registro").validate({  
-rules:{  
-   nombres:{  
-        required:true
-    },
-    
-    /* *** contacto 1 **  */
-	apellidos:{  
-        required:true
-    },
-    fecha:{  
-        required:true ,
-         
-    },
-    sexo:{  
-        required:true ,
-        
-    },
-    user:{  
-        required:true 
-        
-    },
-    pass:{  
-        required:true 
-      
-    },
-    cpass:{  
-        required:true 
-       
-    }
-
-},
-   messages: {
-  
-
-} 		        
-});       
-});  
-	</script>
 </head>
 
 <body>
@@ -124,7 +82,7 @@ rules:{
 		<nav>
 			<ul>
 				<li>
-					<a href="galeria.jsp">Nosotros</a>
+					<a href="nosotros.jsp">Nosotros</a>
 					<ul class="children">
 						<li><a href="nosotros.jsp">¿Quiénes somos?</a></li>
 						<li><a href="galeria.jsp">Galería</a></li>
@@ -135,16 +93,16 @@ rules:{
 				<li>
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
-						<li><a href="#">Productos según Tipo</a></li>
-						<li><a href="#">Productos según Marca</a></li>
-						<li><a href="#">Productos según Precio</a></li>
+						<li><a href="productos-tipo.jsp">Productos según Tipo</a></li>
+						<li><a href="productos-marca.jsp">Productos según Marca</a></li>
+						<li><a href="productos-precio.jsp">Productos según Precio</a></li>
 					</ul>
 				</li>
 				
 				<li><a href="compras.jsp">Compras en Línea</a></li>
 				
 				<li>
-					<a href="servicio.jsp">Servicio Técnico</a>
+					<a href="servicio-pfc.jsp">Servicio Técnico</a>
 					<ul class="children">
 						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
 						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
@@ -158,7 +116,7 @@ rules:{
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
 						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
-						<li><a href="archivos/deltron.pdf">Términos</a></li>
+						<li><a href="archivos/terminos.pdf">Términos</a></li>
 					</ul>
 				</li>
 				<li><a href="contacto.jsp">Contáctanos</a></li>
@@ -169,7 +127,7 @@ rules:{
 			<i class="icon-cancel"></i>
 			<ul>
 				<li>
-					<a href="galeria.jsp">Nosotros</a>
+					<a href="nosotros.jsp">Nosotros</a>
 					<ul class="children">
 						<li><a href="nosotros.jsp">¿Quiénes somos?</a></li>
 						<li><a href="galeria.jsp">Galería</a></li>
@@ -179,14 +137,14 @@ rules:{
 				<li>
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
-						<li><a href="#">Productos según Tipo</a></li>
-						<li><a href="#">Productos según Marca</a></li>
-						<li><a href="#">Productos según Precio</a></li>
+						<li><a href="productos-tipo.jsp">Productos según Tipo</a></li>
+						<li><a href="productos-marca.jsp">Productos según Marca</a></li>
+						<li><a href="productos-precio.jsp">Productos según Precio</a></li>
 					</ul>
 				</li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
 				<li>
-					<a href="servicio.jsp">Servicio Técnico</a>
+					<a href="servicio-pfc.jsp">Servicio Técnico</a>
 					<ul class="children">
 						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
 						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
@@ -200,7 +158,7 @@ rules:{
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
 						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
-						<li><a href="archivos/deltron.pdf">Términos</a></li>
+						<li><a href="archivos/terminos.pdf">Términos</a></li>
 					</ul>
 					</ul>
 				</li>
@@ -225,47 +183,53 @@ rules:{
 	<center><p style='color: #ffffff; background-color: #BC2626'>Ocurrió un error, Intentelo de nuevo.</p></center>
 	<div id="areaForm">	<!--Area del formulario  Inicio-->	
 	        
-	<form class="" id="frm_registro" name="frm_registro" method="POST" action="saveCliente" onSubmit="return validarPasswd()" novalidate>	
-	       
-	<!--	************ Personal Natural o Empresa *******************************	-->
-	
+	<form class="" id="frm_registro" name="frm_registro" method="POST" action="saveCliente" onSubmit="return validarPasswd()">	
+	      
 	<span class="titSeccion">Contacto Principal</span> 
 	<div class="tablaTitulos"><span class="alignVert">Nombres</span></div>
-	<div class="cellInput"><input type="text" class="textBox"  size="40" id="nombres" name="nombres"></div>
+	<div class="cellInput"><input type="text" class="textBox"   maxlength="20" size="40" id="nombres" name="nombres" required></div>
 	<div class="clean"></div>
 	
 	<div class="tablaTitulos"><span class="alignVert">Apellidos</span></div>
-	<div class="cellInput"><input type="text" class="textBox" size="40" id="apellidos" name="apellidos"></div>
+	<div class="cellInput"><input type="text" class="textBox" maxlength="25" size="40" id="apellidos" name="apellidos" required></div>
 	<div class="clean"></div>
 	
 	<div class="tablaTitulos"><span class="alignVert">Fecha de Nacimiento</span></div>
-	<div class="cellInput"><input type="text" class="textBox" id="fecha" name="fecha" size="8"></div>
+	<div class="cellInput"><input type="text" class="textBox" maxlength="10" id="fecha" name="fecha" size="8" required></div>
 	<div class="clean"></div>
 	
-	<div class="tablaTitulos"><span class="alignVert">Sexo</span></div>
-	<div class="cellInput"><select class="textBox" id="sexo" name="sexo"><option value="m">Masculino</option><option value="f">Femenino</option><option value="n" selected>Sin especificar</option></select></div>
-	<div class="clean"></div>
-	            
-	<br>
-				
-	<!--	****************** contacto y Usuario Web************************	-->
+	<div class="tablaTitulos"><span class="alignVert" >Sexo</span></div>
+	<div class="cellInput">
+		<select class="textBox" id="sexo" name="sexo" required>
+		<option value="">Sin especificar</option>
+		<option value="M">Masculino</option>
+		<option value="F">Femenino</option>
+		
+		</select>
+	</div>
+	<div class="clean"></div><br>
+	
 	<span class="titSeccion">Usuario Web</span> 
 	<div class="tablaTitulos"><span class="alignVert">Usuario</span></div>
-	<div class="cellInput"><input type="text" class="textBox" size="40" name="user"></div>
+	<div class="cellInput"><input type="text" class="textBox" size="40" name="user" maxlength="8" required></div>
 	<div class="clean"></div>
 	
 	<div class="tablaTitulos"><span class="alignVert">Contraseña</span></div>
-	<div class="cellInput"><input type="password" class="textBox" size="40" id="pass" name="pass"></div>
+	<div class="cellInput"><input type="password" class="textBox" maxlength="10" size="40" id="pass" name="pass" required></div>
 	<div class="clean"></div>
 	
 	<div class="tablaTitulos"><span class="alignVert">Repita la Contraseña</span></div>
-	<div class="cellInput"><input type="password" class="textBox" value="" size="40"   id ="cpass"name="cpass"></div>
+	<div class="cellInput"><input type="password" class="textBox" value="" size="40"  maxlength="10" id ="cpass"name="cpass" required></div>
 	<div class="clean"></div>
 	<br>
+	<div class="clean"></div><div class="clean"></div>
 	<input  style="color: #ffffff; margin: 0 auto;background-color: #338790" type="submit" name="guardar" id="guardar" value="Guardar">
 	<input  style="color: #ffffff; margin: 0 auto;background-color: #338790" type="reset" value="Borrar" />
+	<div class="clean"></div>
 	</form>
 	</div>
+	</div>
+	
 </section>
 	<br><br><br><br><br><br><br>
 	<div class="franja">
@@ -287,7 +251,7 @@ rules:{
 			<ul>
 				<li><a href="productos.jsp">Lista de Productos</a></li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
-				<li><a href="servicio.jsp">Sérvicio Tecnico</a></li>
+				<li><a href="servicio-pfc.jsp">Sérvicio Tecnico</a></li>
 				<li><a href="galeria.jsp">Información de la Empresa</a></li>
 			</ul>
 		</div>
@@ -295,13 +259,14 @@ rules:{
 			<h3>Soporte</h3>
 			<ul>
 				<li><a href="contacto.jsp">Contacto</a></li>
-				<li>Llámanos (+511) 416 - 2018</li>
+				<li>Llámanos (+51) 959 096 704 </li>
+				<li>vlatecsoft@hotmail.com</li>
 			</ul>
 		</div>
 		<div class="box four">
 			<ul>
 				<ul class="redes">
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://www.facebook.com/Vlatec-Soft-1450201235273579/"><i class="icon-facebook"></i></a></li>
 					<li><a href="#"><i class="icon-twitter"></i></a></li>
 					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
@@ -324,7 +289,7 @@ rules:{
 				<ul>
 				<li><a href="productos.jsp">Lista de Productos</a></li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
-				<li><a href="servicio.jsp">Servicio Técnico</a></li>
+				<li><a href="servicio-pfc.jsp">Servicio Técnico</a></li>
 				<li><a href="galeria.jsp">Información de la Empresa</a></li>
 				</ul>
 			</div>
@@ -332,14 +297,15 @@ rules:{
 			<div class="container">
 				<ul>
 					<li><a href="contacto.jsp">Contacto</a></li>
-					<li>Llámanos (+511) 416 - 2018</li>
+					<li>Llámanos (+51) 959 096 704 </li>
+					<li>vlatecsoft@hotmail.com</li>
 				</ul>
 			</div>
 		</div>
 		<div class="container">
 			<ul>
 				<ul class="redes">
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://www.facebook.com/Vlatec-Soft-1450201235273579/"><i class="icon-facebook"></i></a></li>
 					<li><a href="#"><i class="icon-twitter"></i></a></li>
 					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>

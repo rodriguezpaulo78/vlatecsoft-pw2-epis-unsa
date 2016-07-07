@@ -58,7 +58,7 @@
 						<li><a href="informacion-distribuidor.jsp">Información de la Cuenta</a></li>
 						<li><a href="up-distribuidor.jsp">Actualizar Información</a></li>
 						<li><a href="del-distribuidor.jsp">Eliminar Cuenta</a></li>
-						<li><a href="index.html">Cerrar Sesión</a></li>
+						<li><a href="index.jsp">Cerrar Sesión</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -84,7 +84,7 @@
 						<li><a href="informacion-distribuidor.jsp">Información de la Cuenta</a></li>
 						<li><a href="up-distribuidor.jsp">Actualizar Información</a></li>
 						<li><a href="del-distribuidor.jsp">Eliminar Cuenta</a></li>
-						<li><a href="index.html">Cerrar Sesión</a></li>
+						<li><a href="index.jsp">Cerrar Sesión</a></li>
 					</ul>
 				</li>
 			</ul>

@@ -134,7 +134,7 @@
 			<div class="title">
 				<h1>Tienda Virtual</h1>
 				<ul>
-					<li><a href="tienda.jsp">Acceder</a></li>
+					<li><a href="#">Proximamente</a></li>
 				</ul>
 			</div>
 		</div>

@@ -162,7 +162,7 @@
 		<div class="box1 four1">
 			<ul>
 				<ul class="redes">
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://www.facebook.com/Vlatec-Soft-1450201235273579/"><i class="icon-facebook"></i></a></li>
 					<li><a href="#"><i class="icon-twitter"></i></a></li>
 					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
@@ -176,7 +176,7 @@
 		<div class="container">
 			<ul>
 				<ul class="redes">
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://www.facebook.com/Vlatec-Soft-1450201235273579/"><i class="icon-facebook"></i></a></li>
 					<li><a href="#"><i class="icon-twitter"></i></a></li>
 					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>

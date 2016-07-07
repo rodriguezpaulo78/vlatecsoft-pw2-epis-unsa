@@ -8,17 +8,16 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.jpg">
 	<link rel="stylesheet" type="text/css" href="../css/jquery-ui-themes-1.11.2/themes/dot-luv/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="../css/iniciarSesionUsuario.css">
-	
 
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery-ui.js"></script>
 	<meta name="description" content="Ofrece lo último en Hardware al alcance de tus manos.">
 	<meta property="og:site_name" content="VLATECSOFT | Tecnología en tus manos"/>
-	<meta property="og:url" content="http://vlatecsoft-pw2episunsa.rhcloud.com"/>
+	<meta property="og:url" content="http://1-dot-vlatecsoft.appspot.com"/>
 	<meta property="og:title" content="VLATECSOFT | Tecnología en tus manos"/>
 	<meta property="og:type" content="website"/>
-	<meta property="og:image" content="http://vlatecsoft-pw2episunsa.rhcloud.com/images/default.png"/>
+	<meta property="og:image" content="http://1-dot-vlatecsoft.appspot.com/images/default.png"/>
 	<meta property="og:description" content="Ofrece lo último en Hardware al alcance de tus manos."/>
 	
 </head>
@@ -33,15 +32,13 @@
 	<h1><font color="white" face="arial">Hola!, para continuar primero Inicia Sesión</font></h1>
 	</div>
 	
-	
-	
 	<div id="texto">
 	<h1><font color="white" face="arial">ACCESO DE CLIENTES</font></h1>
 	</div>
 
 	<div id="form-main">
 		<div id="form-div">
-			<form class="form" action="loginControllerDistribuidor" method="post">
+			<form class="form" action="loginControllerCliente" method="post">
 			<p class="name">
 				<input type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" name="username" id="usuario" placeholder="Nombre de usuario" maxlength="12" required="required" autofocus="autofocus"/>
 			</p>
@@ -57,12 +54,8 @@
 	<h1><font color="white" face="arial">¿No tienes una cuenta?</font></h1>
 	</div>
 <br>
-	
-			
 		<a  id="button-blue1" href="registro-cliente.jsp">Regístrate Aquí Cliente</a>
-			
-	
-	
+		
 	</center>
 	
 </body>

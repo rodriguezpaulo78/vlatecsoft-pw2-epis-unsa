@@ -187,11 +187,11 @@
 	      
 	<span class="titSeccion">Contacto Principal</span> 
 	<div class="tablaTitulos"><span class="alignVert">Nombres</span></div>
-	<div class="cellInput"><input type="text" class="textBox"   maxlength="20" size="40" id="nombres" name="nombres" required></div>
+	<div class="cellInput"><input type="text" class="textBox"   maxlength="20" size="30" id="nombres" name="nombres" required></div>
 	<div class="clean"></div>
 	
 	<div class="tablaTitulos"><span class="alignVert">Apellidos</span></div>
-	<div class="cellInput"><input type="text" class="textBox" maxlength="25" size="40" id="apellidos" name="apellidos" required></div>
+	<div class="cellInput"><input type="text" class="textBox" maxlength="25" size="30" id="apellidos" name="apellidos" required></div>
 	<div class="clean"></div>
 	
 	<div class="tablaTitulos"><span class="alignVert">Fecha de Nacimiento</span></div>
@@ -211,15 +211,15 @@
 	
 	<span class="titSeccion">Usuario Web</span> 
 	<div class="tablaTitulos"><span class="alignVert">Usuario</span></div>
-	<div class="cellInput"><input type="text" class="textBox" size="40" name="user" maxlength="8" required></div>
+	<div class="cellInput"><input type="text" class="textBox" size="25" name="user" maxlength="12" required></div>
 	<div class="clean"></div>
 	
 	<div class="tablaTitulos"><span class="alignVert">Contraseña</span></div>
-	<div class="cellInput"><input type="password" class="textBox" maxlength="10" size="40" id="pass" name="pass" required></div>
+	<div class="cellInput"><input type="password" class="textBox" maxlength="12" size="25" id="pass" name="pass" required></div>
 	<div class="clean"></div>
 	
 	<div class="tablaTitulos"><span class="alignVert">Repita la Contraseña</span></div>
-	<div class="cellInput"><input type="password" class="textBox" value="" size="40"  maxlength="10" id ="cpass"name="cpass" required></div>
+	<div class="cellInput"><input type="password" class="textBox" value="" size="25"  maxlength="12" id ="cpass"name="cpass" required></div>
 	<div class="clean"></div>
 	<br>
 	<div class="clean"></div><div class="clean"></div>

@@ -5,8 +5,8 @@
 <head>
 <meta http-equiv="Refresh" content="5;url=login-admin.jsp">
 <title>Error</title>
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.jpg">
 <link rel="stylesheet" type="text/css" href="../css/iniciarSesionUsuario.css">
-
 </head>
 <body>
 

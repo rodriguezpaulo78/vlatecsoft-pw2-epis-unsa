@@ -7,7 +7,7 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 
-import ServicesModel.AuthenticatorAdmin;
+import ServicesModel.AuthenticatorCliente;
 import ServicesModel.Users;
  
 //import sun.text.normalizer.ICUBinary.Authenticate;
@@ -26,7 +26,7 @@ public class LoginControllerCliente extends HttpServlet {
 		String password = request.getParameter("password");
 		RequestDispatcher rd = null;
  
-		AuthenticatorAdmin authenticator = new AuthenticatorAdmin();
+		AuthenticatorCliente authenticator = new AuthenticatorCliente();
 		String result = authenticator.authenticate(username, password);
 		if (result.equals("success")) {
 			rd = request.getRequestDispatcher("/index.jsp");

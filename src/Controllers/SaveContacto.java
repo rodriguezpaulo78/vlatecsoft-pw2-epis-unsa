@@ -24,11 +24,11 @@ public class SaveContacto extends HttpServlet {
 		
 		try{
 			pm.makePersistent(p);
-			resp.sendRedirect("sucess.jsp");
+			resp.sendRedirect("sucess-registro.jsp");
 			
 		}catch(Exception e){
 			System.out.println(e);
-			resp.sendRedirect("error.jsp");
+			resp.sendRedirect("error-registro.jsp");
 		}finally{
 			pm.close();
 		}

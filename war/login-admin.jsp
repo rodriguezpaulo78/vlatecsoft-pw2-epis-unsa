@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>VLATECSOFT | Administradores</title>
+	<title>VLATECSOFT | Iniciar Sesión</title>
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.jpg">
 	<link rel="stylesheet" type="text/css" href="../css/jquery-ui-themes-1.11.2/themes/dot-luv/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="../css/iniciarSesionUsuario.css">
@@ -14,10 +14,10 @@
 	<script src="js/jquery-ui.js"></script>
 	<meta name="description" content="Ofrece lo último en Hardware al alcance de tus manos.">
 	<meta property="og:site_name" content="VLATECSOFT | Tecnología en tus manos"/>
-	<meta property="og:url" content="http://vlatecsoft-pw2episunsa.rhcloud.com"/>
+	<meta property="og:url" content="http://1-dot-vlatecsoft.appspot.com"/>
 	<meta property="og:title" content="VLATECSOFT | Tecnología en tus manos"/>
 	<meta property="og:type" content="website"/>
-	<meta property="og:image" content="http://vlatecsoft-pw2episunsa.rhcloud.com/images/default.png"/>
+	<meta property="og:image" content="http://1-dot-vlatecsoft.appspot.com/images/default.png"/>
 	<meta property="og:description" content="Ofrece lo último en Hardware al alcance de tus manos."/>
 	<script language="javascript">
 		alert("Atención! - Está a punto de ingresar a un Sitio exclusivo para Administradores!");
@@ -33,7 +33,6 @@
 	<div id="texto1">
 	<h1><font color="white" face="arial">Bienvenido.</font></h1>
 	</div>
-	
 	
 	<div id="textodis">
 	<h1><font color="white" face="arial">ACCESO DE ADMINISTRADORES</font></h1>
@@ -53,7 +52,6 @@
 		</div>
 	</div>
 
-	
 	</center>
 	
 </body>

@@ -24,7 +24,8 @@
 <body>
 
 	<div class="top-legal">
-	<header>
+	
+<header>
 	<div id="lightbox" class="shadow">
 	<div class="mensaje">
 		<span><i class="icon-cancel"></i></span>
@@ -52,16 +53,16 @@
 				<li>
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
-						<li><a href="#">Productos según Tipo</a></li>
-						<li><a href="#">Productos según Marca</a></li>
-						<li><a href="#">Productos según Precio</a></li>
+						<li><a href="productos-tipo.jsp">Productos según Tipo</a></li>
+						<li><a href="productos-marca.jsp">Productos según Marca</a></li>
+						<li><a href="productos-precio.jsp">Productos según Precio</a></li>
 					</ul>
 				</li>
 				
 				<li><a href="compras.jsp">Compras en Línea</a></li>
 				
 				<li>
-					<a href="servicio.jsp">Servicio Técnico</a>
+					<a href="servicio-pfc.jsp">Servicio Técnico</a>
 					<ul class="children">
 						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
 						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
@@ -75,7 +76,7 @@
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
 						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
-						<li><a href="archivos/deltron.pdf">Términos</a></li>
+						<li><a href="archivos/terminos.pdf">Términos</a></li>
 					</ul>
 				</li>
 				<li><a href="contacto.jsp">Contáctanos</a></li>
@@ -96,14 +97,14 @@
 				<li>
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
-						<li><a href="#">Productos según Tipo</a></li>
-						<li><a href="#">Productos según Marca</a></li>
-						<li><a href="#">Productos según Precio</a></li>
+						<li><a href="productos-tipo.jsp">Productos según Tipo</a></li>
+						<li><a href="productos-marca.jsp">Productos según Marca</a></li>
+						<li><a href="productos-precio.jsp">Productos según Precio</a></li>
 					</ul>
 				</li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
 				<li>
-					<a href="servicio.jsp">Servicio Técnico</a>
+					<a href="servicio-pfc.jsp">Servicio Técnico</a>
 					<ul class="children">
 						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
 						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
@@ -117,7 +118,7 @@
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
 						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
-						<li><a href="archivos/deltron.pdf">Términos</a></li>
+						<li><a href="archivos/terminos.pdf">Términos</a></li>
 					</ul>
 					</ul>
 				</li>
@@ -159,18 +160,7 @@ cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js"
 var c = document.getElementsByTagName("script")[0];
 c.parentNode.insertBefore(cp, c); })(); </script>
 
-	<div class="franja2">
-		<div class="container"><p>Accesorios Hardware para Computadora</p></div>
-	</div>
 	
-		
-	<div class="franja2">
-		<div class="container"><p>Impresoras</p></div>
-	</div>
-	
-	<div class="franja2">
-		<div class="container"><p>Consolas para Videojuegos</p></div>
-	</div>
 	
 	</center></div>
 	
@@ -184,44 +174,44 @@ c.parentNode.insertBefore(cp, c); })(); </script>
 		<thead><tr><th>Título</th><th>Descarga</th></tr></thead>
 		<tbody>
 		<tr>
-			<td>Doc1</td>
-			<td width="80px"><a href="archivos/nocas.pdf"><img src="images/pdf.jpg"></a></td>
+			<td>Curso Basico de Montaje</td>
+			<td width="80px"><a href="archivos/cbmo.pdf"><img src="images/pdf.jpg"></a></td>
 		</tr>
 		<tr class="alt">
-			<td>Doc2</td>
+			<td>Curso de Redes</td>
 			<td><a href="archivos/nocas.pdf"><img src="images/powerpoint.jpg"></a></td>
 		</tr>
 		<tr>
-			<td>Doc3</td>
-			<td><a href="archivos/nocas.pdf"><img src="images/pdf.jpg"></a></td>
+			<td>Construir una PC</td>
+			<td><a href="archivos/cpc.pdf"><img src="images/pdf.jpg"></a></td>
 		</tr>
 		<tr class="alt">
-			<td>Doc4</td>
-			<td><a href="archivos/nocas.pdf"><img src="images/word.png"></a></td>
+			<td>Estructura de una PC</td>
+			<td><a href="archivos/epc.doc"><img src="images/word.png"></a></td>
 		</tr>
 		<tr>
-			<td>Doc5</td>
-			<td><a href="archivos/nocas.pdf"><img src="images/excel.png"></a></td>
+			<td>Análisis Matricial</td>
+			<td><a href="archivos/hardware.pdf"><img src="images/excel.png"></a></td>
 		</tr>
 		<tr class="alt">
-			<td>Doc4</td>
-			<td><a href="archivos/nocas.pdf"><img src="images/word.png"></a></td>
+			<td>Como Formatear un Disco Duro</td>
+			<td><a href="archivos/cfdd1.doc"><img src="images/word.png"></a></td>
 		</tr>
 		<tr>
-			<td>Doc1</td>
-			<td width="80px"><a href="archivos/nocas.pdf"><img src="images/pdf.jpg"></a></td>
+			<td>Manual de Hardware</td>
+			<td width="80px"><a href="archivos/hardware.pdf"><img src="images/pdf.jpg"></a></td>
 		</tr>
 		<tr>
-			<td>Doc1</td>
-			<td width="80px"><a href="archivos/nocas.pdf"><img src="images/pdf.jpg"></a></td>
+			<td>Manual del Disco Duro</td>
+			<td width="80px"><a href="archivos/mdd.pdf"><img src="images/pdf.jpg"></a></td>
 		</tr>
 		<tr class="alt">
-			<td>Doc4</td>
-			<td><a href="archivos/nocas.pdf"><img src="images/word.png"></a></td>
+			<td>Manual de como formatear un Disco Duro</td>
+			<td><a href="archivos/mcdff.doc"><img src="images/word.png"></a></td>
 		</tr>
 		<tr class="alt">
-			<td>Doc4</td>
-			<td><a href="archivos/nocas.pdf"><img src="images/word.png"></a></td>
+			<td>Montaje y Configuracion de PC</td>
+			<td><a href="archivos/smcpc.doc"><img src="images/word.png"></a></td>
 		</tr>
 		</tbody>
 	</table></div>
@@ -245,7 +235,7 @@ c.parentNode.insertBefore(cp, c); })(); </script>
 			<ul>
 				<li><a href="productos.jsp">Lista de Productos</a></li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
-				<li><a href="servicio.jsp">Sérvicio Tecnico</a></li>
+				<li><a href="servicio-pfc.jsp">Sérvicio Tecnico</a></li>
 				<li><a href="galeria.jsp">Información de la Empresa</a></li>
 			</ul>
 		</div>
@@ -253,13 +243,14 @@ c.parentNode.insertBefore(cp, c); })(); </script>
 			<h3>Soporte</h3>
 			<ul>
 				<li><a href="contacto.jsp">Contacto</a></li>
-				<li>Llámanos (+511) 416 - 2018</li>
+				<li>Llámanos (+51) 959 096 704 </li>
+				<li>vlatecsoft@hotmail.com</li>
 			</ul>
 		</div>
 		<div class="box four">
 			<ul>
 				<ul class="redes">
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://www.facebook.com/Vlatec-Soft-1450201235273579/"><i class="icon-facebook"></i></a></li>
 					<li><a href="#"><i class="icon-twitter"></i></a></li>
 					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
@@ -282,7 +273,7 @@ c.parentNode.insertBefore(cp, c); })(); </script>
 				<ul>
 				<li><a href="productos.jsp">Lista de Productos</a></li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
-				<li><a href="servicio.jsp">Servicio Técnico</a></li>
+				<li><a href="servicio-pfc.jsp">Servicio Técnico</a></li>
 				<li><a href="galeria.jsp">Información de la Empresa</a></li>
 				</ul>
 			</div>
@@ -290,14 +281,15 @@ c.parentNode.insertBefore(cp, c); })(); </script>
 			<div class="container">
 				<ul>
 					<li><a href="contacto.jsp">Contacto</a></li>
-					<li>Llámanos (+511) 416 - 2018</li>
+					<li>Llámanos (+51) 959 096 704 </li>
+					<li>vlatecsoft@hotmail.com</li>
 				</ul>
 			</div>
 		</div>
 		<div class="container">
 			<ul>
 				<ul class="redes">
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://www.facebook.com/Vlatec-Soft-1450201235273579/"><i class="icon-facebook"></i></a></li>
 					<li><a href="#"><i class="icon-twitter"></i></a></li>
 					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>

@@ -38,7 +38,7 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="galeria.jsp">Nosotros</a>
+					<a href="nosotros.jsp">Nosotros</a>
 					<ul class="children">
 						<li><a href="nosotros.jsp">¿Quiénes somos?</a></li>
 						<li><a href="galeria.jsp">Galería</a></li>
@@ -49,16 +49,16 @@
 				<li>
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
-						<li><a href="#">Productos según Tipo</a></li>
-						<li><a href="#">Productos según Marca</a></li>
-						<li><a href="#">Productos según Precio</a></li>
+						<li><a href="productos-tipo.jsp">Productos según Tipo</a></li>
+						<li><a href="productos-marca.jsp">Productos según Marca</a></li>
+						<li><a href="productos-precio.jsp">Productos según Precio</a></li>
 					</ul>
 				</li>
 				
 				<li><a href="compras.jsp">Compras en Línea</a></li>
 				
 				<li>
-					<a>Servicio Técnico</a>
+					<a href="servicio-pfc.jsp">Servicio Técnico</a>
 					<ul class="children">
 						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
 						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
@@ -72,7 +72,7 @@
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
 						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
-						<li><a href="archivos/deltron.pdf">Términos</a></li>
+						<li><a href="archivos/terminos.pdf">Términos</a></li>
 					</ul>
 				</li>
 				<li><a href="contacto.jsp">Contáctanos</a></li>
@@ -83,7 +83,7 @@
 			<i class="icon-cancel"></i>
 			<ul>
 				<li>
-					<a href="galeria.jsp">Nosotros</a>
+					<a href="nosotros.jsp">Nosotros</a>
 					<ul class="children">
 						<li><a href="nosotros.jsp">¿Quiénes somos?</a></li>
 						<li><a href="galeria.jsp">Galería</a></li>
@@ -93,14 +93,14 @@
 				<li>
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
-						<li><a href="#">Productos según Tipo</a></li>
-						<li><a href="#">Productos según Marca</a></li>
-						<li><a href="#">Productos según Precio</a></li>
+						<li><a href="productos-tipo.jsp">Productos según Tipo</a></li>
+						<li><a href="productos-marca.jsp">Productos según Marca</a></li>
+						<li><a href="productos-precio.jsp">Productos según Precio</a></li>
 					</ul>
 				</li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
 				<li>
-					<a>Servicio Técnico</a>
+					<a href="servicio-pfc.jsp">Servicio Técnico</a>
 					<ul class="children">
 						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
 						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
@@ -114,7 +114,7 @@
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
 						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
-						<li><a href="archivos/deltron.pdf">Términos</a></li>
+						<li><a href="archivos/terminos.pdf">Términos</a></li>
 					</ul>
 					</ul>
 				</li>
@@ -435,7 +435,7 @@
 			<ul>
 				<li><a href="productos.jsp">Lista de Productos</a></li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
-				<li><a href="servicio.jsp">Sérvicio Tecnico</a></li>
+				<li><a href="servicio-pfc.jsp">Sérvicio Tecnico</a></li>
 				<li><a href="galeria.jsp">Información de la Empresa</a></li>
 			</ul>
 		</div>
@@ -443,13 +443,14 @@
 			<h3>Soporte</h3>
 			<ul>
 				<li><a href="contacto.jsp">Contacto</a></li>
-				<li>Llámanos (+511) 416 - 2018</li>
+				<li>Llámanos (+51) 959 096 704 </li>
+				<li>vlatecsoft@hotmail.com</li>
 			</ul>
 		</div>
 		<div class="box four">
 			<ul>
 				<ul class="redes">
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://www.facebook.com/Vlatec-Soft-1450201235273579/"><i class="icon-facebook"></i></a></li>
 					<li><a href="#"><i class="icon-twitter"></i></a></li>
 					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
@@ -472,7 +473,7 @@
 				<ul>
 				<li><a href="productos.jsp">Lista de Productos</a></li>
 				<li><a href="compras.jsp">Compras en Línea</a></li>
-				<li><a href="servicio.jsp">Servicio Técnico</a></li>
+				<li><a href="servicio-pfc.jsp">Servicio Técnico</a></li>
 				<li><a href="galeria.jsp">Información de la Empresa</a></li>
 				</ul>
 			</div>
@@ -480,14 +481,15 @@
 			<div class="container">
 				<ul>
 					<li><a href="contacto.jsp">Contacto</a></li>
-					<li>Llámanos (+511) 416 - 2018</li>
+					<li>Llámanos (+51) 959 096 704 </li>
+					<li>vlatecsoft@hotmail.com</li>
 				</ul>
 			</div>
 		</div>
 		<div class="container">
 			<ul>
 				<ul class="redes">
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://www.facebook.com/Vlatec-Soft-1450201235273579/"><i class="icon-facebook"></i></a></li>
 					<li><a href="#"><i class="icon-twitter"></i></a></li>
 					<li><a href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
