@@ -1,41 +1,37 @@
 package Controllers;
-
 import java.io.IOException;
-import java.util.ArrayList;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 
-import ServicesModel.AuthenticatorAdmin;
-import ServicesModel.Users;
- 
-//import sun.text.normalizer.ICUBinary.Authenticate;
- 
+@SuppressWarnings("serial")
 public class LoginControllerAdmin extends HttpServlet {
-	private static final long serialVersionUID = 1L;
- 
-	public LoginControllerAdmin() {
-		super();
-	}
-	
-	protected void doPost(HttpServletRequest request,
-		HttpServletResponse response) throws IOException, ServletException {
- 
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
-		RequestDispatcher rd = null;
- 
-		AuthenticatorAdmin authenticator = new AuthenticatorAdmin();
-		String result = authenticator.authenticate(username, password);
-		if (result.equals("success")) {
-			rd = request.getRequestDispatcher("/admin.jsp");
-			Users user = new Users(username, password);
-			request.setAttribute("user", user);
-		} else {
-			rd = request.getRequestDispatcher("/error-login-admin.jsp");
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+		
+//		resp.setContentType("text/plain");
+		String user = req.getParameter("username");
+		String pass = req.getParameter("password");
+		
+		if ((((user.equalsIgnoreCase("Paulo"))&& (pass.equals("123456")))
+				||(((user.equalsIgnoreCase("Arturo"))&& (pass.equals("123456")))
+				||(((user.equalsIgnoreCase("Carlos"))&& (pass.equals("123456")))
+				||(((user.equalsIgnoreCase("Danilo"))&& (pass.equals("123456")))))))){
+			HttpSession misesion= req.getSession(true);
+			
+			misesion.setAttribute("username", user);
+			
+			
+		     RequestDispatcher rd = getServletContext().getRequestDispatcher("/admin.jsp");
+		     rd.forward(req, resp);
 		}
-		rd.forward(request, response);
+		else{
+			HttpSession misesion= req.getSession(true);
+				
+			misesion.setAttribute("username", false);
+			RequestDispatcher rd = getServletContext().getRequestDispatcher("/error-login-admin.jsp");
+		     rd.forward(req, resp);
+		     
+		  
+		}
 	}
- 
 }

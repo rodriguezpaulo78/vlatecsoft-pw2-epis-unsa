@@ -33,9 +33,12 @@ public class Producto {
 	private String fecha;
 
 	@Persistent
+	private String precio;
+	
+	@Persistent
 	 private boolean contest;
 	 
-	 public Producto(String grupo, String marca, String linea,String item, String descripcion, String fecha,boolean contest) {
+	 public Producto(String grupo, String marca, String linea,String item, String descripcion, String fecha,String precio,boolean contest) {
 		super();
 		this.grupo = grupo;
 		this.marca = marca;
@@ -44,6 +47,7 @@ public class Producto {
 		this.descripcion = descripcion;
 		this.fecha = fecha;
 		this.contest = contest;
+		this.precio = precio;
 	}
 
 	public String getGrupo() {
@@ -92,6 +96,14 @@ public class Producto {
 
 	public void setFecha(String fecha) {
 		this.fecha = fecha;
+	}
+	
+	public String getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(String precio) {
+		this.precio = precio;
 	}
 	
 	public boolean getContest() {

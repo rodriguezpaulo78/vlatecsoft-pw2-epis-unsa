@@ -1,5 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%HttpSession sesionadmin= request.getSession(); %>
+    <% if(sesionadmin.getAttribute("username") == null){
+    	response.sendRedirect("login-distribuidor-notfound.jsp");
+    } %>
 
 <head>
 	<meta charset="UTF-8">
@@ -12,13 +18,13 @@
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery-ui.js"></script>
-	<meta name="description" content="Ofrece lo 鷏timo en Hardware al alcance de tus manos.">
-	<meta property="og:site_name" content="VLATECSOFT | Tecnolog韆 en tus manos"/>
+	<meta name="description" content="Ofrece lo 煤ltimo en Hardware al alcance de tus manos.">
+	<meta property="og:site_name" content="VLATECSOFT | Tecnolog铆a en tus manos"/>
 	<meta property="og:url" content="http://1-dot-vlatecsoft.appspot.com"/>
-	<meta property="og:title" content="VLATECSOFT | Tecnolog韆 en tus manos"/>
+	<meta property="og:title" content="VLATECSOFT | Tecnolog铆a en tus manos"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:image" content="http://1-dot-vlatecsoft.appspot.com/images/default.png"/>
-	<meta property="og:description" content="Ofrece lo 鷏timo en Hardware al alcance de tus manos."/>
+	<meta property="og:description" content="Ofrece lo 煤ltimo en Hardware al alcance de tus manos."/>
 </head>
 
 <body>
@@ -52,15 +58,18 @@
 				<li>
 					<a href="eliminar-producto.jsp">Eliminar Producto</a>
 				</li>
-				<li>
-					<a>Usuario</a>
+				<%HttpSession misesion= request.getSession(); %>
+				<% if(misesion.getAttribute("username") == null){%>
+    			<li><a href="login-cliente.jsp">Iniciar Sesi贸n</a></li>
+   				<% } else {%>
+   				<li>
+					<a><% out.println(misesion.getAttribute("username")); %></a>
 					<ul class="children">
-						<li><a href="informacion-distribuidor.jsp">Informaci髇 de la Cuenta</a></li>
-						<li><a href="up-distribuidor.jsp">Actualizar Informaci髇</a></li>
-						<li><a href="del-distribuidor.jsp">Eliminar Cuenta</a></li>
-						<li><a href="index.jsp">Cerrar Sesi髇</a></li>
+						<li><a href="informacion-distribuidor.jsp">Informaci贸n de la Cuenta</a></li>
+						<li><a href="/cerrarSesionDistribuidor">Cerrar Sesi贸n</a></li>
 					</ul>
 				</li>
+   				<% }%>
 			</ul>
 		</nav>
 		<div class="nav-mobil">
@@ -79,14 +88,17 @@
 				<li>
 					<a href="eliminar-producto.jsp">Eliminar Producto</a>
 				</li>
-				<li><a>Usuario</a>
+				<% if(misesion.getAttribute("username") == null){%>
+    			<li><a href="login-cliente.jsp">Iniciar Sesi贸n</a></li>
+   				<% } else {%>
+   				<li>
+					<a><% out.println(misesion.getAttribute("username")); %></a>
 					<ul class="children">
-						<li><a href="informacion-distribuidor.jsp">Informaci髇 de la Cuenta</a></li>
-						<li><a href="up-distribuidor.jsp">Actualizar Informaci髇</a></li>
-						<li><a href="del-distribuidor.jsp">Eliminar Cuenta</a></li>
-						<li><a href="index.jsp">Cerrar Sesi髇</a></li>
+						<li><a href="informacion-distribuidor.jsp">Informaci贸n de la Cuenta</a></li>
+						<li><a href="/cerrarSesionDistribuidor">Cerrar Sesi贸n</a></li>
 					</ul>
 				</li>
+   				<% }%>
 			</ul>
 		</div>
 	</div>
@@ -97,7 +109,7 @@
 <div class="top">
 	<div class="page-title">
 		<div class="container">
-			<div class="h1color"><h1>Bienvenido Distribuidor</h1></div>
+			<div class="h1color"><h1>Bienvenido "<%out.println(misesion.getAttribute("username"));%>"</h1></div>
 		</div>
 	</div>
 </div>

@@ -18,8 +18,9 @@ public class SaveProducto extends HttpServlet {
 		String item = req.getParameter("item");
 		String descripcion = req.getParameter("descripcion");
 		String fecha = req.getParameter("fecha");
+		String precio = req.getParameter("precio");
 		
-		Producto p = new Producto( grupo,  marca,  linea,  item,  descripcion,  fecha, false);
+		Producto p = new Producto( grupo,  marca,  linea,  item,  descripcion,  fecha, precio, false);
 		
 		PersistenceManager pm = PMF.get().getPersistenceManager();
 		resp.setContentType("text/html");

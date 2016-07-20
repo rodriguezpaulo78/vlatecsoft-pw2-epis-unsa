@@ -1,7 +1,11 @@
-
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%HttpSession sesionadmin= request.getSession(); %>
+    <% if(sesionadmin.getAttribute("username") == null){
+    	response.sendRedirect("login-distribuidor-notfound.jsp");
+    } %>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -27,13 +31,13 @@
 	<script type="text/javascript" src="js/jquery-ui-1.8.6.min.js"></script>
 	<script type="text/javascript" src="js/jquery.ui.datepicker-es.js"></script>
 	<link type="text/css" href="css/jquery-ui-1.7.2.custom.css" rel="Stylesheet" />
-	<meta name="description" content="Ofrece lo 鷏timo en Hardware al alcance de tus manos.">
-	<meta property="og:site_name" content="VLATECSOFT | Tecnolog韆 en tus manos"/>
+	<meta name="description" content="Ofrece lo 煤ltimo en Hardware al alcance de tus manos.">
+	<meta property="og:site_name" content="VLATECSOFT | Tecnolog铆a en tus manos"/>
 	<meta property="og:url" content="http://1-dot-vlatecsoft.appspot.com"/>
-	<meta property="og:title" content="VLATECSOFT | Tecnolog韆 en tus manos"/>
+	<meta property="og:title" content="VLATECSOFT | Tecnolog铆a en tus manos"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:image" content="http://1-dot-vlatecsoft.appspot.com/images/default.png"/>
-	<meta property="og:description" content="Ofrece lo 鷏timo en Hardware al alcance de tus manos."/>
+	<meta property="og:description" content="Ofrece lo 煤ltimo en Hardware al alcance de tus manos."/>
 </head>
 
 <body>
@@ -67,15 +71,18 @@
 				<li>
 					<a href="eliminar-producto.jsp">Eliminar Producto</a>
 				</li>
-				<li>
-					<a>Usuario</a>
+				<%HttpSession misesion= request.getSession(); %>
+				<% if(misesion.getAttribute("username") == null){%>
+    			<li><a href="login-cliente.jsp">Iniciar Sesi贸n</a></li>
+   				<% } else {%>
+   				<li>
+					<a><% out.println(misesion.getAttribute("username")); %></a>
 					<ul class="children">
-						<li><a href="informacion-distribuidor.jsp">Informaci髇 de la Cuenta</a></li>
-						<li><a href="up-distribuidor.jsp">Actualizar Informaci髇</a></li>
-						<li><a href="del-distribuidor.jsp">Eliminar Cuenta</a></li>
-						<li><a href="index.jsp">Cerrar Sesi髇</a></li>
+						<li><a href="informacion-distribuidor.jsp">Informaci贸n de la Cuenta</a></li>
+						<li><a href="/cerrarSesionDistribuidor">Cerrar Sesi贸n</a></li>
 					</ul>
 				</li>
+   				<% }%>
 			</ul>
 		</nav>
 		<div class="nav-mobil">
@@ -94,20 +101,22 @@
 				<li>
 					<a href="eliminar-producto.jsp">Eliminar Producto</a>
 				</li>
-				<li><a>Usuario</a>
+				<% if(misesion.getAttribute("username") == null){%>
+    			<li><a href="login-cliente.jsp">Iniciar Sesi贸n</a></li>
+   				<% } else {%>
+   				<li>
+					<a><% out.println(misesion.getAttribute("username")); %></a>
 					<ul class="children">
-						<li><a href="informacion-distribuidor.jsp">Informaci髇 de la Cuenta</a></li>
-						<li><a href="up-distribuidor.jsp">Actualizar Informaci髇</a></li>
-						<li><a href="del-distribuidor.jsp">Eliminar Cuenta</a></li>
-						<li><a href="index.jsp">Cerrar Sesi髇</a></li>
+						<li><a href="informacion-distribuidor.jsp">Informaci贸n de la Cuenta</a></li>
+						<li><a href="/cerrarSesionDistribuidor">Cerrar Sesi贸n</a></li>
 					</ul>
 				</li>
+   				<% }%>
 			</ul>
 		</div>
 	</div>
 	<i class="icon-menu"></i>
 </header>
-
 
 <section class="wrapper">
 <div id="headForm"><!--Cabecera del formulario -->
@@ -120,7 +129,7 @@
 	        
 	<form class="" id="mainform" name="mainform" method="POST" action="saveProducto" onSubmit="return validarPasswd()">	
 	       
-	<span class="titSeccion">Especificaci髇 de Producto</span> 
+	<span class="titSeccion">Especificaci贸n de Producto</span> 
 	<div class="tablaTitulos"><span class="alignVert">Selecciona un Grupo</span></div>
 	<div class="cellInput">
 	<select name="Continent" size="1" onChange="if(!window.refillme){return;}refillme();" required>
@@ -273,7 +282,7 @@
 					<option value="Controles de Juegos">Controles de Juegos</option>
 					<option value="Reproductores Multimedia">Reproductores Multimedia</option>
 					<option value="Microfonos y Auriculares">Microfonos y Auriculares</option>
-					<option value="Parlantes Est閞eo"> Parlantes Est閞eo</option>
+					<option value="Parlantes Est茅reo"> Parlantes Est茅reo</option>
 					<option value="Camara Video Conferencia Webcam">Camara Video Conferencia Webcam</option>
 					
 					<!-- Then the countries for North America -->
@@ -367,7 +376,7 @@
 	<div class="clean"></div>
 	<br>
 	
-	<div class="tablaTitulos"><span class="alignVert">Descripci髇</span></div>
+	<div class="tablaTitulos"><span class="alignVert">Descripci贸n</span></div>
 	<div class="cellInput"><textarea name="descripcion" id="descripcion" rows="10" cols="50" required></textarea><br /></div>
 	<div class="clean"></div>
 	<br>
@@ -375,6 +384,11 @@
 	<div class="tablaTitulos"><span class="alignVert">Fecha de Registro</span></div>
 	<div class="cellInput"><input type="text" class="textBox" id="fecha" maxlength="10"  name="fecha" size="8" required></div>
 	<div class="clean"></div>
+	
+	<div class="tablaTitulos"><span class="alignVert">Precio del Producto</span></div>
+	<div class="cellInput"><input type="text" class="textBox" id="precio" maxlength="7"  name="precio" size="6" required></div>
+	<div class="clean"></div>
+	
 	
 	<div class="clean"></div><div class="clean"></div>
 	<input  style="color: #ffffff; margin: 0 auto;background-color: #338790" type="submit" name="guardar" id="guardar" value="Guardar">

@@ -19,9 +19,7 @@
 	<meta property="og:type" content="website"/>
 	<meta property="og:image" content="http://1-dot-vlatecsoft.appspot.com/images/default.png"/>
 	<meta property="og:description" content="Ofrece lo último en Hardware al alcance de tus manos."/>
-	<script language="javascript">
-		alert("Atención! - Está a punto de ingresar a un Sitio exclusivo para Administradores!");
-	</script>
+	
 </head>
 
 <body>

@@ -1,8 +1,11 @@
-
-		
-		<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%HttpSession sesionadmin= request.getSession(); %>
+    <% if(sesionadmin.getAttribute("username") == null){
+    	response.sendRedirect("login-admin-notfound.jsp");
+    } %>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -13,13 +16,21 @@
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery-ui.js"></script>
-	<meta name="description" content="Ofrece lo 鷏timo en Hardware al alcance de tus manos.">
-	<meta property="og:site_name" content="VLATECSOFT | Tecnolog韆 en tus manos"/>
+	
+	<link rel="stylesheet" href="css/table.css">
+		<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script language="javascript" src="js/shCore.js"></script>
+<script language="javascript" src="js/shBrushJScript.js"></script>
+<script language="javascript">$(function() { dp.SyntaxHighlighter.HighlightAll('code'); });</script><script type="text/javascript" src="js/table.js"></script>
+	
+	<meta name="description" content="Ofrece lo 煤ltimo en Hardware al alcance de tus manos.">
+	<meta property="og:site_name" content="VLATECSOFT | Tecnolog铆a en tus manos"/>
 	<meta property="og:url" content="http://1-dot-vlatecsoft.appspot.com"/>
-	<meta property="og:title" content="VLATECSOFT | Tecnolog韆 en tus manos"/>
+	<meta property="og:title" content="VLATECSOFT | Tecnolog铆a en tus manos"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:image" content="http://1-dot-vlatecsoft.appspot.com/images/default.png"/>
-	<meta property="og:description" content="Ofrece lo 鷏timo en Hardware al alcance de tus manos."/>
+	<meta property="og:description" content="Ofrece lo 煤ltimo en Hardware al alcance de tus manos."/>
 </head>
 
 <body>
@@ -57,11 +68,11 @@
 					<a>Mensajes</a>
 					<ul class="children">
 						<li><a href="consulta-contacto.jsp">Lista de Mensajes</a></li>
-						<li><a href="update-contacto.jsp">Actualizaci髇 de Mensajes</a></li>
-						<li><a href="eliminar-contacto.jsp">Eliminaci髇 de Mensajes</a></li>
+						<li><a href="update-contacto.jsp">Actualizaci贸n de Mensajes</a></li>
+						<li><a href="eliminar-contacto.jsp">Eliminaci贸n de Mensajes</a></li>
 					</ul>
 				</li>
-				<li><a href="login-admin.jsp">Cerrar Sesi髇</a></li>
+				<li><a href="/cerrarSesionAdmin">Cerrar Sesi贸n</a></li>
 			</ul>
 		</nav>
 		<div class="nav-mobil">
@@ -90,12 +101,12 @@
 					<a>Mensajes</a>
 					<ul class="children">
 						<li><a href="consulta-contacto.jsp">Lista de Mensajes</a></li>
-						<li><a href="update-contacto.jsp">Actualizaci髇 de Mensajes</a></li>
-						<li><a href="eliminar-contacto.jsp">Eliminaci髇 de Mensajes</a></li>
+						<li><a href="update-contacto.jsp">Actualizaci贸n de Mensajes</a></li>
+						<li><a href="eliminar-contacto.jsp">Eliminaci贸n de Mensajes</a></li>
 					</ul>
 				</li>
 				
-				<li><a href="login-admin.jsp">Cerrar Sesi髇</a></li>
+				<li><a href="/cerrarSesionAdmin">Cerrar Sesi贸n</a></li>
 			</ul>
 		</div>
 	</div>
@@ -115,23 +126,25 @@
 <% 	PersistenceManager pm = PMF.get().getPersistenceManager();
 	Query q = pm.newQuery(Distribuidor.class);
 	List<Distribuidor> p = (List<Distribuidor>) q.execute();%>
-	<table border='4'>
+	<table border='4' id="t1"  class="example table-autosort table-autofilter table-autopage:10 table-stripeclass:alternate table-page-number:t1page table-page-count:t1pages table-filtered-rowcount:t1filtercount table-rowcount:t1allcount">
 	<THEAD><tr>
-		<th WIDTH="30"> N </th>
-		<th WIDTH="100"> Apellido Paterno </th>
-		<th WIDTH="100"> Apellido Materno </th>
-		<th WIDTH="150"> Nombre </th>
-		<th WIDTH="100"> DNI </th>
-		<th WIDTH="200"> Email </th>
-		<th WIDTH="100"> Telefono </th>
-		<th WIDTH="150"> Usuario </th>
-		<th WIDTH="150"> Password </th>
-		<th WIDTH="150"> Estado </th>
-	</tr></THEAD>
+		<th WIDTH="30" class="table-filterable table-sortable:numeric" > N </th>
+		<th WIDTH="100" class="table-sortable:default"> Apellido Paterno </th>
+		<th WIDTH="100" class="table-sortable:default"> Apellido Materno </th>
+		<th WIDTH="150" class="table-filterable table-sortable:default"> Nombre </th>
+		<th WIDTH="100" class="table-filterable table-sortable:numeric" > DNI </th>
+		<th WIDTH="200" class="table-sortable:default"> Email </th>
+		<th WIDTH="100" class="table-filterable table-sortable:numeric" > Telefono </th>
+		<th WIDTH="150" class="table-sortable:default"> Usuario </th>
+		<th WIDTH="150" class="table-sortable:default"> Password </th>
+		<th WIDTH="150" class="table-filterable table-sortable:default"> Estado </th>
+	</tr></THEAD><tbody>
+		
+
 		<% for(int i=0;i<p.size();i++){ %>
 		<% String estado= (p.get(i).getContest())? "Activo":"No Activo"; %>
 			<form>
-			<tbody>
+			
 				<tr>
 					<td><%=i+1%></td>
 					<td><%=p.get(i).getApPat()%></td>
@@ -144,9 +157,21 @@
 					<td><%=p.get(i).getPass().substring(0,1)+"*********"%></td>
 					<td><%=estado%></td>
 				</tr>
-				</tbody>
+				
 			</form>
 		<%} %>
+		</tbody>
+		<tfoot>
+	<tr>
+		<td class="table-page:previous" style="color:white;text-align:center;cursor:pointer;">Anterior</td>
+		<td colspan="8" style="color:white;text-align:center;">Pagina <span id="t1page"></span>&nbsp;de <span id="t1pages"></span></td>
+		<td class="table-page:next" style="color:white;text-align:center;cursor:pointer;">Siguiente</td>
+		
+	</tr>
+	<tr>
+		<td colspan="10"style="color:white;text-align:center;"><span id="t1filtercount"></span>&nbsp;of <span id="t1allcount"></span>&nbsp;rows match filter(s)</td>
+</tfoot>
+		
 		</table>
 
 			</div>

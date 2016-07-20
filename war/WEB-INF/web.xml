@@ -30,6 +30,32 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<url-pattern>/loginControllerCliente</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>CerrarSesionAdmin</servlet-name>
+		<servlet-class>Controllers.CerrarSesionAdmin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CerrarSesionAdmin</servlet-name>
+		<url-pattern>/cerrarSesionAdmin</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>CerrarSesionCliente</servlet-name>
+		<servlet-class>Controllers.CerrarSesionCliente</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CerrarSesionCliente</servlet-name>
+		<url-pattern>/cerrarSesionCliente</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>CerrarSesionDistribuidor</servlet-name>
+		<servlet-class>Controllers.CerrarSesionDistribuidor</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CerrarSesionDistribuidor</servlet-name>
+		<url-pattern>/cerrarSesionDistribuidor</url-pattern>
+	</servlet-mapping>
+	
 	
 	<servlet>
 		<servlet-name>SaveContacto</servlet-name>

@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Refresh" content="5;url=login-distribuidor.jsp">
+<meta http-equiv="Refresh" content="4;url=login-admin.jsp">
 <title>Error</title>
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.jpg">
 <link rel="stylesheet" type="text/css" href="../css/iniciarSesionUsuario.css">
@@ -10,11 +10,11 @@
     /* Determinamos el tiempo total en segundos */
     var totalTiempo=5;
     /* Determinamos la url donde redireccionar */
-    var url="login-distribuidor.jsp";
+    var url="login-admin.jsp";
  
     function updateReloj()
     {
-        document.getElementById('footer2').innerHTML = "Ingrese los Datos Correctamente, Redireccionando en "+totalTiempo+" segundos";
+        document.getElementById('footer2').innerHTML = "Primero debe Iniciar Sesión para ingresar a esta página!, Redireccionando en "+totalTiempo+" segundos";
  
         if(totalTiempo==0)
         {
@@ -32,9 +32,8 @@
     </script>
 </head>
 <body>
-
 <p id="footer2"></p>
-<p id="footer3">Si no eres redireccionado automáticamente pulsa en el siguiente enlace : <a href="login-distribuidor.jsp"> Inicio de Sesión de Distribuidores.</a></p>
+<p id="footer3">Si no eres redireccionado automáticamente pulsa en el siguiente enlace : <a href="login-admin.jsp"> Inicio de Sesión de Administradores.</a></p>
 
 </body>
 </html>

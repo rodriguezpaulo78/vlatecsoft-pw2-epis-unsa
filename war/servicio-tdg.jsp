@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 
 <!-- Mirrored from www.culqi.com/precio.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 May 2016 02:56:21 GMT -->
@@ -28,7 +28,7 @@
 <body>
 
 <div class="top-precios">
-<header>
+	<header>
 	<div id="lightbox" class="shadow">
 	<div class="mensaje">
 		<span><i class="icon-cancel"></i></span>
@@ -47,43 +47,60 @@
 				<li>
 					<a href="nosotros.jsp">Nosotros</a>
 					<ul class="children">
-						<li><a href="nosotros.jsp">Â¿QuiÃ©nes somos?</a></li>
-						<li><a href="galeria.jsp">GalerÃ­a</a></li>
-						<li><a href="javascript:void(0);" id="opener" class="boton">EscrÃ­benos</a></li>
+						<li><a href="nosotros.jsp">¿Quiénes somos?</a></li>
+						<li><a href="galeria.jsp">Galería</a></li>
+						<li><a href="javascript:void(0);" id="opener" class="boton">Escríbenos</a></li>
 					</ul>
 				</li>
 				
 				<li>
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
-						<li><a href="productos-tipo.jsp">Productos segÃºn Tipo</a></li>
-						<li><a href="productos-marca.jsp">Productos segÃºn Marca</a></li>
-						<li><a href="productos-precio.jsp">Productos segÃºn Precio</a></li>
+						<li><a href="productos-tipo.jsp">Productos según Tipo</a></li>
+						<li><a href="productos-marca.jsp">Marcas</a></li>
+					
 					</ul>
 				</li>
 				
-				<li><a href="compras.jsp">Compras en LÃ­nea</a></li>
+				
 				
 				<li>
-					<a href="servicio-pfc.jsp">Servicio TÃ©cnico</a>
+					<a href="servicio-pfc.jsp">Servicio Técnico</a>
 					<ul class="children">
 						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
 						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
-						<li><a href="servicio-hla.jsp">Horarios y Lugares de AtenciÃ³n</a></li>
-						<li><a href="servicio-tdg.jsp">Tipos de GarantÃ­a</a></li>
-						<li><a href="archivos/nocas.pdf">AtenciÃ³n de otras marcas</a></li>
+						<li><a href="servicio-hla.jsp">Horarios y Lugares de Atención</a></li>
+						<li><a href="servicio-tdg.jsp">Tipos de Garantía</a></li>
+						<li><a href="archivos/nocas.pdf">Atención de otras marcas</a></li>
 					</ul>
 				</li>
 				<li>
 					<a>Distribuidores</a>
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
-						<li><a href="login-distribuidor.jsp">Extranet-ActualizaciÃ³n de Datos</a></li>
-						<li><a href="archivos/terminos.pdf">TÃ©rminos</a></li>
+						<%HttpSession misesion= request.getSession(); %>
+						<% if(misesion.getAttribute("username") != null){%>
+						<li><a href="distribuidores.jsp">Extranet-Actualización de Datos</a></li>
+						<%}else{ %>
+						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
+						<%} %>
+						<li><a href="archivos/terminos.pdf">Términos</a></li>
 					</ul>
 				</li>
-				<li><a href="contacto.jsp">ContÃ¡ctanos</a></li>
-				<li><a href="login-cliente.jsp">Iniciar SesiÃ³n</a></li>
+				<li><a href="contacto.jsp">Contáctanos</a></li>
+				
+    			<% if(misesion.getAttribute("username") == null){%>
+    			<li><a href="login-cliente.jsp">Iniciar Sesión</a></li>
+   				<% } else {%>
+   				<li>
+					<a><% out.println(misesion.getAttribute("username")); %></a>
+					<ul class="children">
+						<li><a href="informacion-cliente.jsp">Información de la Cuenta</a></li>
+						<li><a href="/cerrarSesionCliente">Cerrar Sesión</a></li>
+					</ul>
+				</li>
+   				<% }%>
+				
 			</ul>
 		</nav>
 		<div class="nav-mobil">
@@ -92,42 +109,58 @@
 				<li>
 					<a href="nosotros.jsp">Nosotros</a>
 					<ul class="children">
-						<li><a href="nosotros.jsp">Â¿QuiÃ©nes somos?</a></li>
-						<li><a href="galeria.jsp">GalerÃ­a</a></li>
-						<li class="boton"><a  href="javascript:void(0);" id="opener" class="boton">EscrÃ­benos</a></li>
+						<li><a href="nosotros.jsp">¿Quiénes somos?</a></li>
+						<li><a href="galeria.jsp">Galería</a></li>
+						<li class="boton"><a  href="javascript:void(0);" id="opener" class="boton">Escríbenos</a></li>
 					</ul>
 				</li>
 				<li>
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
-						<li><a href="productos-tipo.jsp">Productos segÃºn Tipo</a></li>
-						<li><a href="productos-marca.jsp">Productos segÃºn Marca</a></li>
-						<li><a href="productos-precio.jsp">Productos segÃºn Precio</a></li>
+						<li><a href="productos-tipo.jsp">Productos según Tipo</a></li>
+						<li><a href="productos-marca.jsp">Marcas</a></li>
+						
 					</ul>
 				</li>
-				<li><a href="compras.jsp">Compras en LÃ­nea</a></li>
+				
 				<li>
-					<a href="servicio-pfc.jsp">Servicio TÃ©cnico</a>
+					<a href="servicio-pfc.jsp">Servicio Técnico</a>
 					<ul class="children">
 						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
 						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
-						<li><a href="servicio-hla.jsp">Horarios y Lugares de AtenciÃ³n</a></li>
-						<li><a href="servicio-tdg.jsp">Tipos de GarantÃ­a</a></li>
-						<li><a href="archivos/nocas.pdf">AtenciÃ³n de otras marcas</a></li>
+						<li><a href="servicio-hla.jsp">Horarios y Lugares de Atención</a></li>
+						<li><a href="servicio-tdg.jsp">Tipos de Garantía</a></li>
+						<li><a href="archivos/nocas.pdf">Atención de otras marcas</a></li>
 					</ul>
 				</li>
 				<li>
 					<a>Distribuidores</a>
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
-						<li><a href="login-distribuidor.jsp">Extranet-ActualizaciÃ³n de Datos</a></li>
-						<li><a href="archivos/terminos.pdf">TÃ©rminos</a></li>
+						<% if(misesion.getAttribute("username") != null){%>
+						<li><a href="distribuidores.jsp">Extranet-Actualización de Datos</a></li>
+						<%}else{ %>
+						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
+						<%} %>
+						<li><a href="archivos/terminos.pdf">Términos</a></li>
 					</ul>
 					</ul>
 				</li>
 				
-				<li><a href="contacto.jsp">ContÃ¡ctanos</a></li>
-				<li><a href="login-cliente.jsp">Iniciar SesiÃ³n</a></li>
+				<li><a href="contacto.jsp">Contáctanos</a></li>
+    			<% if(misesion.getAttribute("username") == null){%>
+    			<li><a href="login-cliente.jsp">Iniciar Sesión</a></li>
+   				<% } else {%>
+   				<li>
+					<a><% out.println(misesion.getAttribute("username")); %></a>
+					<ul class="children">
+						<li><a href="informacion-distribuidor.jsp">Información de la Cuenta</a></li>
+						<li><a href="up-distribuidor.jsp">Actualizar Información</a></li>
+						<li><a href="del-distribuidor.jsp">Eliminar Cuenta</a></li>
+						<li><a href="/cerrarSesionCliente">Cerrar Sesión</a></li>
+					</ul>
+				</li>
+   				<% }%>
 			</ul>
 		</div>
 	</div>

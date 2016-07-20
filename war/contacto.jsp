@@ -86,12 +86,12 @@
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
 						<li><a href="productos-tipo.jsp">Productos según Tipo</a></li>
-						<li><a href="productos-marca.jsp">Productos según Marca</a></li>
-						<li><a href="productos-precio.jsp">Productos según Precio</a></li>
+						<li><a href="productos-marca.jsp">Marcas</a></li>
+					
 					</ul>
 				</li>
 				
-				<li><a href="compras.jsp">Compras en Línea</a></li>
+				
 				
 				<li>
 					<a href="servicio-pfc.jsp">Servicio Técnico</a>
@@ -107,12 +107,29 @@
 					<a>Distribuidores</a>
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
+						<%HttpSession misesion= request.getSession(); %>
+						<% if(misesion.getAttribute("username") != null){%>
+						<li><a href="distribuidores.jsp">Extranet-Actualización de Datos</a></li>
+						<%}else{ %>
 						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
+						<%} %>
 						<li><a href="archivos/terminos.pdf">Términos</a></li>
 					</ul>
 				</li>
 				<li><a href="contacto.jsp">Contáctanos</a></li>
-				<li><a href="login-cliente.jsp">Iniciar Sesión</a></li>
+				
+    			<% if(misesion.getAttribute("username") == null){%>
+    			<li><a href="login-cliente.jsp">Iniciar Sesión</a></li>
+   				<% } else {%>
+   				<li>
+					<a><% out.println(misesion.getAttribute("username")); %></a>
+					<ul class="children">
+						<li><a href="informacion-cliente.jsp">Información de la Cuenta</a></li>
+						<li><a href="/cerrarSesionCliente">Cerrar Sesión</a></li>
+					</ul>
+				</li>
+   				<% }%>
+				
 			</ul>
 		</nav>
 		<div class="nav-mobil">
@@ -130,11 +147,11 @@
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
 						<li><a href="productos-tipo.jsp">Productos según Tipo</a></li>
-						<li><a href="productos-marca.jsp">Productos según Marca</a></li>
-						<li><a href="productos-precio.jsp">Productos según Precio</a></li>
+						<li><a href="productos-marca.jsp">Marcas</a></li>
+						
 					</ul>
 				</li>
-				<li><a href="compras.jsp">Compras en Línea</a></li>
+				
 				<li>
 					<a href="servicio-pfc.jsp">Servicio Técnico</a>
 					<ul class="children">
@@ -149,14 +166,30 @@
 					<a>Distribuidores</a>
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
+						<% if(misesion.getAttribute("username") != null){%>
+						<li><a href="distribuidores.jsp">Extranet-Actualización de Datos</a></li>
+						<%}else{ %>
 						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
+						<%} %>
 						<li><a href="archivos/terminos.pdf">Términos</a></li>
 					</ul>
 					</ul>
 				</li>
 				
 				<li><a href="contacto.jsp">Contáctanos</a></li>
-				<li><a href="login-cliente.jsp">Iniciar Sesión</a></li>
+    			<% if(misesion.getAttribute("username") == null){%>
+    			<li><a href="login-cliente.jsp">Iniciar Sesión</a></li>
+   				<% } else {%>
+   				<li>
+					<a><% out.println(misesion.getAttribute("username")); %></a>
+					<ul class="children">
+						<li><a href="informacion-distribuidor.jsp">Información de la Cuenta</a></li>
+						<li><a href="up-distribuidor.jsp">Actualizar Información</a></li>
+						<li><a href="del-distribuidor.jsp">Eliminar Cuenta</a></li>
+						<li><a href="/cerrarSesionCliente">Cerrar Sesión</a></li>
+					</ul>
+				</li>
+   				<% }%>
 			</ul>
 		</div>
 	</div>

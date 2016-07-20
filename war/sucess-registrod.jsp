@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -14,13 +15,13 @@
 	<script src="js/jquery-1.6.2.js" type="text/javascript"></script>
 	<script src="js/jquery.validate.js" type="text/javascript"></script>
 	<script src="js/messages_es.js" type="text/javascript"></script>
-	<meta name="description" content="Ofrece lo ˙ltimo en Hardware al alcance de tus manos.">
-	<meta property="og:site_name" content="VLATECSOFT | TecnologÌa en tus manos"/>
+	<meta name="description" content="Ofrece lo √∫ltimo en Hardware al alcance de tus manos.">
+	<meta property="og:site_name" content="VLATECSOFT | Tecnolog√≠a en tus manos"/>
 	<meta property="og:url" content="http://1-dot-vlatecsoft.appspot.com"/>
-	<meta property="og:title" content="VLATECSOFT | TecnologÌa en tus manos"/>
+	<meta property="og:title" content="VLATECSOFT | Tecnolog√≠a en tus manos"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:image" content="http://1-dot-vlatecsoft.appspot.com/images/default.png"/>
-	<meta property="og:description" content="Ofrece lo ˙ltimo en Hardware al alcance de tus manos."/>
+	<meta property="og:description" content="Ofrece lo √∫ltimo en Hardware al alcance de tus manos."/>
 	<script>
 	function validarPasswd() {
 	var p1 = document.getElementById("pass").value;
@@ -35,17 +36,17 @@
 	}
 	 
 	if (espacios) {
-	  alert ("La contraseÒa no puede contener espacios en blanco");
+	  alert ("La contrase√±a no puede contener espacios en blanco");
 	  return false;
 	}
 	
 	if (p1.length == 0 || p2.length == 0) {
-		  alert("Los campos de la contraseÒa no pueden quedar vacios!");
+		  alert("Los campos de la contrase√±a no pueden quedar vacios!");
 		  return false;
 		}
 	
 	if (p1 != p2) {
-		  alert("Las contraseÒas deben de coincidir!");
+		  alert("Las contrase√±as deben de coincidir!");
 		  return false;
 		} else {
 		  return true; 
@@ -132,43 +133,61 @@
 				<li>
 					<a href="nosotros.jsp">Nosotros</a>
 					<ul class="children">
-						<li><a href="nosotros.jsp">øQuiÈnes somos?</a></li>
-						<li><a href="galeria.jsp">GalerÌa</a></li>
-						<li><a href="javascript:void(0);" id="opener" class="boton">EscrÌbenos</a></li>
+						<li><a href="nosotros.jsp">¬øQui√©nes somos?</a></li>
+						<li><a href="galeria.jsp">Galer√≠a</a></li>
+						<li><a href="javascript:void(0);" id="opener" class="boton">Escr√≠benos</a></li>
 					</ul>
 				</li>
 				
 				<li>
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
-						<li><a href="productos-tipo.jsp">Productos seg˙n Tipo</a></li>
-						<li><a href="productos-marca.jsp">Productos seg˙n Marca</a></li>
-						<li><a href="productos-precio.jsp">Productos seg˙n Precio</a></li>
+						<li><a href="productos-tipo.jsp">Productos seg√∫n Tipo</a></li>
+						<li><a href="productos-marca.jsp">Marcas</a></li>
+					
 					</ul>
 				</li>
 				
-				<li><a href="compras.jsp">Compras en LÌnea</a></li>
+				
 				
 				<li>
-					<a href="servicio-pfc.jsp">Servicio TÈcnico</a>
+					<a href="servicio-pfc.jsp">Servicio T√©cnico</a>
 					<ul class="children">
 						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
 						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
-						<li><a href="servicio-hla.jsp">Horarios y Lugares de AtenciÛn</a></li>
-						<li><a href="servicio-tdg.jsp">Tipos de GarantÌa</a></li>
-						<li><a href="archivos/nocas.pdf">AtenciÛn de otras marcas</a></li>
+						<li><a href="servicio-hla.jsp">Horarios y Lugares de Atenci√≥n</a></li>
+						<li><a href="servicio-tdg.jsp">Tipos de Garant√≠a</a></li>
+						<li><a href="archivos/nocas.pdf">Atenci√≥n de otras marcas</a></li>
 					</ul>
 				</li>
 				<li>
 					<a>Distribuidores</a>
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
-						<li><a href="login-distribuidor.jsp">Extranet-ActualizaciÛn de Datos</a></li>
-						<li><a href="archivos/terminos.pdf">TÈrminos</a></li>
+						<%HttpSession misesion= request.getSession(); %>
+						<% if(misesion.getAttribute("username") != null){%>
+						<li><a href="distribuidores.jsp">Extranet-Actualizaci√≥n de Datos</a></li>
+						<%}else{ %>
+						<li><a href="login-distribuidor.jsp">Extranet-Actualizaci√≥n de Datos</a></li>
+						<%} %>
+						<li><a href="archivos/terminos.pdf">T√©rminos</a></li>
 					</ul>
 				</li>
-				<li><a href="contacto.jsp">Cont·ctanos</a></li>
-				<li><a href="login-cliente.jsp">Iniciar SesiÛn</a></li>
+				<li><a href="contacto.jsp">Cont√°ctanos</a></li>
+				
+    			<% if(misesion.getAttribute("username") == null){%>
+    			<li><a href="login-cliente.jsp">Iniciar Sesi√≥n</a></li>
+   				<% } else {%>
+   				<li>
+					<a><% out.println(misesion.getAttribute("username")); %></a>
+					<ul class="children">
+						<li><a href="informacion-cliente.jsp">Informaci√≥n de la Cuenta</a></li>
+					
+						<li><a href="/cerrarSesionCliente">Cerrar Sesi√≥n</a></li>
+					</ul>
+				</li>
+   				<% }%>
+				
 			</ul>
 		</nav>
 		<div class="nav-mobil">
@@ -177,42 +196,58 @@
 				<li>
 					<a href="nosotros.jsp">Nosotros</a>
 					<ul class="children">
-						<li><a href="nosotros.jsp">øQuiÈnes somos?</a></li>
-						<li><a href="galeria.jsp">GalerÌa</a></li>
-						<li class="boton"><a  href="javascript:void(0);" id="opener" class="boton">EscrÌbenos</a></li>
+						<li><a href="nosotros.jsp">¬øQui√©nes somos?</a></li>
+						<li><a href="galeria.jsp">Galer√≠a</a></li>
+						<li class="boton"><a  href="javascript:void(0);" id="opener" class="boton">Escr√≠benos</a></li>
 					</ul>
 				</li>
 				<li>
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
-						<li><a href="productos-tipo.jsp">Productos seg˙n Tipo</a></li>
-						<li><a href="productos-marca.jsp">Productos seg˙n Marca</a></li>
-						<li><a href="productos-precio.jsp">Productos seg˙n Precio</a></li>
+						<li><a href="productos-tipo.jsp">Productos seg√∫n Tipo</a></li>
+						<li><a href="productos-marca.jsp">Marcas</a></li>
+						
 					</ul>
 				</li>
-				<li><a href="compras.jsp">Compras en LÌnea</a></li>
+				
 				<li>
-					<a href="servicio-pfc.jsp">Servicio TÈcnico</a>
+					<a href="servicio-pfc.jsp">Servicio T√©cnico</a>
 					<ul class="children">
 						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
 						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
-						<li><a href="servicio-hla.jsp">Horarios y Lugares de AtenciÛn</a></li>
-						<li><a href="servicio-tdg.jsp">Tipos de GarantÌa</a></li>
-						<li><a href="archivos/nocas.pdf">AtenciÛn de otras marcas</a></li>
+						<li><a href="servicio-hla.jsp">Horarios y Lugares de Atenci√≥n</a></li>
+						<li><a href="servicio-tdg.jsp">Tipos de Garant√≠a</a></li>
+						<li><a href="archivos/nocas.pdf">Atenci√≥n de otras marcas</a></li>
 					</ul>
 				</li>
 				<li>
 					<a>Distribuidores</a>
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
-						<li><a href="login-distribuidor.jsp">Extranet-ActualizaciÛn de Datos</a></li>
-						<li><a href="archivos/terminos.pdf">TÈrminos</a></li>
+						<% if(misesion.getAttribute("username") != null){%>
+						<li><a href="distribuidores.jsp">Extranet-Actualizaci√≥n de Datos</a></li>
+						<%}else{ %>
+						<li><a href="login-distribuidor.jsp">Extranet-Actualizaci√≥n de Datos</a></li>
+						<%} %>
+						<li><a href="archivos/terminos.pdf">T√©rminos</a></li>
 					</ul>
 					</ul>
 				</li>
 				
-				<li><a href="contacto.jsp">Cont·ctanos</a></li>
-				<li><a href="login-cliente.jsp">Iniciar SesiÛn</a></li>
+				<li><a href="contacto.jsp">Cont√°ctanos</a></li>
+    			<% if(misesion.getAttribute("username") == null){%>
+    			<li><a href="login-cliente.jsp">Iniciar Sesi√≥n</a></li>
+   				<% } else {%>
+   				<li>
+					<a><% out.println(misesion.getAttribute("username")); %></a>
+					<ul class="children">
+						<li><a href="informacion-distribuidor.jsp">Informaci√≥n de la Cuenta</a></li>
+						<li><a href="up-distribuidor.jsp">Actualizar Informaci√≥n</a></li>
+						<li><a href="del-distribuidor.jsp">Eliminar Cuenta</a></li>
+						<li><a href="/cerrarSesionCliente">Cerrar Sesi√≥n</a></li>
+					</ul>
+				</li>
+   				<% }%>
 			</ul>
 		</div>
 	</div>
@@ -273,11 +308,11 @@
 	<div class="cellInput"><input type="text" class="textBox" maxlength="8" size="40" name="user"></div>
 	<div class="clean"></div>
 	
-	<div class="tablaTitulos"><span class="alignVert">ContraseÒa</span></div>
+	<div class="tablaTitulos"><span class="alignVert">Contrase√±a</span></div>
 	<div class="cellInput"><input type="password" class="textBox" maxlength="10" size="40" id="pass" name="pass"></div>
 	<div class="clean"></div>
 	
-	<div class="tablaTitulos"><span class="alignVert">Repita la ContraseÒa</span></div>
+	<div class="tablaTitulos"><span class="alignVert">Repita la Contrase√±a</span></div>
 	<div class="cellInput"><input type="password" class="textBox" maxlength="10" value="" size="40"   id ="cpass"name="cpass"></div>
 	<div class="clean"></div>
 	<br>
@@ -286,49 +321,49 @@
 	<div class="boxTerGaran">
 	    
 	TERMINOS DE GARANTIA<br><br>
-	<strong>1 -Alcance de la GarantÌa</strong><br><br>
+	<strong>1 -Alcance de la Garant√≠a</strong><br><br>
 	
-	1.1-Grupo Vlatecsoft no se responsabiliza por el desconocimiento de los tÈrminos de garantÌa del personal que entregue o recoja los productos en el ·rea de Servicio al Cliente (Revise y verifique).
-	<br>1.2-La garantÌa aplica sÛlo a la mercaderÌa vendida por Grupo Vlatecsoft, no se extiende a terceros ni se responsabiliza por posibles daÒos a otra mercaderÌa ni los producidos por el transporte de terceros y sÛlo se presta en nuestros centros de atenciÛn al cliente.
-	<br>1.3-La garantÌa no incluye ning˙n tipo de instalaciÛn (solo del equipo). Dicho servicio tendr· un costo adicional.
-	<br>1.4-En ning˙n caso Grupo Vlatecsoft se responsabiliza por el software u otros datos almacenados en la mercaderÌa. Se recomienda realizar backups (copias de seguridad) en forma periÛdica. Grupo Vlatecsoft no se responsabiliza por posibles daÒos y/o perjuicios de cualquier naturaleza causados por fallas en la mercaderÌa (a excepciÛn de la propia mercaderÌa adquirida en nuestras tiendas). Es obligatorio que al ensamblar se realice un control de calidad antes de entregar el producto final.
-	<br>1.5-El periodo de garantÌa del servicio de ensamblaje de computadoras es de acuerdo a lo acordado(al comprar) y sÛlo cubre la mano de obra de la reparaciÛn. Esta garantÌa no cubre el software instalado u otra informaciÛn instalada.
-	<br>1.6-No se aceptar·n cambios ni devoluciones por incompatibilidad (verifique compatibilidad en las propias marcas y modelos) con productos de otros proveedores ni por errores de compra, esto se encontrar· sujeto a validaciÛn por el ·rea de reclamos, asÌ como a penalizaciones por gastos administrativos.
+	1.1-Grupo Vlatecsoft no se responsabiliza por el desconocimiento de los t√©rminos de garant√≠a del personal que entregue o recoja los productos en el √°rea de Servicio al Cliente (Revise y verifique).
+	<br>1.2-La garant√≠a aplica s√≥lo a la mercader√≠a vendida por Grupo Vlatecsoft, no se extiende a terceros ni se responsabiliza por posibles da√±os a otra mercader√≠a ni los producidos por el transporte de terceros y s√≥lo se presta en nuestros centros de atenci√≥n al cliente.
+	<br>1.3-La garant√≠a no incluye ning√∫n tipo de instalaci√≥n (solo del equipo). Dicho servicio tendr√° un costo adicional.
+	<br>1.4-En ning√∫n caso Grupo Vlatecsoft se responsabiliza por el software u otros datos almacenados en la mercader√≠a. Se recomienda realizar backups (copias de seguridad) en forma peri√≥dica. Grupo Vlatecsoft no se responsabiliza por posibles da√±os y/o perjuicios de cualquier naturaleza causados por fallas en la mercader√≠a (a excepci√≥n de la propia mercader√≠a adquirida en nuestras tiendas). Es obligatorio que al ensamblar se realice un control de calidad antes de entregar el producto final.
+	<br>1.5-El periodo de garant√≠a del servicio de ensamblaje de computadoras es de acuerdo a lo acordado(al comprar) y s√≥lo cubre la mano de obra de la reparaci√≥n. Esta garant√≠a no cubre el software instalado u otra informaci√≥n instalada.
+	<br>1.6-No se aceptar√°n cambios ni devoluciones por incompatibilidad (verifique compatibilidad en las propias marcas y modelos) con productos de otros proveedores ni por errores de compra, esto se encontrar√° sujeto a validaci√≥n por el √°rea de reclamos, as√≠ como a penalizaciones por gastos administrativos.
 	<br><br>
-	<strong>2 -Lineamientos de los Productos en GarantÌa</strong><br><br>
-	<br>2.1-La mercaderÌa debe ser remitida a nuestros centros de servicios debidamente protegida, con los accesorios completos, conforme fue despachada, en el caso de "cases" bastar· traer la fuente de alimentaciÛn con su respectiva guÌa de remisiÛn. En los casos que el producto sea de un lote se solicitar· la guÌa de remisiÛn para el ingreso del producto.
-	<br>2.2-El cliente deber· indicar la falla especÌfica de la mercaderÌa al momento de entregarla. De no verificarse la falla descrita, la mercaderÌa ser· devuelta. En el caso de envÌo de productos de provincia se deber· llenar el formato RMA especificando la falla del producto, el cual se encuentra colgado en el siguiente
+	<strong>2 -Lineamientos de los Productos en Garant√≠a</strong><br><br>
+	<br>2.1-La mercader√≠a debe ser remitida a nuestros centros de servicios debidamente protegida, con los accesorios completos, conforme fue despachada, en el caso de "cases" bastar√° traer la fuente de alimentaci√≥n con su respectiva gu√≠a de remisi√≥n. En los casos que el producto sea de un lote se solicitar√° la gu√≠a de remisi√≥n para el ingreso del producto.
+	<br>2.2-El cliente deber√° indicar la falla espec√≠fica de la mercader√≠a al momento de entregarla. De no verificarse la falla descrita, la mercader√≠a ser√° devuelta. En el caso de env√≠o de productos de provincia se deber√° llenar el formato RMA especificando la falla del producto, el cual se encuentra colgado en el siguiente
 	link: http//www.vlatecsoft.com/formulario.jsp.
-	<br>2.3-La garantÌa de la mercaderÌa no ser· v·lida en los siguientes casos: daÒo fÌsico, etiquetas del fabricante o de Grupo Vlatecsoft adulteradas o removidas, evidencia de intento de reparaciÛn, evidencia de rayaduras o maltratos en las cubiertas pl·sticas, daÒos causados por fluctuaciones elÈctricas externas,
-	sobrecarga, mala instalaciÛn, cualquier elemento extraÒo (oxido, ·cidos, lÌquidos, quÌmicos, etc.), por desastres naturales o provocados (incendios, inundaciones, tormentas elÈctricas, terremotos, etc.), por uso o almacenaje sin cumplir las especificaciones ambientales del fabricante.
-	<br>2.4-La garantÌa no cubre accesorios, conectores, puertos de entrada y salida (paralelo, serial, etc.), o cabezales de impresoras. AsÌ mismo no cubre consumibles y/o repuestos consumibles y componentes que se desgasten por el uso (consulte garantÌas del fabricante).
-	<br>2.5-La recepciÛn del producto, por parte de Servicio al Cliente, no implica un diagnostico definitivo y no garantiza la aplicaciÛn de la garantÌa del mismo, esto ser· validado por el especialista tÈcnico. Por lo tanto, el cargo de recepciÛn que se le entrega no garantiza la aplicaciÛn de la garantÌa del producto.
-	<br>2.6-El cliente se encuentra en la obligaciÛn de ingresar al sistema listo (http://Vlatecsoft.com/garantias.jsp) para conocer el status de su producto, en el caso que estos se encuentren en la categorÌa "LISTO PARA RECOGER" y superen el tiempo de almacenamiento de 30 dÌas Grupo Vlatecosft podr· disponer de los productos seg˙n como considere conveniente, siendo el producto declarado en ABANDONO.
-	<br>2.7-Los productos enviados a nuestras oficinas que no cumplan con los requisitos indicados o que no cuenten con la informaciÛn completa no ser·n aceptados.
+	<br>2.3-La garant√≠a de la mercader√≠a no ser√° v√°lida en los siguientes casos: da√±o f√≠sico, etiquetas del fabricante o de Grupo Vlatecsoft adulteradas o removidas, evidencia de intento de reparaci√≥n, evidencia de rayaduras o maltratos en las cubiertas pl√°sticas, da√±os causados por fluctuaciones el√©ctricas externas,
+	sobrecarga, mala instalaci√≥n, cualquier elemento extra√±o (oxido, √°cidos, l√≠quidos, qu√≠micos, etc.), por desastres naturales o provocados (incendios, inundaciones, tormentas el√©ctricas, terremotos, etc.), por uso o almacenaje sin cumplir las especificaciones ambientales del fabricante.
+	<br>2.4-La garant√≠a no cubre accesorios, conectores, puertos de entrada y salida (paralelo, serial, etc.), o cabezales de impresoras. As√≠ mismo no cubre consumibles y/o repuestos consumibles y componentes que se desgasten por el uso (consulte garant√≠as del fabricante).
+	<br>2.5-La recepci√≥n del producto, por parte de Servicio al Cliente, no implica un diagnostico definitivo y no garantiza la aplicaci√≥n de la garant√≠a del mismo, esto ser√° validado por el especialista t√©cnico. Por lo tanto, el cargo de recepci√≥n que se le entrega no garantiza la aplicaci√≥n de la garant√≠a del producto.
+	<br>2.6-El cliente se encuentra en la obligaci√≥n de ingresar al sistema listo (http://Vlatecsoft.com/garantias.jsp) para conocer el status de su producto, en el caso que estos se encuentren en la categor√≠a "LISTO PARA RECOGER" y superen el tiempo de almacenamiento de 30 d√≠as Grupo Vlatecosft podr√° disponer de los productos seg√∫n como considere conveniente, siendo el producto declarado en ABANDONO.
+	<br>2.7-Los productos enviados a nuestras oficinas que no cumplan con los requisitos indicados o que no cuenten con la informaci√≥n completa no ser√°n aceptados.
 	<br><br>
-	<strong>3 -Tipos y Tiempos de GarantÌa</strong><br><br>
-	<br>3.1-Los tipos y perÌodos de garantÌa se especifican en la lista de precios, guÌa de remisiÛn y ficha de producto en nuestra web. Consulte con su ejecutivo de ventas cualquier duda antes de realizar su compra.
-	<br>3.2-La mercaderÌa con cÛdigo de garantÌa "W" (GarantÌa del representante en el Per˙) descritos en la lista de precios y en la ficha del producto en nuestra web, se rigen por las condiciones de garantÌa de los mismos representantes y se canalizan a travÈs de sus Centros de Servicio Autorizados (CSA).
-	<br>3.3-La mercaderÌa con cÛdigo de garantÌa "X" (Consultar), "Y" (GarantÌa sÛlo del fabricante) y "Z" (No aplica), deber·n ser tramitadas directamente con el fabricante.
-	<br>3.4-La mercaderÌa que no se encuentre especificada en los puntos 3.2 y 3.3, se manejar· bajo las siguientes modalidades:
-	<br>3.4.1-AtenciÛn Inmediata: Durante este plazo la mercaderÌa podr· ser remplazada inmediatamente despuÈs de verificada la falla de fabricaciÛn. Los requisitos son:
-	<br>3.4.1.1-Despachos locales (3 dÌas ˙tiles despuÈs de la compra).
-	<br>3.4.1.2-Despachos a otras provincias (5 dÌas ˙tiles despuÈs de la compra).
-	<br>3.4.2-AtenciÛn Regular: El remplazÛ se realizar· en un tiempo m·ximo de 30 dÌas calendarios posteriores al ingreso del producto.
-	<br>3.5-La mercaderÌa de remplazÛ podr· ser: reparada, remanufacturada u otro producto de caracterÌsticas similares o superiores de la misma marca u otra; y ser· garantizada por el perÌodo restante de la garantÌa.
-	<br>3.6-En caso de no disponer de stock del producto de remplazÛ en el plazo m·ximo de atenciÛn se emitir· una nota de crÈdito, con el precio actualizado del producto a la fecha de emisiÛn de la nota de crÈdito. La emisiÛn de la nota de crÈdito no aplica para los casos con soluciÛn de remplazÛ de producto.
+	<strong>3 -Tipos y Tiempos de Garant√≠a</strong><br><br>
+	<br>3.1-Los tipos y per√≠odos de garant√≠a se especifican en la lista de precios, gu√≠a de remisi√≥n y ficha de producto en nuestra web. Consulte con su ejecutivo de ventas cualquier duda antes de realizar su compra.
+	<br>3.2-La mercader√≠a con c√≥digo de garant√≠a "W" (Garant√≠a del representante en el Per√∫) descritos en la lista de precios y en la ficha del producto en nuestra web, se rigen por las condiciones de garant√≠a de los mismos representantes y se canalizan a trav√©s de sus Centros de Servicio Autorizados (CSA).
+	<br>3.3-La mercader√≠a con c√≥digo de garant√≠a "X" (Consultar), "Y" (Garant√≠a s√≥lo del fabricante) y "Z" (No aplica), deber√°n ser tramitadas directamente con el fabricante.
+	<br>3.4-La mercader√≠a que no se encuentre especificada en los puntos 3.2 y 3.3, se manejar√° bajo las siguientes modalidades:
+	<br>3.4.1-Atenci√≥n Inmediata: Durante este plazo la mercader√≠a podr√° ser remplazada inmediatamente despu√©s de verificada la falla de fabricaci√≥n. Los requisitos son:
+	<br>3.4.1.1-Despachos locales (3 d√≠as √∫tiles despu√©s de la compra).
+	<br>3.4.1.2-Despachos a otras provincias (5 d√≠as √∫tiles despu√©s de la compra).
+	<br>3.4.2-Atenci√≥n Regular: El remplaz√≥ se realizar√° en un tiempo m√°ximo de 30 d√≠as calendarios posteriores al ingreso del producto.
+	<br>3.5-La mercader√≠a de remplaz√≥ podr√° ser: reparada, remanufacturada u otro producto de caracter√≠sticas similares o superiores de la misma marca u otra; y ser√° garantizada por el per√≠odo restante de la garant√≠a.
+	<br>3.6-En caso de no disponer de stock del producto de remplaz√≥ en el plazo m√°ximo de atenci√≥n se emitir√° una nota de cr√©dito, con el precio actualizado del producto a la fecha de emisi√≥n de la nota de cr√©dito. La emisi√≥n de la nota de cr√©dito no aplica para los casos con soluci√≥n de remplaz√≥ de producto.
 	<br>
 	<br>
-	Con el propÛsito de brindarles un mejor servicio en la atenciÛn de sus garantÌas y aclarar las posibles dudas, les invitamos a contactarse: Consultas TÈcnicas - email: garantias@vlatecsoft.com.pe
-	Consultas administrativas y de gestiÛn de garantÌas - email: garantias.cliente@vlatecsoft.com.pe
+	Con el prop√≥sito de brindarles un mejor servicio en la atenci√≥n de sus garant√≠as y aclarar las posibles dudas, les invitamos a contactarse: Consultas T√©cnicas - email: garantias@vlatecsoft.com.pe
+	Consultas administrativas y de gesti√≥n de garant√≠as - email: garantias.cliente@vlatecsoft.com.pe
 	Consultas sobre el estado de sus productos, ingresar al siguiente link: .http://Vlatecsoft.com/garantias.jsp
-	Para mayor informaciÛn visite nuestra p·gina web www.deltron.com.pe www.Vlatecsoft.com.pe
-	Los tÈrminos y condiciones de garantÌas pueden ser modificados sin previo aviso. El cliente declara su consentimiento
+	Para mayor informaci√≥n visite nuestra p√°gina web www.deltron.com.pe www.Vlatecsoft.com.pe
+	Los t√©rminos y condiciones de garant√≠as pueden ser modificados sin previo aviso. El cliente declara su consentimiento
 	</div>
 	
 	<div class="checkboxStyle">
 	<input type="checkbox" name="acepto_termino" style="display:inline; padding-top:5px;" >
-	<span style="display:inline; width:20%; padding-top:5px;">Acepto los tÈrminos</span>
+	<span style="display:inline; width:20%; padding-top:5px;">Acepto los t√©rminos</span>
 	</div>
 	<br>
 	<input  style="color: #ffffff; margin: 0 auto;background-color: #338790" type="submit" name="guardar" id="guardar" value="Guardar">
@@ -357,16 +392,16 @@
 			<h3>Producto</h3>
 			<ul>
 				<li><a href="productos.jsp">Lista de Productos</a></li>
-				<li><a href="compras.jsp">Compras en LÌnea</a></li>
-				<li><a href="servicio-pfc.jsp">SÈrvicio Tecnico</a></li>
-				<li><a href="galeria.jsp">InformaciÛn de la Empresa</a></li>
+				<li><a href="compras.jsp">Compras en L√≠nea</a></li>
+				<li><a href="servicio-pfc.jsp">S√©rvicio Tecnico</a></li>
+				<li><a href="galeria.jsp">Informaci√≥n de la Empresa</a></li>
 			</ul>
 		</div>
 		<div class="box three">
 			<h3>Soporte</h3>
 			<ul>
 				<li><a href="contacto.jsp">Contacto</a></li>
-				<li>Ll·manos (+51) 959 096 704 </li>
+				<li>Ll√°manos (+51) 959 096 704 </li>
 				<li>vlatecsoft@hotmail.com</li>
 			</ul>
 		</div>
@@ -395,16 +430,16 @@
 			<div class="container">
 				<ul>
 				<li><a href="productos.jsp">Lista de Productos</a></li>
-				<li><a href="compras.jsp">Compras en LÌnea</a></li>
-				<li><a href="servicio-pfc.jsp">Servicio TÈcnico</a></li>
-				<li><a href="galeria.jsp">InformaciÛn de la Empresa</a></li>
+				<li><a href="compras.jsp">Compras en L√≠nea</a></li>
+				<li><a href="servicio-pfc.jsp">Servicio T√©cnico</a></li>
+				<li><a href="galeria.jsp">Informaci√≥n de la Empresa</a></li>
 				</ul>
 			</div>
 			<h3>Soporte <i class="icon-down-open"></i></h3>
 			<div class="container">
 				<ul>
 					<li><a href="contacto.jsp">Contacto</a></li>
-					<li>Ll·manos (+51) 959 096 704 </li>
+					<li>Ll√°manos (+51) 959 096 704 </li>
 					<li>vlatecsoft@hotmail.com</li>
 				</ul>
 			</div>

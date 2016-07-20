@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -17,13 +18,13 @@
 	<script src="js/jquery.validate.js" type="text/javascript"></script>
 	<script src="js/messages_es.js" type="text/javascript"></script>
 	
-	<meta name="description" content="Ofrece lo 鷏timo en Hardware al alcance de tus manos.">
-	<meta property="og:site_name" content="VLATECSOFT | Tecnolog韆 en tus manos"/>
+	<meta name="description" content="Ofrece lo 煤ltimo en Hardware al alcance de tus manos.">
+	<meta property="og:site_name" content="VLATECSOFT | Tecnolog铆a en tus manos"/>
 	<meta property="og:url" content="http://1-dot-vlatecsoft.appspot.com"/>
-	<meta property="og:title" content="VLATECSOFT | Tecnolog韆 en tus manos"/>
+	<meta property="og:title" content="VLATECSOFT | Tecnolog铆a en tus manos"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:image" content="http://1-dot-vlatecsoft.appspot.com/images/default.png"/>
-	<meta property="og:description" content="Ofrece lo 鷏timo en Hardware al alcance de tus manos."/>
+	<meta property="og:description" content="Ofrece lo 煤ltimo en Hardware al alcance de tus manos."/>
 	<script>
 	/* **********************  validacion del formulario  ****************** */
 	$(document).ready(function(){
@@ -76,43 +77,61 @@
 				<li>
 					<a href="nosotros.jsp">Nosotros</a>
 					<ul class="children">
-						<li><a href="nosotros.jsp">縌ui閚es somos?</a></li>
-						<li><a href="galeria.jsp">Galer韆</a></li>
-						<li><a href="javascript:void(0);" id="opener" class="boton">Escr韇enos</a></li>
+						<li><a href="nosotros.jsp">驴Qui茅nes somos?</a></li>
+						<li><a href="galeria.jsp">Galer铆a</a></li>
+						<li><a href="javascript:void(0);" id="opener" class="boton">Escr铆benos</a></li>
 					</ul>
 				</li>
 				
 				<li>
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
-						<li><a href="productos-tipo.jsp">Productos seg鷑 Tipo</a></li>
-						<li><a href="productos-marca.jsp">Productos seg鷑 Marca</a></li>
-						<li><a href="productos-precio.jsp">Productos seg鷑 Precio</a></li>
+						<li><a href="productos-tipo.jsp">Productos seg煤n Tipo</a></li>
+						<li><a href="productos-marca.jsp">Marcas</a></li>
+					
 					</ul>
 				</li>
 				
-				<li><a href="compras.jsp">Compras en L韓ea</a></li>
+				
 				
 				<li>
-					<a href="servicio-pfc.jsp">Servicio T閏nico</a>
+					<a href="servicio-pfc.jsp">Servicio T茅cnico</a>
 					<ul class="children">
 						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
 						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
-						<li><a href="servicio-hla.jsp">Horarios y Lugares de Atenci髇</a></li>
-						<li><a href="servicio-tdg.jsp">Tipos de Garant韆</a></li>
-						<li><a href="archivos/nocas.pdf">Atenci髇 de otras marcas</a></li>
+						<li><a href="servicio-hla.jsp">Horarios y Lugares de Atenci贸n</a></li>
+						<li><a href="servicio-tdg.jsp">Tipos de Garant铆a</a></li>
+						<li><a href="archivos/nocas.pdf">Atenci贸n de otras marcas</a></li>
 					</ul>
 				</li>
 				<li>
 					<a>Distribuidores</a>
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
-						<li><a href="login-distribuidor.jsp">Extranet-Actualizaci髇 de Datos</a></li>
-						<li><a href="archivos/terminos.pdf">T閞minos</a></li>
+						<%HttpSession misesion= request.getSession(); %>
+						<% if(misesion.getAttribute("username") != null){%>
+						<li><a href="distribuidores.jsp">Extranet-Actualizaci贸n de Datos</a></li>
+						<%}else{ %>
+						<li><a href="login-distribuidor.jsp">Extranet-Actualizaci贸n de Datos</a></li>
+						<%} %>
+						<li><a href="archivos/terminos.pdf">T茅rminos</a></li>
 					</ul>
 				</li>
-				<li><a href="contacto.jsp">Cont醕tanos</a></li>
-				<li><a href="login-cliente.jsp">Iniciar Sesi髇</a></li>
+				<li><a href="contacto.jsp">Cont谩ctanos</a></li>
+				
+    			<% if(misesion.getAttribute("username") == null){%>
+    			<li><a href="login-cliente.jsp">Iniciar Sesi贸n</a></li>
+   				<% } else {%>
+   				<li>
+					<a><% out.println(misesion.getAttribute("username")); %></a>
+					<ul class="children">
+						<li><a href="informacion-cliente.jsp">Informaci贸n de la Cuenta</a></li>
+					
+						<li><a href="/cerrarSesionCliente">Cerrar Sesi贸n</a></li>
+					</ul>
+				</li>
+   				<% }%>
+				
 			</ul>
 		</nav>
 		<div class="nav-mobil">
@@ -121,42 +140,58 @@
 				<li>
 					<a href="nosotros.jsp">Nosotros</a>
 					<ul class="children">
-						<li><a href="nosotros.jsp">縌ui閚es somos?</a></li>
-						<li><a href="galeria.jsp">Galer韆</a></li>
-						<li class="boton"><a  href="javascript:void(0);" id="opener" class="boton">Escr韇enos</a></li>
+						<li><a href="nosotros.jsp">驴Qui茅nes somos?</a></li>
+						<li><a href="galeria.jsp">Galer铆a</a></li>
+						<li class="boton"><a  href="javascript:void(0);" id="opener" class="boton">Escr铆benos</a></li>
 					</ul>
 				</li>
 				<li>
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
-						<li><a href="productos-tipo.jsp">Productos seg鷑 Tipo</a></li>
-						<li><a href="productos-marca.jsp">Productos seg鷑 Marca</a></li>
-						<li><a href="productos-precio.jsp">Productos seg鷑 Precio</a></li>
+						<li><a href="productos-tipo.jsp">Productos seg煤n Tipo</a></li>
+						<li><a href="productos-marca.jsp">Marcas</a></li>
+						
 					</ul>
 				</li>
-				<li><a href="compras.jsp">Compras en L韓ea</a></li>
+				
 				<li>
-					<a href="servicio-pfc.jsp">Servicio T閏nico</a>
+					<a href="servicio-pfc.jsp">Servicio T茅cnico</a>
 					<ul class="children">
 						<li><a href="servicio-pfc.jsp">Preguntas Frecuentes del Cliente</a></li>
 						<li><a href="servicio-pfd.jsp">Preguntas Frecuentes de Nuestros Distribuidores</a></li>
-						<li><a href="servicio-hla.jsp">Horarios y Lugares de Atenci髇</a></li>
-						<li><a href="servicio-tdg.jsp">Tipos de Garant韆</a></li>
-						<li><a href="archivos/nocas.pdf">Atenci髇 de otras marcas</a></li>
+						<li><a href="servicio-hla.jsp">Horarios y Lugares de Atenci贸n</a></li>
+						<li><a href="servicio-tdg.jsp">Tipos de Garant铆a</a></li>
+						<li><a href="archivos/nocas.pdf">Atenci贸n de otras marcas</a></li>
 					</ul>
 				</li>
 				<li>
 					<a>Distribuidores</a>
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
-						<li><a href="login-distribuidor.jsp">Extranet-Actualizaci髇 de Datos</a></li>
-						<li><a href="archivos/terminos.pdf">T閞minos</a></li>
+						<% if(misesion.getAttribute("username") != null){%>
+						<li><a href="distribuidores.jsp">Extranet-Actualizaci贸n de Datos</a></li>
+						<%}else{ %>
+						<li><a href="login-distribuidor.jsp">Extranet-Actualizaci贸n de Datos</a></li>
+						<%} %>
+						<li><a href="archivos/terminos.pdf">T茅rminos</a></li>
 					</ul>
 					</ul>
 				</li>
 				
-				<li><a href="contacto.jsp">Cont醕tanos</a></li>
-				<li><a href="login-cliente.jsp">Iniciar Sesi髇</a></li>
+				<li><a href="contacto.jsp">Cont谩ctanos</a></li>
+    			<% if(misesion.getAttribute("username") == null){%>
+    			<li><a href="login-cliente.jsp">Iniciar Sesi贸n</a></li>
+   				<% } else {%>
+   				<li>
+					<a><% out.println(misesion.getAttribute("username")); %></a>
+					<ul class="children">
+						<li><a href="informacion-distribuidor.jsp">Informaci贸n de la Cuenta</a></li>
+						<li><a href="up-distribuidor.jsp">Actualizar Informaci贸n</a></li>
+						<li><a href="del-distribuidor.jsp">Eliminar Cuenta</a></li>
+						<li><a href="/cerrarSesionCliente">Cerrar Sesi贸n</a></li>
+					</ul>
+				</li>
+   				<% }%>
 			</ul>
 		</div>
 	</div>
@@ -168,7 +203,7 @@
 </div>
 
 <div id="div_registro" class="containerreg"><!--formulario  inicio-->
-<span class="titlereg"> Cont醕tanos</span> 
+<span class="titlereg"> Cont谩ctanos</span> 
 <center><span class="italicText">Todos los campos son obligatorios *</span></center>    
 <center><p style='color: #ffffff; background-color: #BC2626'>Mensaje Enviado. </p></center>
        
@@ -219,16 +254,16 @@
 			<h3>Producto</h3>
 			<ul>
 				<li><a href="productos.jsp">Lista de Productos</a></li>
-				<li><a href="compras.jsp">Compras en L韓ea</a></li>
-				<li><a href="servicio-pfc.jsp">S閞vicio Tecnico</a></li>
-				<li><a href="galeria.jsp">Informaci髇 de la Empresa</a></li>
+				<li><a href="compras.jsp">Compras en L铆nea</a></li>
+				<li><a href="servicio-pfc.jsp">S茅rvicio Tecnico</a></li>
+				<li><a href="galeria.jsp">Informaci贸n de la Empresa</a></li>
 			</ul>
 		</div>
 		<div class="box three">
 			<h3>Soporte</h3>
 			<ul>
 				<li><a href="contacto.jsp">Contacto</a></li>
-				<li>Ll醡anos (+51) 959 096 704 </li>
+				<li>Ll谩manos (+51) 959 096 704 </li>
 				<li>vlatecsoft@hotmail.com</li>
 			</ul>
 		</div>
@@ -257,16 +292,16 @@
 			<div class="container">
 				<ul>
 				<li><a href="productos.jsp">Lista de Productos</a></li>
-				<li><a href="compras.jsp">Compras en L韓ea</a></li>
-				<li><a href="servicio-pfc.jsp">Servicio T閏nico</a></li>
-				<li><a href="galeria.jsp">Informaci髇 de la Empresa</a></li>
+				<li><a href="compras.jsp">Compras en L铆nea</a></li>
+				<li><a href="servicio-pfc.jsp">Servicio T茅cnico</a></li>
+				<li><a href="galeria.jsp">Informaci贸n de la Empresa</a></li>
 				</ul>
 			</div>
 			<h3>Soporte <i class="icon-down-open"></i></h3>
 			<div class="container">
 				<ul>
 					<li><a href="contacto.jsp">Contacto</a></li>
-					<li>Ll醡anos (+51) 959 096 704 </li>
+					<li>Ll谩manos (+51) 959 096 704 </li>
 					<li>vlatecsoft@hotmail.com</li>
 				</ul>
 			</div>

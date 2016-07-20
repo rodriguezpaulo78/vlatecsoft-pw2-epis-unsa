@@ -31,6 +31,7 @@ h1,h2,h3,h4{font-weight:500;}
 .container1{max-width:1140px;width:100%;margin:0 auto}
 .top{background-image:url(../images/fondo1.jpg);background-position:bottom center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;height:600px;color:#fff}
 .top1{background-image:url(../images/fondo-contacto.jpg);background-position:bottom center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;height:1000px;color:#fff}
+.top2{background-image:url(../images/fondo1.jpg);background-position:bottom center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;height:900px;color:#fff;max-height:2000px}
 .g-recaptcha{padding:2px;display: flex;justify-content: center;align-items: center;}
 
 label{display: block;padding:2px;margin:2px;cursor:pointer;}
@@ -595,7 +596,7 @@ padding-bottom: 30px;
 
 .boxTerGaran {
 	height: 300px;
-	width: 600px;
+	width: 90%;
 	overflow: auto;
 	padding: 10;
 	font-size: 10pt;
@@ -696,7 +697,7 @@ padding-bottom: 30px;
 }
 .cellInput {
 	text-align: left;
-	width: 470px;
+	width: 50%;
 	font-size: 10px;
 	float: left;
 	margin-bottom: 10px;
@@ -705,7 +706,7 @@ padding-bottom: 30px;
 .tablaTitulos{
 	font-size: 10pt;
 	color: #4c4c4c;
-	width: 145px;
+	width: 30%;
 	text-align: right;
 	padding: 5px;
 	float: left;
@@ -720,7 +721,7 @@ padding-bottom: 30px;
 }
 
 .datagrid table { border-collapse: collapse; text-align: left; width: 100%; } 
-.datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #006699; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; margin-top:20px; margin-bottom:20px; width:70% }
+.datagrid { background: #fff; overflow: hidden; border: 1px solid #006699; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; margin-top:20px; margin-bottom:20px; width:70% }
 .datagrid table td, .datagrid table th { padding: 3px 10px; }
 .datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; color:#FFFFFF; font-size: 15px; font-weight: bold; border: 1px solid #0070A8;text-align:center; } 
 .datagrid table thead th:first-child { border: none; border: 1px solid #0070A8;text-align:center;}
@@ -728,6 +729,16 @@ padding-bottom: 30px;
 .datagrid table tbody .alt td { background: #E1EEF4; color: #00496B; border: 1px solid #0070A8; }
 .datagrid table tbody td:first-child { border: 1px solid #0070A8; text-align:center;}
 .datagrid table tbody tr:last-child td { border-bottom: none; text-align:center; }
+
+.datagrid1 table { border-collapse: collapse; text-align: left; width: 100%; } 
+.datagrid1 { background: #fff; overflow: hidden; border: 1px solid #006699; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; margin-top:20px; margin-bottom:20px; width:100%}
+.datagrid1 table td, .datagrid table th { padding: 3px 10px; }
+.datagrid1 table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; color:#FFFFFF; font-size: 15px; font-weight: bold; border: 1px solid #0070A8;text-align:center; } 
+.datagrid1 table thead th:first-child { border: none; border: 1px solid #0070A8;text-align:center;}
+.datagrid1 table tbody td { color: #00496B; border: 1px solid #0070A8;font-size: 12px;font-weight: normal;text-align:center; }
+.datagrid1 table tbody .alt td { background: #E1EEF4; color: #00496B; border: 1px solid #0070A8; }
+.datagrid1 table tbody td:first-child { border: 1px solid #0070A8; text-align:center;}
+.datagrid1 table tbody tr:last-child td { border-bottom: none; text-align:center; }
 
 .lead{margin-bottom:20px;font-size:30px;font-weight:200;line-height:1.4;}
 .textol{width:70%;float:right}

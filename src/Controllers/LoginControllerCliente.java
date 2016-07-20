@@ -1,41 +1,60 @@
 package Controllers;
-
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
+import ServicesModel.Cliente;
+import ServicesModel.PMF;
+
+import javax.jdo.PersistenceManager;
+import javax.jdo.Query;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 
-import ServicesModel.AuthenticatorCliente;
-import ServicesModel.Users;
- 
-//import sun.text.normalizer.ICUBinary.Authenticate;
- 
+@SuppressWarnings("serial")
 public class LoginControllerCliente extends HttpServlet {
-	private static final long serialVersionUID = 1L;
- 
-	public LoginControllerCliente() {
-		super();
-	}
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+		
+//		resp.setContentType("text/plain");
+		String user = req.getParameter("username");
+		String pass = req.getParameter("password");
+		
+		PersistenceManager pm = PMF.get().getPersistenceManager();
+		Query q = pm.newQuery("SELECT FROM " + Cliente.class.getName());
 	
-	protected void doPost(HttpServletRequest request,
-		HttpServletResponse response) throws IOException, ServletException {
- 
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
-		RequestDispatcher rd = null;
- 
-		AuthenticatorCliente authenticator = new AuthenticatorCliente();
-		String result = authenticator.authenticate(username, password);
-		if (result.equals("success")) {
-			rd = request.getRequestDispatcher("/index.jsp");
-			Users user = new Users(username, password);
-			request.setAttribute("user", user);
-		} else {
-			rd = request.getRequestDispatcher("/error-login-cliente.jsp");
+		List<Cliente> clientes = (List<Cliente>)q.execute();
+		
+		
+		for(int i=0;i<clientes.size();i++){
+			System.out.println(clientes.get(i).getUser());
+			if(clientes.get(i).getUser().equalsIgnoreCase(user) && clientes.get(i).getPass().equalsIgnoreCase(pass)){
+				System.out.println(clientes.get(i).getUser());
+				System.out.println(clientes.get(i).getPass());
+				HttpSession misesion= req.getSession(true);
+				misesion.setAttribute("username", user);
+				misesion.setAttribute("password", pass);
+			     RequestDispatcher rd = getServletContext().getRequestDispatcher("/index.jsp");
+			     rd.forward(req, resp);
+			     return;
+			}else{
+				
+			}
 		}
-		rd.forward(request, response);
+		
+		if(user.equalsIgnoreCase("demo")&&pass.equalsIgnoreCase("demo")){
+			HttpSession misesion= req.getSession(true);
+			misesion.setAttribute("username", user);
+			misesion.setAttribute("password", pass);
+		     RequestDispatcher rd = getServletContext().getRequestDispatcher("/index.jsp");
+		     rd.forward(req, resp);
+		}
+		else{
+			RequestDispatcher rd = getServletContext().getRequestDispatcher("/error-login-cliente.jsp");
+		     rd.forward(req, resp);
+		  
+		}
+	
 	}
- 
 }
+

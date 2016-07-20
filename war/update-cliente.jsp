@@ -1,23 +1,37 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%HttpSession sesionadmin= request.getSession(); %>
+    <% if(sesionadmin.getAttribute("username") == null){
+    	response.sendRedirect("login-admin-notfound.jsp");
+    } %>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>VLATECSOFT | Tecnolog韆 en tus manos</title>
+	<title>VLATECSOFT | Clientes</title>
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.jpg">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery-ui.js"></script>
-	<meta name="description" content="Ofrece lo 鷏timo en Hardware al alcance de tus manos.">
-	<meta property="og:site_name" content="VLATECSOFT | Tecnolog韆 en tus manos"/>
+	
+		<link rel="stylesheet" href="css/table.css">
+		<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script language="javascript" src="js/shCore.js"></script>
+<script language="javascript" src="js/shBrushJScript.js"></script>
+<script language="javascript">$(function() { dp.SyntaxHighlighter.HighlightAll('code'); });</script><script type="text/javascript" src="js/table.js"></script>
+	
+	
+	<meta name="description" content="Ofrece lo 煤ltimo en Hardware al alcance de tus manos.">
+	<meta property="og:site_name" content="VLATECSOFT | Tecnolog铆a en tus manos"/>
 	<meta property="og:url" content="http://1-dot-vlatecsoft.appspot.com"/>
-	<meta property="og:title" content="VLATECSOFT | Tecnolog韆 en tus manos"/>
+	<meta property="og:title" content="VLATECSOFT | Tecnolog铆a en tus manos"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:image" content="http://1-dot-vlatecsoft.appspot.com/images/default.png"/>
-	<meta property="og:description" content="Ofrece lo 鷏timo en Hardware al alcance de tus manos."/>
+	<meta property="og:description" content="Ofrece lo 煤ltimo en Hardware al alcance de tus manos."/>
 </head>
 
 <body>
@@ -55,11 +69,11 @@
 					<a>Mensajes</a>
 					<ul class="children">
 						<li><a href="consulta-contacto.jsp">Lista de Mensajes</a></li>
-						<li><a href="update-contacto.jsp">Actualizaci髇 de Mensajes</a></li>
-						<li><a href="eliminar-contacto.jsp">Eliminaci髇 de Mensajes</a></li>
+						<li><a href="update-contacto.jsp">Actualizaci贸n de Mensajes</a></li>
+						<li><a href="eliminar-contacto.jsp">Eliminaci贸n de Mensajes</a></li>
 					</ul>
 				</li>
-				<li><a href="login-admin.jsp">Cerrar Sesi髇</a></li>
+				<li><a href="/cerrarSesionAdmin">Cerrar Sesi贸n</a></li>
 			</ul>
 		</nav>
 		<div class="nav-mobil">
@@ -88,12 +102,12 @@
 					<a>Mensajes</a>
 					<ul class="children">
 						<li><a href="consulta-contacto.jsp">Lista de Mensajes</a></li>
-						<li><a href="update-contacto.jsp">Actualizaci髇 de Mensajes</a></li>
-						<li><a href="eliminar-contacto.jsp">Eliminaci髇 de Mensajes</a></li>
+						<li><a href="update-contacto.jsp">Actualizaci贸n de Mensajes</a></li>
+						<li><a href="eliminar-contacto.jsp">Eliminaci贸n de Mensajes</a></li>
 					</ul>
 				</li>
 				
-				<li><a href="login-admin.jsp">Cerrar Sesi髇</a></li>
+				<li><a href="/cerrarSesionAdmin">Cerrar Sesi贸n</a></li>
 			</ul>
 		</div>
 	</div>
@@ -114,23 +128,23 @@
 <% 	PersistenceManager pm = PMF.get().getPersistenceManager();
 	Query q = pm.newQuery(Cliente.class);
 	List<Cliente> p = (List<Cliente>) q.execute();%>
-	<table border='4'>
+	<table border='4' id="t1"  class="example table-autosort table-autofilter table-autopage:10 table-stripeclass:alternate table-page-number:t1page table-page-count:t1pages table-filtered-rowcount:t1filtercount table-rowcount:t1allcount">
 	<THEAD><tr>
-		<th WIDTH="30"> N </th>
-		<th WIDTH="300"> Nombres </th>
-		<th WIDTH="300"> Apellidos </th>
-		<th WIDTH="150"> Fecha de Nacimiento </th>
-		<th WIDTH="120"> Sexo </th>
-		<th WIDTH="150"> User </th>
-		<th WIDTH="200"> Pass </th>
-		<th WIDTH="120"> Estado </th>
+		<th WIDTH="30" class="table-filterable table-sortable:numeric"> N </th>
+		<th WIDTH="300" class="table-filterable table-sortable:default"> Nombres </th>
+		<th WIDTH="300" class="table-filterable table-sortable:default"> Apellidos </th>
+		<th WIDTH="150" class="table-sortable:date"> Fecha de Nacimiento </th>
+		<th WIDTH="120" class="table-filterable table-sortable:default"> Sexo </th>
+		<th WIDTH="200" class="table-sortable:default"> User </th>
+		<th WIDTH="200" class="table-sortable:default"> Pass </th>
+		<th WIDTH="120" class="table-filterable table-sortable:default"> Estado </th>
 		<th WIDTH="120"> Opcion </th>
 		
-	</tr></THEAD>
+	</tr></THEAD><tbody>
 		<% for(int i=0;i<p.size();i++){ %>
 		<% String estado= (p.get(i).getContest())? " Activo":"No Activo"; %>
 			<form action="updateCliente" method="post">
-			<tbody>
+			
 				<tr>
 					<input type="hidden"  name="indice" value="<%=i+1%>">
 					<td><%=i+1%></td>
@@ -143,9 +157,20 @@
 					<td><%=estado%></td>
 					<td><input style='color:#fff; background-color: #FF9900' type='submit' value='Cambiar'></td>
 				</tr>
-				</tbody>
+				
 			</form>
 		<%} %>
+		</tbody>
+		<tfoot>
+	<tr>
+		<td class="table-page:previous" style="color:white;text-align:center;cursor:pointer;">Anterior</td>
+		<td colspan="7" style="color:white;text-align:center;">Pagina <span id="t1page"></span>&nbsp;de <span id="t1pages"></span></td>
+		<td class="table-page:next" style="color:white;text-align:center;cursor:pointer;">Siguiente</td>
+		
+	</tr>
+	<tr>
+		<td colspan="9"style="color:white;text-align:center;"><span id="t1filtercount"></span>&nbsp;of <span id="t1allcount"></span>&nbsp;rows match filter(s)</td>
+</tfoot>
 		</table>
 
 			</div>

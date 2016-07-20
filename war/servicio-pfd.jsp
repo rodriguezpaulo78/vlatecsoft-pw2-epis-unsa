@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 
 <!-- Mirrored from www.culqi.com/precio.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 May 2016 02:56:21 GMT -->
@@ -28,7 +28,7 @@
 <body>
 
 <div class="top-precios">
-<header>
+	<header>
 	<div id="lightbox" class="shadow">
 	<div class="mensaje">
 		<span><i class="icon-cancel"></i></span>
@@ -57,12 +57,12 @@
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
 						<li><a href="productos-tipo.jsp">Productos según Tipo</a></li>
-						<li><a href="productos-marca.jsp">Productos según Marca</a></li>
-						<li><a href="productos-precio.jsp">Productos según Precio</a></li>
+						<li><a href="productos-marca.jsp">Marcas</a></li>
+					
 					</ul>
 				</li>
 				
-				<li><a href="compras.jsp">Compras en Línea</a></li>
+				
 				
 				<li>
 					<a href="servicio-pfc.jsp">Servicio Técnico</a>
@@ -78,12 +78,29 @@
 					<a>Distribuidores</a>
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
+						<%HttpSession misesion= request.getSession(); %>
+						<% if(misesion.getAttribute("username") != null){%>
+						<li><a href="distribuidores.jsp">Extranet-Actualización de Datos</a></li>
+						<%}else{ %>
 						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
+						<%} %>
 						<li><a href="archivos/terminos.pdf">Términos</a></li>
 					</ul>
 				</li>
 				<li><a href="contacto.jsp">Contáctanos</a></li>
-				<li><a href="login-cliente.jsp">Iniciar Sesión</a></li>
+				
+    			<% if(misesion.getAttribute("username") == null){%>
+    			<li><a href="login-cliente.jsp">Iniciar Sesión</a></li>
+   				<% } else {%>
+   				<li>
+					<a><% out.println(misesion.getAttribute("username")); %></a>
+					<ul class="children">
+						<li><a href="informacion-cliente.jsp">Información de la Cuenta</a></li>
+						<li><a href="/cerrarSesionCliente">Cerrar Sesión</a></li>
+					</ul>
+				</li>
+   				<% }%>
+				
 			</ul>
 		</nav>
 		<div class="nav-mobil">
@@ -101,11 +118,11 @@
 					<a href="productos.jsp">Productos</a>
 					<ul class="children">
 						<li><a href="productos-tipo.jsp">Productos según Tipo</a></li>
-						<li><a href="productos-marca.jsp">Productos según Marca</a></li>
-						<li><a href="productos-precio.jsp">Productos según Precio</a></li>
+						<li><a href="productos-marca.jsp">Marcas</a></li>
+						
 					</ul>
 				</li>
-				<li><a href="compras.jsp">Compras en Línea</a></li>
+				
 				<li>
 					<a href="servicio-pfc.jsp">Servicio Técnico</a>
 					<ul class="children">
@@ -120,14 +137,30 @@
 					<a>Distribuidores</a>
 					<ul class="children">
 						<li><a href="registro-distribuidor.jsp">Registro</a></li>
+						<% if(misesion.getAttribute("username") != null){%>
+						<li><a href="distribuidores.jsp">Extranet-Actualización de Datos</a></li>
+						<%}else{ %>
 						<li><a href="login-distribuidor.jsp">Extranet-Actualización de Datos</a></li>
+						<%} %>
 						<li><a href="archivos/terminos.pdf">Términos</a></li>
 					</ul>
 					</ul>
 				</li>
 				
 				<li><a href="contacto.jsp">Contáctanos</a></li>
-				<li><a href="login-cliente.jsp">Iniciar Sesión</a></li>
+    			<% if(misesion.getAttribute("username") == null){%>
+    			<li><a href="login-cliente.jsp">Iniciar Sesión</a></li>
+   				<% } else {%>
+   				<li>
+					<a><% out.println(misesion.getAttribute("username")); %></a>
+					<ul class="children">
+						<li><a href="informacion-distribuidor.jsp">Información de la Cuenta</a></li>
+						<li><a href="up-distribuidor.jsp">Actualizar Información</a></li>
+						<li><a href="del-distribuidor.jsp">Eliminar Cuenta</a></li>
+						<li><a href="/cerrarSesionCliente">Cerrar Sesión</a></li>
+					</ul>
+				</li>
+   				<% }%>
 			</ul>
 		</div>
 	</div>
